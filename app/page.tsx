@@ -219,7 +219,9 @@ export default function AddsysWeb() {
         <a href="#cobertura" onClick={() => setMobileMenuOpen(false)} className="transition hover:text-sky-700">Cobertura</a>
         <a href="#contacto" onClick={() => setMobileMenuOpen(false)} className="transition hover:text-sky-700">Contacto</a>
         <a
-          href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+          href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-xl bg-green-500 px-4 py-3 text-center text-white shadow-sm transition hover:bg-green-600"
         >
           WhatsApp
@@ -267,7 +269,9 @@ export default function AddsysWeb() {
       {/* CTA */}
       <div className="mt-8 flex flex-wrap gap-4">
         <a
-          href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+          href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-green-500 text-white px-6 py-3 rounded-2xl font-medium hover:bg-green-600 transition shadow-lg shadow-green-500/20 hover:-translate-y-0.5"
         >
           Hablar por WhatsApp
@@ -667,7 +671,9 @@ export default function AddsysWeb() {
 
               <div className="mt-8">
                 <a
-                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-green-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-green-600 transition shadow-lg"
                 >
                   Escribir por WhatsApp
@@ -784,7 +790,9 @@ export default function AddsysWeb() {
           <div>Cobertura en todo el país</div>
           <div>operaciones@addsys.cl</div>
           <a
-            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+            href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block rounded-xl bg-green-500 px-4 py-2 text-white shadow-sm transition hover:bg-green-600"
           >
             WhatsApp
@@ -804,7 +812,9 @@ export default function AddsysWeb() {
 
 {/* BOTÓN WHATSAPP */}
 <a
-  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
+  target="_blank"
+  rel="noopener noreferrer"
   className="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 transition z-50"
       >
         WhatsApp
