@@ -187,7 +187,9 @@ export default function AddsysWeb() {
       <a href="#cobertura" className="transition hover:text-sky-700">Cobertura</a>
       <a href="#contacto" className="transition hover:text-sky-700">Contacto</a>
       <a
-        href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+       href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
+	target="_blank"
+        rel="noopener noreferrer"
         className="rounded-xl bg-green-500 px-4 py-2 text-white shadow-sm transition hover:bg-green-600"
       >
         WhatsApp
