@@ -168,13 +168,21 @@ export default function AddsysWeb() {
   return (
     <div className="min-h-screen bg-white text-slate-800">
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur shadow-sm">
-  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+
+  {/* Barra superior (mensaje) */}
+  <div className="text-[11px] sm:text-xs md:text-sm text-sky-800 bg-sky-50 border-b border-sky-100 py-1 px-2 text-center">
+    8 años en el mercado • Temuco, Chile • Cobertura nacional
+  </div>
+
+  {/* Header principal */}
+  <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center border-b border-slate-200">
+    
     <div className="flex items-center gap-3">
-      <img src="/logo-addsys.png" alt="logo" className="h-12 object-contain" />
+      <img src="/logo-addsys.png" alt="logo" className="h-11 object-contain" />
       <div>
-        <div className="font-bold text-xl">ADDSYS SpA</div>
-        <div className="text-sm text-gray-500">Ingeniería Sanitaria</div>
+        <div className="font-bold text-lg md:text-xl">ADDSYS SpA</div>
+        <div className="text-xs md:text-sm text-gray-500">Ingeniería Sanitaria</div>
       </div>
     </div>
 
@@ -234,27 +242,24 @@ export default function AddsysWeb() {
 {/* HERO */}
 <section
   id="inicio"
-  className="scroll-mt-19 bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.10),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(34,211,238,0.10),_transparent_24%)] bg-white"
+  className="scroll-mt-35 bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.10),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(34,211,238,0.10),_transparent_24%)] bg-white"
 >  
 
-<div className="max-w-7xl mx-auto px-5 md:px-6 pt-5 md:pt-5 pb-14 md:py-20 grid md:grid-cols-2 gap-3 md:gap-12 items-start">
+<div className="max-w-7xl mx-auto px-5 md:px-6 pt-5 md:pt-0 pb-20 md:py-20 grid md:grid-cols-2 gap-3 md:gap-12 items-start">
     
     {/* TEXTO */}
     <div className="order-2 md:order-1">
-      <div className="inline-flex items-center gap-2 bg-white border border-sky-100 text-sky-800 rounded-full px-4 py-2 text-sm shadow-sm mt-2 mb-2">
-        8 años en el mercado • Temuco, Chile • Todo Chile
-      </div>
-
-      <h1 className="mt-2 text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-tight">
+      
+      <h1 className="mt-0 text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-tight">
         Soluciones sanitarias confiables para ejecutar tu proyecto con seguridad
       </h1>
 
-      <p className="mt-6 text-lg text-gray-600 max-w-2xl leading-8">
+      <p className="mt-4 text-lg text-gray-600 max-w-2xl leading-8">
         Desde Temuco, ADDSYS cuenta con 8 años de experiencia desarrollando soluciones sanitarias en agua potable y aguas servidas, brindando atención especializada a proyectos domiciliarios, urbanos e industriales en la zona sur del país.
       </p>
 
       {/* DESTACADOS */}
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-4 flex flex-wrap gap-3">
         {[
           "Experiencia comprobada",
           "Cobertura Nacional",
@@ -286,7 +291,7 @@ export default function AddsysWeb() {
       </div>
 
       {/* BLOQUES CLAVE (MUCHO MÁS LIMPIOS) */}
-      <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl">
+      <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl">
         <div className="rounded-2xl border bg-white p-4 shadow-sm">
           <div className="text-sm text-gray-500">Trayectoria</div>
           <div className="text-lg font-semibold text-sky-700">8 años</div>
@@ -305,13 +310,13 @@ export default function AddsysWeb() {
     </div>
 
     {/* IMAGEN */}
-    <div className="relative order-1 md:order-2 md:mt-16">
+    <div className="relative order-1 md:order-2 md:mt-6">
 
   {/* Fondo sutil */}
 <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-3xl bg-gray-200/40"></div>
 
 {/* Imagen */}
-<div className="relative overflow-hidden rounded-3xl border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.08)] h-[380px] sm:h-[450px] md:h-[600px]">
+<div className="relative overflow-hidden rounded-3xl border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.08)] h-[380px] sm:h-[450px] md:h-[550px]">
   <img
     src={heroImages[currentImage].src}
     alt="Proyecto sanitario"
@@ -327,7 +332,7 @@ export default function AddsysWeb() {
 </section>
 
       {/* SERVICIOS + POR QUE ELEGIRNOS */}
-      <section id="servicios" className="py-24">
+      <section id="servicios" className="scroll-mt-7 py-24">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="bg-gradient-to-b from-slate-50 to-white rounded-[2rem] p-10 shadow-sm border border-slate-200">
@@ -401,7 +406,7 @@ export default function AddsysWeb() {
 
 
       {/* GALERIA */}
-<section id="proyectos" className="bg-gradient-to-b from-white to-gray-100 py-24">
+<section id="proyectos" className="scroll-mt-7 bg-gradient-to-b from-white to-gray-100 py-24">
   <div className="max-w-7xl mx-auto px-6">
     <div className="overflow-visible rounded-3xl shadow-lg border border-gray-200 bg-white p-8">
 
@@ -552,9 +557,8 @@ export default function AddsysWeb() {
   </div>
 </section>
 
-
 {/* CLIENTES */}
-<section id="clientes" className="py-24">
+<section id="clientes" className="scroll-mt-7 py-24">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="bg-gradient-to-b from-slate-50 to-white rounded-[2rem] p-10 shadow-sm border border-slate-200">
@@ -644,7 +648,7 @@ export default function AddsysWeb() {
       </section>
 
             {/* CONTACTO */}
-      <section id="contacto" className="py-24 bg-slate-900 text-white">
+      <section id="contacto" className="scroll-mt-15 py-24 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
             {/* TEXTO */}
