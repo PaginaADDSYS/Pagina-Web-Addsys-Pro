@@ -18,6 +18,12 @@ export default function AddsysWeb() {
 
   const [currentImage, setCurrentImage] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">(
+    "idle",
+  );
+
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const isHovered = useRef(false);
 
@@ -970,6 +976,9 @@ export default function AddsysWeb() {
                 onSubmit={async (e) => {
                   e.preventDefault();
 
+                  setIsSubmitting(true);
+                  setFormStatus("idle");
+
                   const form = e.currentTarget;
                   const formData = new FormData(form);
 
@@ -996,7 +1005,10 @@ export default function AddsysWeb() {
                     form.reset();
                   } catch (error) {
                     alert("Hubo un problema al enviar la solicitud");
+                    setFormStatus("error");
                     console.error(error);
+                  } finally {
+                    setIsSubmitting(false);
                   }
                 }}
                 className="grid gap-4 border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm bg-white"
@@ -1028,10 +1040,30 @@ export default function AddsysWeb() {
 
                 <button
                   type="submit"
-                  className="w-full bg-sky-600 text-white py-3 rounded-lg font-medium hover:bg-sky-700 transition"
+                  disabled={isSubmitting}
+                  className="w-full bg-sky-600 text-white py-3 rounded-lg font-medium hover:bg-sky-700 transition disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
-                  Enviar solicitud
+                  {isSubmitting ? (
+                    <>
+                      <span className="h-4 w-4 border-2 border-white/40 border-t-white rounded-full animate-spin"></span>
+                      Enviando...
+                    </>
+                  ) : (
+                    "Enviar solicitud"
+                  )}
                 </button>
+                {formStatus === "success" && (
+                  <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
+                    ✓ Solicitud enviada correctamente. Te contactaremos pronto.
+                  </div>
+                )}
+
+                {formStatus === "error" && (
+                  <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                    Ocurrió un problema al enviar la solicitud. Intenta
+                    nuevamente.
+                  </div>
+                )}
               </form>
 
               <p className="text-xs text-gray-500 mt-4">
