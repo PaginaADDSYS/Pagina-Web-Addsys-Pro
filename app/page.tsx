@@ -1001,14 +1001,19 @@ export default function AddsysWeb() {
                       throw new Error("Error al enviar");
                     }
 
-                    alert("Solicitud enviada correctamente");
                     form.reset();
+                    setFormStatus("success");
+                    setTimeout(() => {
+                      setFormStatus("idle");
+                      setIsSubmitting(false);
+                    }, 5000);
                   } catch (error) {
-                    alert("Hubo un problema al enviar la solicitud");
                     setFormStatus("error");
+                    setTimeout(() => {
+                      setFormStatus("idle");
+                      setIsSubmitting(false);
+                    }, 5000);
                     console.error(error);
-                  } finally {
-                    setIsSubmitting(false);
                   }
                 }}
                 className="grid gap-4 border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm bg-white"
@@ -1168,5 +1173,108 @@ export default function AddsysWeb() {
         WhatsApp
       </a>
     </div>
+  );
+}
+
+function ModernContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">(
+    "idle",
+  );
+
+  return (
+    <form
+      onSubmit={async (e) => {
+        e.preventDefault();
+
+        setIsSubmitting(true);
+        setFormStatus("idle");
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        const data = {
+          nombre: formData.get("nombre"),
+          email: formData.get("email"),
+          mensaje: formData.get("mensaje"),
+        };
+
+        try {
+          const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (!response.ok) {
+            throw new Error("Error al enviar");
+          }
+
+          form.reset();
+          setFormStatus("success");
+        } catch (error) {
+          console.error(error);
+          setFormStatus("error");
+        } finally {
+          setIsSubmitting(false);
+        }
+      }}
+      className="grid gap-4 border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm bg-white"
+    >
+      <div className="grid gap-4">
+        <input
+          name="nombre"
+          type="text"
+          placeholder="Nombre"
+          required
+          className="border border-slate-300 p-2 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
+        />
+
+        <input
+          name="email"
+          type="email"
+          placeholder="Correo electrónico"
+          required
+          className="border border-slate-300 p-2 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
+        />
+      </div>
+
+      <textarea
+        name="mensaje"
+        placeholder="Cuéntanos brevemente tu proyecto"
+        rows={4}
+        required
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-sky-500"
+      />
+
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full bg-sky-600 text-white py-3 rounded-lg font-medium hover:bg-sky-700 transition disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+      >
+        {isSubmitting ? (
+          <>
+            <span className="h-4 w-4 border-2 border-white/40 border-t-white rounded-full animate-spin"></span>
+            Enviando...
+          </>
+        ) : (
+          "Enviar solicitud"
+        )}
+      </button>
+
+      {formStatus === "success" && (
+        <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
+          ✓ Solicitud enviada correctamente. Te contactaremos pronto.
+        </div>
+      )}
+
+      {formStatus === "error" && (
+        <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          Ocurrió un problema al enviar la solicitud. Intenta nuevamente.
+        </div>
+      )}
+    </form>
   );
 }
