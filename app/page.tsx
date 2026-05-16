@@ -967,46 +967,57 @@ export default function AddsysWeb() {
               <h3 className="text-xl font-semibold mb-4">Solicitar contacto</h3>
 
               <form
-                action="https://formsubmit.co/55e8e139ccb95be506d051d688958eca"
-                method="POST"
-                className="space-y-4"
+                onSubmit={async (e) => {
+                  e.preventDefault();
+
+                  const formData = new FormData(e.currentTarget);
+
+                  const data = {
+                    nombre: formData.get("nombre"),
+                    email: formData.get("email"),
+                    mensaje: formData.get("mensaje"),
+                  };
+
+                  try {
+                    const response = await fetch("/api/contact", {
+                      method: "POST",
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                      body: JSON.stringify(data),
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                      alert("Solicitud enviada correctamente");
+                      e.currentTarget.reset();
+                    } else {
+                      alert("Hubo un problema al enviar la solicitud");
+                    }
+                  } catch (error) {
+                    alert("Error al enviar el formulario");
+                  }
+                }}
+                className="grid gap-4 border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm bg-white"
               >
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="Nueva solicitud desde addsys.cl"
-                />
-                <input type="hidden" name="_template" value="table" />
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="https://addsys.cl/gracias"
-                />
-                <input
-                  type="text"
-                  name="_honey"
-                  className="hidden"
-                  tabIndex={-1}
-                  autoComplete="off"
-                />
-                <input type="hidden" name="_captcha" value="true" />
+                <div className="grid md:grid-cols-2 gap-4">
+                  <input
+                    name="nombre"
+                    type="text"
+                    placeholder="Nombre"
+                    required
+                    className="border border-slate-300 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
+                  />
 
-                <input
-                  name="nombre"
-                  type="text"
-                  placeholder="Nombre"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500"
-                  required
-                />
-
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Correo electrónico"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500"
-                  required
-                />
-
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Correo electrónico"
+                    required
+                    className="border border-slate-300 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
+                  />
+                </div>
                 <textarea
                   name="mensaje"
                   placeholder="Cuéntanos brevemente tu proyecto"
