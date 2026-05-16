@@ -999,15 +999,15 @@ export default function AddsysWeb() {
                     alert("Error al enviar el formulario");
                   }
                 }}
-                className="grid gap-4 border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm bg-white"
+                className="grid gap-4 border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm bg-white"
               >
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid gap-4">
                   <input
                     name="nombre"
                     type="text"
                     placeholder="Nombre"
                     required
-                    className="border border-slate-300 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
+                    className="border border-slate-300 p-2 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
                   />
 
                   <input
@@ -1015,14 +1015,14 @@ export default function AddsysWeb() {
                     type="email"
                     placeholder="Correo electrónico"
                     required
-                    className="border border-slate-300 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
+                    className="border border-slate-300 p-2 rounded-2xl outline-none focus:ring-2 focus:ring-sky-500 transition"
                   />
                 </div>
                 <textarea
                   name="mensaje"
                   placeholder="Cuéntanos brevemente tu proyecto"
                   rows={4}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-sky-500"
                   required
                 />
 
