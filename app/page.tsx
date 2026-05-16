@@ -970,7 +970,8 @@ export default function AddsysWeb() {
                 onSubmit={async (e) => {
                   e.preventDefault();
 
-                  const formData = new FormData(e.currentTarget);
+                  const form = e.currentTarget;
+                  const formData = new FormData(form);
 
                   const data = {
                     nombre: formData.get("nombre"),
@@ -987,16 +988,15 @@ export default function AddsysWeb() {
                       body: JSON.stringify(data),
                     });
 
-                    const result = await response.json();
-
-                    if (result.success) {
-                      alert("Solicitud enviada correctamente");
-                      e.currentTarget.reset();
-                    } else {
-                      alert("Hubo un problema al enviar la solicitud");
+                    if (!response.ok) {
+                      throw new Error("Error al enviar");
                     }
+
+                    alert("Solicitud enviada correctamente");
+                    form.reset();
                   } catch (error) {
-                    alert("Error al enviar el formulario");
+                    alert("Hubo un problema al enviar la solicitud");
+                    console.error(error);
                   }
                 }}
                 className="grid gap-4 border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm bg-white"
