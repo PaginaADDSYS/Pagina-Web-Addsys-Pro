@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 
+import ADDSYSInsights from "@/components/ADDSYSInsights";
+
 export default function AddsysWeb() {
   const heroImages = [
     { src: "/Images/HERO5.jpg", position: "center 100%", scale: "1" },
@@ -922,6 +924,8 @@ export default function AddsysWeb() {
           </div>
         </div>
       </section>
+
+      <ADDSYSInsights />
 
       {/* CONTACTO */}
       <section
