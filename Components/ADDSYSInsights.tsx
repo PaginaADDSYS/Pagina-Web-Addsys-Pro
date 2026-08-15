@@ -56,7 +56,7 @@ text-sky-700
 
             <div className="relative h-[500px] overflow-hidden">
               <img
-                src="/insights/hero-insight.png"
+                src="/Insights/hero-insight.png"
                 alt={destacada.titulo}
                 className="absolute inset-0 w-full h-full object-cover scale-110 transition-transform duration-[9000ms] hover:scale-110"
               />
