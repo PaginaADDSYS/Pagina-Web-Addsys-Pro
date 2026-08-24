@@ -2,6 +2,12 @@
 
 import { useState, useEffect, useRef } from "react";
 
+import ADDSYSInsights from "@/components/ADDSYSInsights";
+
+import AddsysHomeHero from "@/components/AddsysHomeHero";
+
+import FenixHeroWaves from "@/components/FenixHeroWaves";
+
 export default function AddsysWeb() {
   const heroImages = [
     { src: "/Images/HERO5.jpg", position: "center 100%", scale: "1" },
@@ -146,64 +152,63 @@ export default function AddsysWeb() {
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
-        {/* Barra superior (mensaje) */}
-        <div className="text-[11px] sm:text-xs md:text-sm text-sky-800 bg-sky-50 border-b border-sky-100 py-1 px-2 text-center">
-          8 años en el mercado • Temuco, Chile • Cobertura nacional
-        </div>
+      {/* HERO EXPERIMENTAL — retirado para integración FÉNIX */}
 
-        {/* Header principal */}
-        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center border-b border-slate-200">
-          <div className="flex items-center gap-3">
+      {/* HEADER */}
+      <header className="sticky top-0 z-50 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto h-20 px-6 flex items-center justify-between">
+          {/* LOGO */}
+          <a href="#inicio" className="flex items-center">
             <img
               src="/logo-addsys.png"
-              alt="logo"
-              className="h-11 object-contain"
+              alt="ADDSYS"
+              className="h-20 w-auto object-contain"
             />
-            <div>
-              <div className="font-bold text-lg md:text-xl">ADDSYS SpA</div>
-              <div className="text-xs md:text-sm text-gray-500">
-                Ingeniería Sanitaria
-              </div>
-            </div>
-          </div>
+          </a>
 
-          {/* Menú escritorio */}
-          <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-700">
+          {/* MENÚ ESCRITORIO */}
+          <nav className="hidden lg:flex items-center gap-7 text-base font-medium text-slate-700">
             <a href="#inicio" className="transition hover:text-sky-700">
               Inicio
             </a>
+
             <a href="#servicios" className="transition hover:text-sky-700">
               Servicios
             </a>
+
             <a href="#proyectos" className="transition hover:text-sky-700">
               Proyectos
             </a>
+
             <a href="#clientes" className="transition hover:text-sky-700">
               Clientes
             </a>
+
             <a href="#cobertura" className="transition hover:text-sky-700">
               Cobertura
             </a>
-            <a href="#contacto" className="transition hover:text-sky-700">
-              Contacto
-            </a>
+
             <a
-              href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-green-500 px-4 py-2 text-white shadow-sm transition hover:bg-green-600"
+              href="#insights"
+              className="font-semibold text-sky-700 transition hover:text-sky-800"
             >
-              WhatsApp
+              ADDSYS Insights
             </a>
           </nav>
 
-          {/* Botón móvil */}
+          {/* CTA */}
+          <a
+            href="#contacto"
+            className="hidden lg:inline-flex h-9 items-center justify-center rounded-xl bg-sky-600 px-5 text-sm font-semibold text-white transition hover:bg-sky-700"
+          >
+            Solicitar Cotización
+          </a>
+
+          {/* BOTÓN MÓVIL */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="lg:hidden inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm"
+            className="lg:hidden inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700"
             aria-label="Abrir menú"
             aria-expanded={mobileMenuOpen}
           >
@@ -211,9 +216,9 @@ export default function AddsysWeb() {
           </button>
         </div>
 
-        {/* Menú móvil */}
+        {/* MENÚ MÓVIL */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-slate-200 bg-white px-6 py-4 shadow-sm">
+          <div className="lg:hidden border-t border-slate-200 bg-white px-6 py-4">
             <nav className="flex flex-col gap-4 text-sm font-medium text-slate-700">
               <a
                 href="#inicio"
@@ -222,6 +227,7 @@ export default function AddsysWeb() {
               >
                 Inicio
               </a>
+
               <a
                 href="#servicios"
                 onClick={() => setMobileMenuOpen(false)}
@@ -229,6 +235,7 @@ export default function AddsysWeb() {
               >
                 Servicios
               </a>
+
               <a
                 href="#proyectos"
                 onClick={() => setMobileMenuOpen(false)}
@@ -236,6 +243,7 @@ export default function AddsysWeb() {
               >
                 Proyectos
               </a>
+
               <a
                 href="#clientes"
                 onClick={() => setMobileMenuOpen(false)}
@@ -243,6 +251,7 @@ export default function AddsysWeb() {
               >
                 Clientes
               </a>
+
               <a
                 href="#cobertura"
                 onClick={() => setMobileMenuOpen(false)}
@@ -250,20 +259,21 @@ export default function AddsysWeb() {
               >
                 Cobertura
               </a>
+
+              <a
+                href="#insights"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-semibold text-sky-700"
+              >
+                ADDSYS Insights
+              </a>
+
               <a
                 href="#contacto"
                 onClick={() => setMobileMenuOpen(false)}
-                className="transition hover:text-sky-700"
+                className="rounded-xl bg-sky-600 px-5 py-3 text-center font-semibold text-white transition hover:bg-sky-700"
               >
-                Contacto
-              </a>
-              <a
-                href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl bg-green-500 px-4 py-3 text-center text-white shadow-sm transition hover:bg-green-600"
-              >
-                WhatsApp
+                Solicitar Cotización
               </a>
             </nav>
           </div>
@@ -273,17 +283,20 @@ export default function AddsysWeb() {
       {/* HERO */}
       <section
         id="inicio"
-        className="scroll-mt-35 bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.10),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(34,211,238,0.10),_transparent_24%)] bg-white"
+        className="scroll-mt-35 relative overflow-hidden bg-[radial-gradient(circle_at_15%_10%,_rgba(14,165,233,0.10),_transparent_30%),radial-gradient(circle_at_85%_85%,_rgba(56,189,248,0.08),_transparent_28%)] bg-white"
       >
-        <div className="max-w-7xl mx-auto px-5 md:px-6 pt-5 md:pt-0 pb-20 md:py-20 grid md:grid-cols-2 gap-3 md:gap-12 items-start">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-6 pt-5 md:pt-0 pb-20 md:py-20 grid md:grid-cols-2 gap-3 md:gap-12 items-start">
           {/* TEXTO */}
-          <div className="order-2 md:order-1">
-            <h1 className="mt-0 text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-tight">
+          <div className="order-2 md:order-1 md:mt-6 max-w-2xl">
+            <div className="mb-3 text-sm font-medium tracking-[0.08em] text-sky-700">
+              INGENIERÍA SANITARIA
+            </div>
+            <h1 className="mt-0 max-w-[650px] text-4xl sm:text-5xl md:text-[40px] font-semibold leading-[1.08] tracking-[-0.02em] text-slate-900">
               Soluciones sanitarias confiables para ejecutar tu proyecto con
               seguridad
             </h1>
 
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl leading-8">
+            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
               Desde Temuco, ADDSYS cuenta con 8 años de experiencia
               desarrollando soluciones sanitarias en agua potable y aguas
               servidas, brindando atención especializada a proyectos
@@ -299,7 +312,7 @@ export default function AddsysWeb() {
               ].map((item) => (
                 <span
                   key={item}
-                  className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700"
+                  className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700"
                 >
                   {item}
                 </span>
@@ -312,14 +325,14 @@ export default function AddsysWeb() {
                 href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 text-white px-6 py-3 rounded-2xl font-medium hover:bg-green-600 transition shadow-lg shadow-green-500/20 hover:-translate-y-0.5"
+                className="h-14 rounded-xl bg-green-500 px-6 py-4 text-base font-semibold text-white transition hover:bg-green-600"
               >
                 Hablar por WhatsApp
               </a>
 
               <a
                 href="#contacto"
-                className="border border-slate-300 px-6 py-3 rounded-2xl font-medium hover:bg-slate-50 transition shadow-sm hover:-translate-y-0.5"
+                className="h-14 rounded-xl bg-sky-600 px-6 py-4 text-base font-semibold text-white transition hover:bg-sky-700"
               >
                 Solicitar cotización
               </a>
@@ -327,21 +340,23 @@ export default function AddsysWeb() {
 
             {/* BLOQUES CLAVE (MUCHO MÁS LIMPIOS) */}
             <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl">
-              <div className="rounded-2xl border bg-white p-4 shadow-sm">
-                <div className="text-sm text-gray-500">Trayectoria</div>
-                <div className="text-lg font-semibold text-sky-700">8 años</div>
+              <div className="rounded-[20px] border border-slate-200 bg-white p-4 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+                <div className="text-sm text-slate-500">Trayectoria</div>
+                <div className="text-lg font-semibold text-slate-900">
+                  8 años
+                </div>
               </div>
 
-              <div className="rounded-2xl border bg-white p-4 shadow-sm">
-                <div className="text-sm text-gray-500">Ubicación</div>
-                <div className="text-lg font-semibold text-sky-700">
+              <div className="rounded-[20px] border border-slate-200 bg-white p-4 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+                <div className="text-sm text-slate-500">Ubicación</div>
+                <div className="text-lg font-semibold text-slate-900">
                   Temuco, Chile
                 </div>
               </div>
 
-              <div className="rounded-2xl border bg-white p-4 shadow-sm col-span-2 md:col-span-1">
-                <div className="text-sm text-gray-500">Cobertura</div>
-                <div className="text-lg font-semibold text-sky-700">
+              <div className="rounded-[20px] border border-slate-200 bg-white p-4 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+                <div className="text-sm text-slate-500">Cobertura</div>
+                <div className="text-lg font-semibold text-slate-900">
                   Todo el país
                 </div>
               </div>
@@ -354,7 +369,7 @@ export default function AddsysWeb() {
             <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-3xl bg-gray-200/40"></div>
 
             {/* Imagen */}
-            <div className="relative overflow-hidden rounded-3xl border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.08)] h-[380px] sm:h-[450px] md:h-[550px]">
+            <div className="relative overflow-hidden rounded-[20px] border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.06)] h-[380px] sm:h-[450px] md:h-[550px]">
               <img
                 src={heroImages[currentImage].src}
                 alt="Proyecto sanitario"
@@ -367,87 +382,87 @@ export default function AddsysWeb() {
             </div>
           </div>
         </div>
+        <FenixHeroWaves />
       </section>
 
       {/* SERVICIOS + POR QUE ELEGIRNOS */}
-      <section id="servicios" className="scroll-mt-7 py-24">
+      <section id="servicios" className="scroll-mt-0 py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-gradient-to-b from-slate-50 to-white rounded-[2rem] p-10 shadow-sm border border-slate-200">
-            {/* SERVICIOS */}
-            <h2 className="text-3xl md:text-4xl font-bold">
-              ¿Cómo te ayudamos?
-            </h2>
-            <p className="mt-4 text-gray-600 max-w-2xl">
-              Entregamos soluciones sanitarias completas para que tu proyecto
-              funcione sin problemas, cumpla normativa y se ejecute de forma
-              eficiente.
-            </p>
+          {/* SERVICIOS */}
+          <h2 className="text-3xl md:text-4xl font-bold">¿Cómo te ayudamos?</h2>
+          <p className="mt-4 text-gray-600 max-w-2xl">
+            Entregamos soluciones sanitarias completas para que tu proyecto
+            funcione sin problemas, cumpla normativa y se ejecute de forma
+            eficiente.
+          </p>
 
-            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
-              {services.map((s) => (
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
+            {services.map((s) => (
+              <div
+                key={s.title}
+                className="rounded-[20px] border border-slate-200 bg-white p-6 shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
+              >
+                <h3 className="font-semibold text-lg">{s.title}</h3>
+                <p className="mt-3 text-sm text-gray-600">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* POR QUE ELEGIRNOS (ahora dentro del mismo contenedor) */}
+          <div className="mt-20">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              ¿Por qué elegir ADDSYS?
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-6 mt-10">
+              {trustPoints.map((point) => (
                 <div
-                  key={s.title}
-                  className="border border-slate-200 bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300"
+                  key={point.title}
+                  className="rounded-[20px] border border-slate-200 bg-white p-6 shadow-[0_8px_32px_rgba(0,0,0,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
                 >
-                  <h3 className="font-semibold text-lg">{s.title}</h3>
-                  <p className="mt-3 text-sm text-gray-600">{s.desc}</p>
+                  <h3 className="font-semibold text-lg">{point.title}</h3>
+                  <p className="mt-3 text-sm text-gray-600">{point.desc}</p>
                 </div>
               ))}
             </div>
+          </div>
 
-            {/* POR QUE ELEGIRNOS (ahora dentro del mismo contenedor) */}
-            <div className="mt-20">
-              <h2 className="text-3xl md:text-4xl font-bold">
-                ¿Por qué elegir ADDSYS?
-              </h2>
+          <div className="mt-10">
+            <div className="rounded-[20px] border border-slate-200 bg-gradient-to-r from-sky-50 via-white to-white p-8 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-800 leading-tight max-w-4xl">
+                Un equipo que respalda cada proyecto
+              </h3>
 
-              <div className="grid md:grid-cols-3 gap-6 mt-10">
-                {trustPoints.map((point) => (
-                  <div
-                    key={point.title}
-                    className="p-6 border border-slate-200 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
-                  >
-                    <h3 className="font-semibold text-lg">{point.title}</h3>
-                    <p className="mt-3 text-sm text-gray-600 leading-7">
-                      {point.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+              <p className="mt-4 text-gray-600 leading-7 md:text-justify">
+                En ADDSYS contamos con personal técnico especializado y
+                experiencia en terreno, lo que nos permite abordar cada proyecto
+                con criterio profesional, eficiencia y soluciones adaptadas a la
+                realidad de cada cliente.
+              </p>
 
-            <div className="mt-10">
-              <div className="rounded-2xl border border-slate-200 bg-gradient-to-r from-sky-50 to-white p-8 shadow-sm">
-                <h3 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-800 leading-tight max-w-4xl">
-                  Un equipo que respalda cada proyecto
-                </h3>
+              <p className="mt-4 text-gray-600 leading-7 md:text-justify">
+                Nuestro equipo combina conocimiento técnico y experiencia
+                práctica, destacando la trayectoria de nuestro Gerente de
+                operaciones, con más de 15 años de experiencia en empresas
+                sanitarias, desarrollando nuevos negocios del rubro y 8 años
+                como contratista en proyectos para empresas sanitarias y
+                clientes industriales.
+              </p>
 
-                <p className="mt-4 text-gray-600 leading-7 md:text-justify">
-                  En ADDSYS contamos con personal técnico especializado y
-                  experiencia en terreno, lo que nos permite abordar cada
-                  proyecto con criterio profesional, eficiencia y soluciones
-                  adaptadas a la realidad de cada cliente.
-                </p>
+              <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm text-slate-600">
+                <div className="rounded-xl border border-slate-200 bg-white/80 px-4 py-3">
+                  <span className="font-semibold text-sky-700">•</span>{" "}
+                  Profesionales con experiencia en el rubro sanitario
+                </div>
 
-                <p className="mt-4 text-gray-600 leading-7 md:text-justify">
-                  Nuestro equipo combina conocimiento técnico y experiencia
-                  práctica, destacando la trayectoria de nuestro Gerente de
-                  operaciones, con más de 15 años de experiencia en empresas
-                  sanitarias, desarrollando nuevos negocios del rubro y 8 años
-                  como contratista en proyectos para empresas sanitarias y
-                  clientes industriales.
-                </p>
+                <div className="rounded-xl border border-slate-200 bg-white/80 px-4 py-3">
+                  <span className="font-semibold text-sky-700">•</span>{" "}
+                  Conocimiento técnico en agua potable y aguas servidas
+                </div>
 
-                <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm text-slate-600">
-                  <div>
-                    • Profesionales con experiencia en el rubro sanitario
-                  </div>
-                  <div>
-                    • Conocimiento técnico en agua potable y aguas servidas
-                  </div>
-                  <div>
-                    • Enfoque práctico en ejecución y resolución de problemas
-                  </div>
+                <div className="rounded-xl border border-slate-200 bg-white/80 px-4 py-3">
+                  <span className="font-semibold text-sky-700">•</span> Enfoque
+                  práctico en ejecución y resolución de problemas
                 </div>
               </div>
             </div>
@@ -458,463 +473,453 @@ export default function AddsysWeb() {
       {/* GALERIA */}
       <section
         id="proyectos"
-        className="scroll-mt-7 bg-gradient-to-b from-white to-gray-100 py-24"
+        className="scroll-mt-0 bg-gradient-to-b from-white to-gray-100 py-24"
       >
         <div className="max-w-7xl mx-auto px-6">
-          <div className="overflow-visible rounded-3xl shadow-lg border border-gray-200 bg-white p-8">
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-              Proyectos ejecutados en terreno
-            </h2>
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            Proyectos ejecutados en terreno
+          </h2>
 
-            <p className="mt-2 text-sky-700 font-medium">
-              Experiencia real en obras sanitarias
-            </p>
+          <p className="mt-2 text-sky-700 font-medium">
+            Experiencia real en obras sanitarias
+          </p>
 
-            <p className="mt-4 text-gray-600 max-w-2xl">
-              Una propuesta visual que transmite experiencia, terreno y
-              ejecución técnica, reforzando la confianza comercial de ADDSYS.
-            </p>
+          <p className="mt-4 text-gray-600 max-w-2xl">
+            Una propuesta visual que transmite experiencia, terreno y ejecución
+            técnica, reforzando la confianza comercial de ADDSYS.
+          </p>
 
-            {/* GRID ORIGINAL */}
-            <div className="max-w-5xl mx-auto mt-10">
-              <div className="grid md:grid-cols-2 gap-6">
+          {/* GRID ORIGINAL */}
+          <div className="max-w-5xl mx-auto mt-10">
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  img: "/Images/F_OB/Grid1.jpg",
+                  titulo: "Planta elevadora de agua servida",
+                  tipo: "Proyecto domiciliario",
+                },
+                {
+                  img: "/Images/F_OB/Grid2.jpg",
+                  titulo: "Planta elevadora de agua potable",
+                  tipo: "Proyecto domiciliario",
+                },
+                {
+                  img: "/Images/F_OB/Grid3.png",
+                  titulo: "Instalación sanitaria",
+                  tipo: "Obra de infraestructura pública, Agua Potable",
+                },
+                {
+                  img: "/Images/F_OB/Grid4.png",
+                  titulo: "Instalación sanitaria",
+                  tipo: "Obra de infraestructura pública, Agua Servida",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="relative overflow-hidden rounded-[20px] border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.06)] group"
+                >
+                  <img
+                    src={item.img}
+                    alt={item.titulo}
+                    className="w-full h-[420px] object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 p-5 text-white">
+                    <div className="text-lg font-semibold leading-tight">
+                      {item.titulo}
+                    </div>
+                    <div className="text-sm text-gray-200">{item.tipo}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CINTA DE PROYECTOS */}
+          <div className="w-full mt-16 px-6 md:px-10">
+            <div className="mb-4 flex items-center justify-between gap-4">
+              <h3 className="text-xl font-semibold">Proyectos recientes</h3>
+
+              <div className="hidden md:flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => scrollCarousel("left")}
+                  className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-50"
+                  aria-label="Ver proyectos anteriores"
+                >
+                  ←
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => scrollCarousel("right")}
+                  className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-50"
+                  aria-label="Ver proyectos siguientes"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+              <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-3 sm:w-4 md:w-6 bg-gradient-to-r from-white to-transparent" />
+              <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-3 sm:w-4 md:w-6 bg-gradient-to-l from-white to-transparent" />
+
+              <div
+                ref={scrollRef}
+                onMouseEnter={() => (isHovered.current = true)}
+                onMouseLeave={() => (isHovered.current = false)}
+                id="carousel"
+                className="flex gap-4 overflow-x-auto py-4 snap-x snap-mandatory scroll-smooth px-6 md:px-10"
+              >
                 {[
                   {
-                    img: "/Images/F_OB/Grid1.jpg",
-                    titulo: "Planta elevadora de agua servida",
-                    tipo: "Proyecto domiciliario",
+                    img: "/Images/100.jpeg",
+                    titulo: "Planta elevadora de agua potable(PEAP)",
+                    ubicacion: "Proyecto domiciliario",
                   },
                   {
-                    img: "/Images/F_OB/Grid2.jpg",
-                    titulo: "Planta elevadora de agua potable",
-                    tipo: "Proyecto domiciliario",
+                    img: "/Images/101.jpeg",
+                    titulo: "Pozo de absorción",
+                    ubicacion: "Sistema particular de agua servida rural",
                   },
                   {
-                    img: "/Images/F_OB/Grid3.png",
-                    titulo: "Instalación sanitaria",
-                    tipo: "Obra de infraestructura pública, Agua Potable",
+                    img: "/Images/102.jpeg",
+                    titulo: "Planta elevadora de agua servida(PEAS)",
+                    ubicacion: "Proyecto domiciliario",
                   },
                   {
-                    img: "/Images/F_OB/Grid4.png",
-                    titulo: "Instalación sanitaria",
-                    tipo: "Obra de infraestructura pública, Agua Servida",
+                    img: "/Images/103.jpeg",
+                    titulo: "PEAS",
+                    ubicacion: "Proyecto domiciliario",
+                  },
+                  {
+                    img: "/Images/104.jpeg",
+                    titulo: "Tablero de fuerza y control",
+                    ubicacion: "Proyecto domiciliario",
+                  },
+                  {
+                    img: "/Images/105.jpeg",
+                    titulo:
+                      "Limpieza de sistemas domiciliarios de agua servida",
+                    ubicacion: "Infraestructura interior sanitaria",
+                  },
+                  {
+                    img: "/Images/106.jpeg",
+                    titulo: "Conexiones a redes públicas de agua servida",
+                    ubicacion: "Sistemas sanitarios urbanos",
+                  },
+                  {
+                    img: "/Images/107.jpeg",
+                    titulo: "Conexiones a redes públicas",
+                    ubicacion: "Sistemas sanitarios urbanos",
+                  },
+                  {
+                    img: "/Images/108.jpeg",
+                    titulo: "Conexiones a redes públicas",
+                    ubicacion: "Sistemas sanitarios urbanos",
+                  },
+                  {
+                    img: "/Images/109.jpeg",
+                    titulo:
+                      "Limpieza de sistemas domiciliarios de agua servida",
+                    ubicacion: "Infraestructura interior sanitaria",
+                  },
+                  {
+                    img: "/Images/110.jpeg",
+                    titulo:
+                      "Limpieza de sistemas domiciliarios de agua servida",
+                    ubicacion: "Infraestructura interior sanitaria",
+                  },
+                  {
+                    img: "/Images/111.jpeg",
+                    titulo: "Conexiones a redes públicas",
+                    ubicacion: "Sistemas sanitarios urbanos",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr1.jpg",
+                    titulo: "PEAS",
+                    ubicacion: "Proyecto domiciliario",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr2.jpg",
+                    titulo: "PEAS",
+                    ubicacion: "Proyecto domiciliario",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr5.jpg",
+                    titulo: "Tablero de fuerza y control",
+                    ubicacion: "Proyecto domiciliario",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr6.jpg",
+                    titulo: "Tablero de fuerza y control",
+                    ubicacion: "Proyecto domiciliario",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr11.png",
+                    titulo: "Conexiones a redes públicas",
+                    ubicacion: "Sistemas sanitarios urbanos",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr12.jpg",
+                    titulo: "Sistema interior de agua servida",
+                    ubicacion: "Proyecto domiciliario",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr14.png",
+                    titulo: "Pozo de absorción",
+                    ubicacion: "Sistema particular de agua servida rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr15.png",
+                    titulo: "Redes púbicas e interiores de agua servida",
+                    ubicacion: "Red pública",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr16.png",
+                    titulo: "Redes púbicas e interiores de agua servida",
+                    ubicacion: "Red pública",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr17.png",
+                    titulo: "Soluciones particulares de agua servida",
+                    ubicacion: "Proyecto rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr18.png",
+                    titulo: "Red interior de agua servida",
+                    ubicacion: "Sistemas sanitarios urbanos",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr19.png",
+                    titulo: "Sistema particular de agua servida",
+                    ubicacion: "Sistema sanitario rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr20.png",
+                    titulo: "Sistema particular de agua servida",
+                    ubicacion: "Sistema sanitario rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr30.jpg",
+                    titulo: "Sistema particular de agua potable",
+                    ubicacion: "Sistema sanitario rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr40.png",
+                    titulo: "Sistema particular de agua potable",
+                    ubicacion: "Sistema sanitario rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr62.jpg",
+                    titulo: "Operación Planta de Tratamiento de Aguas Servidas",
+                    ubicacion: "Sistema sanitario rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr63.jpg",
+                    titulo: "Operación Planta de Tratamiento de Aguas Servidas",
+                    ubicacion: "Sistema sanitario rural",
+                  },
+                  {
+                    img: "/Images/F_OB/Carr64.jpg",
+                    titulo: "Operación Planta de Tratamiento de Aguas Servidas",
+                    ubicacion: "Sistema sanitario rural",
                   },
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="relative overflow-hidden rounded-3xl shadow-lg group"
+                    className="w-[220px] sm:w-[320px] md:w-[340px] flex-none snap-center group"
                   >
-                    <img
-                      src={item.img}
-                      alt={item.titulo}
-                      className="w-full h-[420px] object-cover object-center transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                    <div className="absolute bottom-0 p-5 text-white">
-                      <div className="text-lg font-semibold leading-tight">
-                        {item.titulo}
+                    <div className="relative overflow-hidden rounded-[20px] border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+                      <img
+                        src={item.img}
+                        alt={item.titulo}
+                        className="w-full h-[300px] sm:h-[340px] md:h-[400px] object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                      <div className="absolute bottom-0 p-4 text-white">
+                        <div className="text-base font-semibold leading-tight">
+                          {item.titulo}
+                        </div>
+                        <div className="text-sm text-gray-200">
+                          {item.ubicacion}
+                        </div>
                       </div>
-                      <div className="text-sm text-gray-200">{item.tipo}</div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* CINTA DE PROYECTOS */}
-            <div className="w-full mt-16 px-6 md:px-10">
-              <div className="mb-4 flex items-center justify-between gap-4">
-                <h3 className="text-xl font-semibold">Proyectos recientes</h3>
-
-                <div className="hidden md:flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => scrollCarousel("left")}
-                    className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-50"
-                    aria-label="Ver proyectos anteriores"
-                  >
-                    ←
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => scrollCarousel("right")}
-                    className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-50"
-                    aria-label="Ver proyectos siguientes"
-                  >
-                    →
-                  </button>
-                </div>
-              </div>
-
-              <div className="relative rounded-3xl border border-gray-200 bg-white shadow-xl">
-                <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-3 sm:w-4 md:w-6 bg-gradient-to-r from-white to-transparent" />
-                <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-3 sm:w-4 md:w-6 bg-gradient-to-l from-white to-transparent" />
-
-                <div
-                  ref={scrollRef}
-                  onMouseEnter={() => (isHovered.current = true)}
-                  onMouseLeave={() => (isHovered.current = false)}
-                  id="carousel"
-                  className="flex gap-4 overflow-x-auto py-4 snap-x snap-mandatory scroll-smooth px-6 md:px-10"
-                >
-                  {[
-                    {
-                      img: "/Images/100.jpeg",
-                      titulo: "Planta elevadora de agua potable(PEAP)",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/101.jpeg",
-                      titulo: "Pozo de absorción",
-                      ubicacion: "Sistema particular de agua servida rural",
-                    },
-                    {
-                      img: "/Images/102.jpeg",
-                      titulo: "Planta elevadora de agua servida(PEAS)",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/103.jpeg",
-                      titulo: "PEAS",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/104.jpeg",
-                      titulo: "Tablero de fuerza y control",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/105.jpeg",
-                      titulo:
-                        "Limpieza de sistemas domiciliarios de agua servida",
-                      ubicacion: "Infraestructura interior sanitaria",
-                    },
-                    {
-                      img: "/Images/106.jpeg",
-                      titulo: "Conexiones a redes públicas de agua servida",
-                      ubicacion: "Sistemas sanitarios urbanos",
-                    },
-                    {
-                      img: "/Images/107.jpeg",
-                      titulo: "Conexiones a redes públicas",
-                      ubicacion: "Sistemas sanitarios urbanos",
-                    },
-                    {
-                      img: "/Images/108.jpeg",
-                      titulo: "Conexiones a redes públicas",
-                      ubicacion: "Sistemas sanitarios urbanos",
-                    },
-                    {
-                      img: "/Images/109.jpeg",
-                      titulo:
-                        "Limpieza de sistemas domiciliarios de agua servida",
-                      ubicacion: "Infraestructura interior sanitaria",
-                    },
-                    {
-                      img: "/Images/110.jpeg",
-                      titulo:
-                        "Limpieza de sistemas domiciliarios de agua servida",
-                      ubicacion: "Infraestructura interior sanitaria",
-                    },
-                    {
-                      img: "/Images/111.jpeg",
-                      titulo: "Conexiones a redes públicas",
-                      ubicacion: "Sistemas sanitarios urbanos",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr1.jpg",
-                      titulo: "PEAS",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr2.jpg",
-                      titulo: "PEAS",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr5.jpg",
-                      titulo: "Tablero de fuerza y control",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr6.jpg",
-                      titulo: "Tablero de fuerza y control",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr11.png",
-                      titulo: "Conexiones a redes públicas",
-                      ubicacion: "Sistemas sanitarios urbanos",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr12.jpg",
-                      titulo: "Sistema interior de agua servida",
-                      ubicacion: "Proyecto domiciliario",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr14.png",
-                      titulo: "Pozo de absorción",
-                      ubicacion: "Sistema particular de agua servida rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr15.png",
-                      titulo: "Redes púbicas e interiores de agua servida",
-                      ubicacion: "Red pública",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr16.png",
-                      titulo: "Redes púbicas e interiores de agua servida",
-                      ubicacion: "Red pública",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr17.png",
-                      titulo: "Soluciones particulares de agua servida",
-                      ubicacion: "Proyecto rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr18.png",
-                      titulo: "Red interior de agua servida",
-                      ubicacion: "Sistemas sanitarios urbanos",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr19.png",
-                      titulo: "Sistema particular de agua servida",
-                      ubicacion: "Sistema sanitario rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr20.png",
-                      titulo: "Sistema particular de agua servida",
-                      ubicacion: "Sistema sanitario rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr30.jpg",
-                      titulo: "Sistema particular de agua potable",
-                      ubicacion: "Sistema sanitario rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr40.png",
-                      titulo: "Sistema particular de agua potable",
-                      ubicacion: "Sistema sanitario rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr62.jpg",
-                      titulo:
-                        "Operación Planta de Tratamiento de Aguas Servidas",
-                      ubicacion: "Sistema sanitario rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr63.jpg",
-                      titulo:
-                        "Operación Planta de Tratamiento de Aguas Servidas",
-                      ubicacion: "Sistema sanitario rural",
-                    },
-                    {
-                      img: "/Images/F_OB/Carr64.jpg",
-                      titulo:
-                        "Operación Planta de Tratamiento de Aguas Servidas",
-                      ubicacion: "Sistema sanitario rural",
-                    },
-                  ].map((item, i) => (
-                    <div
-                      key={i}
-                      className="w-[220px] sm:w-[320px] md:w-[340px] flex-none snap-center group"
-                    >
-                      <div className="relative overflow-hidden rounded-2xl border border-gray-200 shadow-md">
-                        <img
-                          src={item.img}
-                          alt={item.titulo}
-                          className="w-full h-[300px] sm:h-[340px] md:h-[400px] object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                        <div className="absolute bottom-0 p-4 text-white">
-                          <div className="text-base font-semibold leading-tight">
-                            {item.titulo}
-                          </div>
-                          <div className="text-sm text-gray-200">
-                            {item.ubicacion}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <p className="text-sm text-gray-500 mt-3">
-                Desliza para ver más proyectos →
-              </p>
-            </div>
+            <p className="text-sm text-gray-500 mt-3">
+              Desliza para ver más proyectos →
+            </p>
           </div>
         </div>
       </section>
 
       {/* CLIENTES */}
-      <section id="clientes" className="scroll-mt-7 py-24">
+      <section
+        id="clientes"
+        className="scroll-mt-0 relative overflow-hidden bg-[radial-gradient(circle_at_15%_10%,_rgba(14,165,233,0.10),_transparent_30%),radial-gradient(circle_at_85%_85%,_rgba(56,189,248,0.08),_transparent_28%)] bg-white py-24"
+      >
         <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-gradient-to-b from-slate-50 to-white rounded-[2rem] p-10 shadow-sm border border-slate-200">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Nuestros clientes
-            </h2>
-            <p className="mt-4 text-gray-600 max-w-2xl">
-              Empresas e instituciones que han confiado en ADDSYS para el
-              desarrollo de sus proyectos sanitarios.
-            </p>
+          <h2 className="text-3xl md:text-4xl font-bold">Nuestros clientes</h2>
+          <p className="mt-4 text-gray-600 max-w-2xl">
+            Empresas e instituciones que han confiado en ADDSYS para el
+            desarrollo de sus proyectos sanitarios.
+          </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-10 items-center">
-              {[
-                "/logos/Cliente1.png",
-                "/logos/Cliente2.png",
-                "/logos/Cliente3.png",
-                "/logos/Cliente4.png",
-                "/logos/Cliente5.png",
-                "/logos/Cliente6.png",
-                "/logos/Cliente7.png",
-                "/logos/Cliente8.png",
-                "/logos/Cliente9.png",
-                "/logos/Cliente10.png",
-                "/logos/Cliente11.png",
-              ].map((logo, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-center p-4 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
-                >
-                  <img
-                    src={logo}
-                    alt={`Cliente ${i + 1}`}
-                    className="max-h-[60px] object-contain opacity-80 hover:opacity-100 transition"
-                  />
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-10 items-center">
+            {[
+              "/logos/Cliente1.png",
+              "/logos/Cliente2.png",
+              "/logos/Cliente3.png",
+              "/logos/Cliente4.png",
+              "/logos/Cliente5.png",
+              "/logos/Cliente6.png",
+              "/logos/Cliente7.png",
+              "/logos/Cliente8.png",
+              "/logos/Cliente9.png",
+              "/logos/Cliente10.png",
+              "/logos/Cliente11.png",
+            ].map((logo, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-center p-4 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition"
+              >
+                <img
+                  src={logo}
+                  alt={`Cliente ${i + 1}`}
+                  className="max-h-[60px] object-contain opacity-80 hover:opacity-100 transition"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* COBERTURA */}
-      <section id="cobertura" className="scroll-mt-7 py-24">
+      <section id="cobertura" className="scroll-mt-0 py-24">
         <div className="max-w-7xl mx-auto px-6">
           {/* TARJETA CONTENEDORA (igual estilo proyectos) */}
-          <div className="bg-gradient-to-b from-slate-50 to-white rounded-[2rem] p-10 shadow-sm border border-slate-200">
-            <h2 className="text-2xl md:text-4xl font-bold leading-tight">
-              Cobertura a nivel nacional
-            </h2>
-            <p className="mt-4 text-gray-600 max-w-6xl leading-7">
-              En ADDSYS contamos con capacidad para desarrollar proyectos
-              sanitarios a nivel nacional, con experiencia en distintas
-              condiciones geográficas y operativas. Nos adaptamos a las
-              necesidades de cada cliente, asegurando soluciones eficientes
-              tanto en zonas urbanas como en entornos industriales.
-            </p>
 
-            {/* TARJETAS PEQUEÑAS (como antes) */}
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-10">
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
-                <h3 className="font-semibold text-lg">Zona de atención</h3>
-                <p className="mt-3 text-sm text-gray-600">
-                  Presencia y capacidad operativa en todo el territorio
-                  nacional.
-                </p>
-              </div>
+          <h2 className="text-2xl md:text-4xl font-bold leading-tight">
+            Cobertura a nivel nacional
+          </h2>
+          <p className="mt-4 text-gray-600 max-w-6xl leading-7">
+            En ADDSYS contamos con capacidad para desarrollar proyectos
+            sanitarios a nivel nacional, con experiencia en distintas
+            condiciones geográficas y operativas. Nos adaptamos a las
+            necesidades de cada cliente, asegurando soluciones eficientes tanto
+            en zonas urbanas como en entornos industriales.
+          </p>
 
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
-                <h3 className="font-semibold text-lg">Tipo de clientes</h3>
-                <p className="mt-3 text-sm text-gray-600">
-                  Empresas, particulares, municipalidades e instituciones.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
-                <h3 className="font-semibold text-lg">Tipo de proyectos</h3>
-                <p className="mt-3 text-sm text-gray-600">
-                  Redes, empalmes, plantas elevadoras y tratamiento de aguas.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
-                <h3 className="font-semibold text-lg">Experiencia</h3>
-                <p className="mt-3 text-sm text-gray-600">
-                  Más de 8 años desarrollando soluciones sanitarias confiables.
-                </p>
-              </div>
+          {/* TARJETAS PEQUEÑAS (como antes) */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-10">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+              <h3 className="font-semibold text-lg">Zona de atención</h3>
+              <p className="mt-3 text-sm text-gray-600">
+                Presencia y capacidad operativa en todo el territorio nacional.
+              </p>
             </div>
-            <div className="mt-16 relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#021B44] via-[#032B73] to-[#021B44] p-8 md:p-14 text-white shadow-2xl">
-              {/* Glow */}
-              <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"></div>
-              <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
 
-              <div className="relative z-10 grid lg:grid-cols-[1.2fr_0.8fr_1fr] gap-10 items-center">
-                {/* Texto */}
-                <div>
-                  <div className="inline-flex items-center rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur">
-                    COBERTURA OPERACIONAL NACIONAL
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+              <h3 className="font-semibold text-lg">Tipo de clientes</h3>
+              <p className="mt-3 text-sm text-gray-600">
+                Empresas, particulares, municipalidades e instituciones.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+              <h3 className="font-semibold text-lg">Tipo de proyectos</h3>
+              <p className="mt-3 text-sm text-gray-600">
+                Redes, empalmes, plantas elevadoras y tratamiento de aguas.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+              <h3 className="font-semibold text-lg">Experiencia</h3>
+              <p className="mt-3 text-sm text-gray-600">
+                Más de 8 años desarrollando soluciones sanitarias confiables.
+              </p>
+            </div>
+          </div>
+          <div className="mt-16 relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#021B44] via-[#032B73] to-[#021B44] p-8 md:p-14 text-white shadow-2xl">
+            {/* Glow */}
+            <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
+
+            <div className="relative z-10 grid lg:grid-cols-[1.2fr_0.8fr_1fr] gap-10 items-center">
+              {/* Texto */}
+              <div>
+                <div className="inline-flex items-center rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur">
+                  COBERTURA OPERACIONAL NACIONAL
+                </div>
+
+                <h3 className="mt-6 text-4xl md:text-5xl font-bold leading-tight">
+                  Ejecutamos proyectos sanitarios en todo Chile
+                </h3>
+
+                <div className="mt-6 h-1 w-20 rounded-full bg-cyan-400"></div>
+
+                <p className="mt-8 text-white/80 leading-8 text-lg">
+                  Desde Temuco, ADDSYS desarrolla soluciones sanitarias para
+                  proyectos urbanos, industriales y domiciliarios, coordinando
+                  diseño, ejecución y soporte técnico en distintas regiones del
+                  país.
+                </p>
+
+                <div className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="text-sm text-white/60">Base operacional</div>
+
+                  <div className="mt-2 text-3xl font-bold">Temuco, Chile</div>
+
+                  <div className="mt-2 text-white/70">
+                    Cobertura y capacidad operativa a nivel nacional.
                   </div>
+                </div>
+              </div>
 
-                  <h3 className="mt-6 text-4xl md:text-5xl font-bold leading-tight">
-                    Ejecutamos proyectos sanitarios en todo Chile
-                  </h3>
+              {/* MAPA */}
+              <div className="relative flex justify-center">
+                <img
+                  src="/Cob_MapChile.png"
+                  alt="Cobertura Chile"
+                  className="h-[520px] md:h-[720px] object-contain scale-140 opacity-95 drop-shadow-[0_25px_35px_rgba(0,0,0,0.45)]"
+                />
+              </div>
 
-                  <div className="mt-6 h-1 w-20 rounded-full bg-cyan-400"></div>
+              {/* Indicadores */}
+              <div className="grid gap-5">
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="text-sm text-white/60">Cobertura</div>
 
-                  <p className="mt-8 text-white/80 leading-8 text-lg">
-                    Desde Temuco, ADDSYS desarrolla soluciones sanitarias para
-                    proyectos urbanos, industriales y domiciliarios, coordinando
-                    diseño, ejecución y soporte técnico en distintas regiones
-                    del país.
-                  </p>
+                  <div className="mt-2 text-4xl font-bold">Nacional</div>
 
-                  <div className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                    <div className="text-sm text-white/60">
-                      Base operacional
-                    </div>
-
-                    <div className="mt-2 text-3xl font-bold">Temuco, Chile</div>
-
-                    <div className="mt-2 text-white/70">
-                      Cobertura y capacidad operativa a nivel nacional.
-                    </div>
+                  <div className="mt-2 text-white/70">
+                    Operación en todo el territorio chileno.
                   </div>
                 </div>
 
-                {/* MAPA */}
-                <div className="relative flex justify-center">
-                  <img
-                    src="/Cob_MapChile.png"
-                    alt="Cobertura Chile"
-                    className="h-[520px] md:h-[720px] object-contain scale-140 opacity-95 drop-shadow-[0_25px_35px_rgba(0,0,0,0.45)]"
-                  />
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="text-sm text-white/60">Experiencia</div>
+
+                  <div className="mt-2 text-4xl font-bold">+8 años</div>
+
+                  <div className="mt-2 text-white/70">
+                    Desarrollo de soluciones sanitarias confiables.
+                  </div>
                 </div>
 
-                {/* Indicadores */}
-                <div className="grid gap-5">
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                    <div className="text-sm text-white/60">Cobertura</div>
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="text-sm text-white/60">Proyectos</div>
 
-                    <div className="mt-2 text-4xl font-bold">Nacional</div>
+                  <div className="mt-2 text-4xl font-bold">Sanitarios</div>
 
-                    <div className="mt-2 text-white/70">
-                      Operación en todo el territorio chileno.
-                    </div>
-                  </div>
-
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                    <div className="text-sm text-white/60">Experiencia</div>
-
-                    <div className="mt-2 text-4xl font-bold">+8 años</div>
-
-                    <div className="mt-2 text-white/70">
-                      Desarrollo de soluciones sanitarias confiables.
-                    </div>
-                  </div>
-
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-                    <div className="text-sm text-white/60">Proyectos</div>
-
-                    <div className="mt-2 text-4xl font-bold">Sanitarios</div>
-
-                    <div className="mt-2 text-white/70">
-                      Urbanos, industriales y domiciliarios.
-                    </div>
+                  <div className="mt-2 text-white/70">
+                    Urbanos, industriales y domiciliarios.
                   </div>
                 </div>
               </div>
@@ -922,6 +927,8 @@ export default function AddsysWeb() {
           </div>
         </div>
       </section>
+
+      <ADDSYSInsights />
 
       {/* CONTACTO */}
       <section
@@ -961,7 +968,7 @@ export default function AddsysWeb() {
                   href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-green-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-green-600 transition shadow-lg"
+                  className="inline-block bg-green-500 text-white px-6 py-3 rounded-2xl font-medium hover:bg-green-600 transition shadow-sm"
                 >
                   Escribir por WhatsApp
                 </a>
@@ -969,7 +976,7 @@ export default function AddsysWeb() {
             </div>
 
             {/* FORMULARIO */}
-            <div className="bg-white text-gray-800 rounded-2xl p-8 shadow-xl">
+            <div className="bg-white text-gray-800 rounded-[20px] p-8 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
               <h3 className="text-xl font-semibold mb-4">Solicitar contacto</h3>
 
               <form
@@ -1016,7 +1023,7 @@ export default function AddsysWeb() {
                     console.error(error);
                   }
                 }}
-                className="grid gap-4 border border-slate-200 rounded-3xl p-5 md:p-6 shadow-sm bg-white"
+                className="grid gap-4 p-0"
               >
                 <div className="grid gap-4">
                   <input
@@ -1039,14 +1046,14 @@ export default function AddsysWeb() {
                   name="mensaje"
                   placeholder="Cuéntanos brevemente tu proyecto"
                   rows={4}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-gray-300 rounded-2xl px-4 py-2 min-h-[155px] resize-none focus:outline-none focus:ring-2 focus:ring-sky-500"
                   required
                 />
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-sky-600 text-white py-3 rounded-lg font-medium hover:bg-sky-700 transition disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full bg-sky-600 text-white py-3 rounded-2xl font-medium hover:bg-sky-700 transition disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>
@@ -1088,14 +1095,8 @@ export default function AddsysWeb() {
                 <img
                   src="/logo-addsys.png"
                   alt="ADDSYS"
-                  className="h-10 object-contain"
+                  className="h-20 object-contain"
                 />
-                <div>
-                  <div className="font-semibold text-slate-800">ADDSYS SpA</div>
-                  <div className="text-sm text-slate-500">
-                    Ingeniería Sanitaria
-                  </div>
-                </div>
               </div>
 
               <p className="mt-4 text-sm leading-7 text-slate-500 max-w-md text-justify [text-align-last:left]">
