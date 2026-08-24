@@ -15,13 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: new Date("2026-08-23"),
-      changeFrequency: "monthly",
+      changeFrequency: "monthly" as const,
       priority: 1,
-    },
-    {
-      url: `${baseUrl}/gracias`,
-      changeFrequency: "yearly",
-      priority: 0.3,
     },
     ...publicacionesUrls,
   ];
