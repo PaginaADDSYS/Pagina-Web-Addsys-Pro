@@ -13,12 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.addsys.cl"),
+
   title: {
     default: "ADDSYS | Ingeniería sanitaria y soluciones de infraestructura",
     template: "%s | ADDSYS",
   },
+
   description:
     "ADDSYS desarrolla soluciones de ingeniería sanitaria, agua potable, aguas servidas, automatización y tecnología aplicada a infraestructura sanitaria.",
+
   keywords: [
     "ingeniería sanitaria",
     "agua potable",
@@ -29,12 +33,35 @@ export const metadata: Metadata = {
     "IoT",
     "ADDSYS",
   ],
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "ADDSYS | Ingeniería sanitaria y soluciones de infraestructura",
     description:
       "Soluciones de ingeniería sanitaria, tecnología e infraestructura para proyectos urbanos, industriales y domiciliarios.",
+    url: "/",
+    siteName: "ADDSYS",
     type: "website",
     locale: "es_CL",
+    images: [
+      {
+        url: "/Insights/hero-insight.png",
+        width: 1200,
+        height: 630,
+        alt: "ADDSYS Ingeniería Sanitaria",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "ADDSYS | Ingeniería sanitaria y soluciones de infraestructura",
+    description:
+      "Soluciones de ingeniería sanitaria, tecnología e infraestructura para proyectos urbanos, industriales y domiciliarios.",
+    images: ["/Insights/hero-insight.png"],
   },
 };
 
