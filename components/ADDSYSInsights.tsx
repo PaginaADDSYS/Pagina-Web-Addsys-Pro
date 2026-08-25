@@ -6,8 +6,28 @@ function InsightsNetwork() {
   return (
     <svg
       viewBox="0 0 900 520"
-      className=" pointer-events-none absolute right-[-15%] top-[-2%] h-[500px] z-20 w-[72%] opacity-75 lg:h-[610px] lg:w-[70%] "
-      aria-hidden="true"
+      className="
+                  pointer-events-none
+                  absolute
+                  left-1/2
+                  top-[270px]
+                  z-20
+                  h-[390px]
+                  w-[145%]
+                  -translate-x-1/2
+                  opacity-75
+
+                  md:left-auto
+                  md:right-[-15%]
+                  md:top-[-2%]
+                  md:h-[500px]
+                  md:w-[72%] 
+                  md:translate-x-0
+                  md:opacity-60
+
+                  lg:h-[610px]
+                  lg:w-[70%]
+"
     >
       {" "}
       <g fill="none" stroke="#0ea5e9" strokeWidth="1.4" opacity="0.72">
