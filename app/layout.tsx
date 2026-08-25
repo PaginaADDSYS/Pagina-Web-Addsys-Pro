@@ -12,6 +12,48 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.addsys.cl/#organization",
+
+  name: "ADDSYS SpA",
+  url: "https://www.addsys.cl/",
+
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.addsys.cl/logo-addsys.png",
+  },
+
+  description:
+    "ADDSYS SpA desarrolla soluciones de ingeniería sanitaria, agua potable, aguas servidas, automatización y tecnología aplicada a infraestructura sanitaria.",
+
+  telephone: "+56968785641",
+  email: "operaciones@addsys.cl",
+
+  location: {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Temuco",
+      addressRegion: "Región de La Araucanía",
+      addressCountry: "CL",
+    },
+  },
+
+  areaServed: {
+    "@type": "Country",
+    name: "Chile",
+  },
+
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+56968785641",
+    email: "operaciones@addsys.cl",
+    availableLanguage: ["Spanish"],
+  },
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.addsys.cl"),
 
@@ -76,7 +118,16 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
