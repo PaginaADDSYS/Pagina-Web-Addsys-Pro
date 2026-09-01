@@ -195,14 +195,20 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
-              // Primer título: presentación de ADDSYS Insights
-              if (texto === "## Un espacio para compartir conocimiento") {
+              // Primer título de cada publicación
+              if (
+                texto.startsWith("## ") &&
+                index ===
+                  publicacion.contenido
+                    .split("\n")
+                    .findIndex((linea) => linea.trim().startsWith("## "))
+              ) {
                 return (
                   <div key={index} className="mb-8">
                     <div className="mb-5 h-1 w-full rounded-full bg-gradient-to-r from-sky-500 via-cyan-400 to-transparent" />
 
                     <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
-                      Un espacio para compartir conocimiento
+                      {texto.replace("## ", "")}
                     </h2>
                   </div>
                 );
@@ -327,7 +333,7 @@ export default async function InsightPage({ params }: PageProps) {
           </p>
 
           <Link
-            href="/#insights"
+            href="/#ultimas-publicaciones"
             className="mt-7 inline-flex items-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:text-sky-700 hover:shadow-md"
           >
             ← Ver más publicaciones

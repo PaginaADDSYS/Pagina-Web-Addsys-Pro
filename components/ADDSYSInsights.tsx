@@ -206,6 +206,10 @@ function InsightsWaves() {
 export default function ADDSYSInsights() {
   const destacada = publicaciones.find((p) => p.destacada);
 
+  const otrasPublicaciones = publicaciones
+    .filter((p) => p.id !== destacada?.id)
+    .sort((a, b) => b.id - a.id);
+
   if (!destacada) return null;
 
   return (
@@ -339,6 +343,72 @@ export default function ADDSYSInsights() {
           </div>
         </article>
       </div>
+
+      {/* ÚLTIMAS PUBLICACIONES */}
+      {otrasPublicaciones.length > 0 && (
+        <div
+          id="ultimas-publicaciones"
+          className="relative z-20 mx-auto max-w-7xl scroll-mt-24 px-6 pb-24"
+        >
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-slate-800 md:text-3xl">
+              Últimas publicaciones
+            </h3>
+
+            <p className="mt-2 text-slate-600">
+              Conocimiento y experiencias aplicadas a la ingeniería sanitaria.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {otrasPublicaciones.map((publicacion) => (
+              <article
+                key={publicacion.id}
+                className="group overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <Link href={`/insights/${publicacion.id}`}>
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <img
+                      src={publicacion.imagen}
+                      alt={publicacion.titulo}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                </Link>
+
+                <div className="p-6">
+                  <span className="inline-flex rounded-full bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-700">
+                    {publicacion.categoria}
+                  </span>
+
+                  <h4 className="mt-4 text-xl font-bold leading-snug text-slate-800">
+                    {publicacion.titulo}
+                  </h4>
+
+                  <p className="mt-3 line-clamp-3 text-sm leading-6 text-slate-600">
+                    {publicacion.resumen}
+                  </p>
+
+                  <div className="mt-5 flex flex-wrap gap-4 text-xs text-slate-500">
+                    <span>📅 {publicacion.fecha}</span>
+                    <span>⏱ {publicacion.tiempoLectura}</span>
+                  </div>
+
+                  <Link
+                    href={`/insights/${publicacion.id}`}
+                    className="mt-5 inline-flex items-center font-semibold text-sky-700 transition-colors hover:text-sky-900"
+                  >
+                    Leer publicación
+                    <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }
