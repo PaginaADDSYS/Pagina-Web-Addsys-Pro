@@ -39,13 +39,13 @@ export async function generateMetadata({
     },
 
     openGraph: {
-      title: publicacion.titulo,
+      title: publicacion.tituloSEO ?? publicacion.titulo,
       description: publicacion.resumen,
       url,
       siteName: "ADDSYS",
       locale: "es_CL",
       type: "article",
-      publishedTime: "2026-08-23",
+      publishedTime: publicacion.fechaISO,
       images: [
         {
           url: imageUrl,
@@ -85,8 +85,42 @@ export default async function InsightPage({ params }: PageProps) {
     "Tecnología aplicada a la ingeniería",
   ];
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: publicacion.titulo,
+    description: publicacion.resumen,
+    image: [`https://www.addsys.cl${publicacion.imagen}`],
+    datePublished: publicacion.fechaISO,
+    dateModified: publicacion.fechaISO,
+    author: {
+      "@type": "Organization",
+      name: "ADDSYS SpA",
+      url: "https://www.addsys.cl/",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "ADDSYS SpA",
+      url: "https://www.addsys.cl/",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.addsys.cl/logo-addsys.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.addsys.cl/insights/${publicacion.id}`,
+    },
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd),
+        }}
+      />
       {/* HEADER + IMAGEN */}
       <section className="relative overflow-hidden bg-gradient-to-b from-sky-50 via-white to-white">
         {/* Glows */}

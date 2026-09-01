@@ -6,9 +6,13 @@ export const publicaciones: Publicacion[] = [
 
     titulo: "ADDSYS Insights: ingeniería sanitaria impulsada por datos",
 
+    tituloSEO: "ADDSYS Insights: ingeniería sanitaria impulsada por datos",
+
     categoria: "ADDSYS Insights",
 
     fecha: "23 de agosto de 2026",
+
+    fechaISO: "2026-08-23",
 
     tiempoLectura: "4 min",
 
@@ -74,9 +78,13 @@ Bienvenidos a ADDSYS Insights.`,
 
     titulo: "¿Qué es una planta elevadora de aguas servidas y cuándo se necesita?",
 
+    tituloSEO: "Planta elevadora de aguas servidas: qué es y cómo funciona",
+
     categoria: "ADDSYS Insights",
 
     fecha: "31 de agosto de 2026",
+
+    fechaISO: "2026-08-31",
 
     tiempoLectura: "4 min",
 
