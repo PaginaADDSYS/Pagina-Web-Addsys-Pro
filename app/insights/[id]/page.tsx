@@ -91,8 +91,8 @@ export default async function InsightPage({ params }: PageProps) {
     headline: publicacion.titulo,
     description: publicacion.resumen,
     image: [`https://www.addsys.cl${publicacion.imagen}`],
-    datePublished: publicacion.fechaISO,
-    dateModified: publicacion.fechaISO,
+    datePublished: publicacion.fechaPublicacionISO ?? publicacion.fechaISO,
+    dateModified: publicacion.fechaPublicacionISO ?? publicacion.fechaISO,
     author: {
       "@type": "Organization",
       name: "ADDSYS SpA",

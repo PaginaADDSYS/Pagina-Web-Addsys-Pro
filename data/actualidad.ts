@@ -86,6 +86,8 @@ Bienvenidos a ADDSYS Insights.`,
 
     fechaISO: "2026-08-31",
 
+    fechaPublicacionISO: "2026-08-31T19:30:00-04:00",
+
     tiempoLectura: "4 min",
 
     resumen:

@@ -8,6 +8,7 @@ export interface Publicacion {
   imagen: string;
   fecha: string;
   fechaISO: string;
+  fechaPublicacionISO?: string;
   tiempoLectura: string;
   destacada: boolean;
 }
