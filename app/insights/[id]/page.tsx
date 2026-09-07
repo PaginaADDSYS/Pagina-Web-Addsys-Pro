@@ -45,7 +45,7 @@ export async function generateMetadata({
       siteName: "ADDSYS",
       locale: "es_CL",
       type: "article",
-      publishedTime: publicacion.fechaISO,
+      publishedTime: publicacion.fechaPublicacionISO ?? publicacion.fechaISO,
       images: [
         {
           url: imageUrl,
@@ -189,6 +189,26 @@ export default async function InsightPage({ params }: PageProps) {
 
               if (!texto) {
                 return <div key={index} className="h-5" />;
+              }
+
+              if (
+                texto.startsWith(
+                  "Si quieres profundizar en este tema, revisa nuestro artículo sobre automatización en sistemas sanitarios",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Si quieres profundizar en este tema, revisa nuestro artículo
+                    sobre{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización en sistemas sanitarios
+                    </Link>
+                    .
+                  </p>
+                );
               }
 
               if (texto === "## ¿Qué encontrarás en ADDSYS Insights?") {

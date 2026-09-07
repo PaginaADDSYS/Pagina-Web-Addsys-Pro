@@ -139,6 +139,8 @@ En instalaciones donde la continuidad operacional es especialmente importante, l
 
 La tecnología no reemplaza un buen diseño hidráulico y sanitario, pero puede convertirse en una herramienta importante para mejorar la operación y gestión de la infraestructura.
 
+Si quieres profundizar en este tema, revisa nuestro artículo sobre automatización en sistemas sanitarios.
+
 ## Cada proyecto requiere una solución particular
 
 No todos los proyectos necesitan una planta elevadora y no todas las plantas elevadoras requieren la misma configuración.
@@ -151,4 +153,122 @@ En **ADDSYS** abordamos los proyectos sanitarios considerando tanto su diseño c
 
     destacada: false,
   },
+
+{
+  id: 3,
+
+  titulo:
+    "Automatización en sistemas sanitarios: ¿qué podemos controlar y monitorear?",
+
+  tituloSEO:
+    "Automatización de sistemas sanitarios: control y monitoreo",
+
+  categoria: "ADDSYS Insights",
+
+  fecha: "6 de septiembre de 2026",
+
+  fechaISO: "2026-09-06",
+
+  fechaPublicacionISO: "2026-09-06T20:45:00-03:00",
+
+  tiempoLectura: "5 min",
+
+  resumen:
+    "La automatización permite conocer lo que ocurre en una instalación sanitaria, controlar equipos y detectar condiciones anormales. Conoce cómo sensores, PLC, alarmas y monitoreo pueden mejorar su operación.",
+
+  contenido: `## ¿Qué significa automatizar un sistema sanitario?
+
+Los sistemas sanitarios dependen de múltiples variables que cambian constantemente durante su operación. Niveles de agua, presiones, caudales, funcionamiento de bombas y estados eléctricos son algunos ejemplos de información que puede ser necesario conocer para operar una instalación de manera adecuada.
+
+En sistemas simples, muchas de estas tareas pueden realizarse mediante controles locales. Sin embargo, a medida que una instalación aumenta su complejidad o requiere mayor continuidad operacional, puede ser conveniente incorporar sistemas de **automatización, monitoreo y generación de alarmas**.
+
+Automatizar no significa solamente hacer que un equipo funcione sin intervención humana. Significa utilizar información proveniente del sistema para **tomar determinadas decisiones de manera automática, segura y predefinida**.
+
+## Primero necesitamos saber qué está ocurriendo
+
+Todo sistema de automatización comienza con información.
+
+Para controlar una instalación es necesario conocer determinadas variables de su funcionamiento. Para ello pueden utilizarse distintos tipos de sensores e instrumentos capaces de medir, por ejemplo, **niveles, presiones, caudales o estados de funcionamiento de los equipos**.
+
+En una planta elevadora de aguas servidas, por ejemplo, conocer el nivel dentro de la cámara permite determinar cuándo deben ponerse en funcionamiento las bombas y cuándo deben detenerse.
+
+En otros sistemas, una medición de presión puede utilizarse para controlar equipos de impulsión o detectar condiciones que se encuentren fuera de los rangos definidos para la operación.
+
+La selección de las variables que deben medirse dependerá de las características y necesidades de cada instalación.
+
+## Del dato a una acción automática
+
+Medir una variable es solamente el primer paso.
+
+La automatización permite utilizar esa información para ejecutar determinadas acciones de acuerdo con una lógica previamente definida.
+
+Un sistema puede, por ejemplo, **poner en funcionamiento una bomba cuando se alcanza cierto nivel, detenerla cuando el nivel disminuye o alternar automáticamente la operación entre distintos equipos**.
+
+También pueden incorporarse condiciones de protección que impidan determinadas maniobras cuando existe una situación que podría afectar a los equipos o al proceso.
+
+Estas decisiones pueden ser gestionadas mediante distintos dispositivos de control, dependiendo de la complejidad de la instalación. En muchos sistemas industriales se utilizan **controladores lógicos programables (PLC)**, capaces de recibir señales desde los instrumentos, procesar una lógica de control y actuar sobre los equipos.
+
+De esta manera se establece una relación entre lo que ocurre físicamente en la instalación y las acciones necesarias para mantener su funcionamiento.
+
+## Alarmas: detectar una condición anormal
+
+Una parte importante de la automatización consiste en reconocer cuándo algo no está funcionando de acuerdo con lo esperado.
+
+Un nivel excesivamente alto, la falla de una bomba, una presión fuera de rango o la pérdida de alimentación eléctrica son ejemplos de situaciones que pueden requerir atención.
+
+El sistema puede identificar estas condiciones y generar una **alarma**.
+
+Dependiendo de la instalación, la alarma puede permanecer localmente en un tablero o interfaz de operación, o puede ser transmitida hacia otros sistemas para informar a las personas responsables.
+
+El objetivo no es solamente saber que existe una falla, sino **detectarla oportunamente y disponer de información que permita tomar una decisión**.
+
+## ¿Automatización y telemetría son lo mismo?
+
+Aunque están estrechamente relacionadas, automatización y telemetría cumplen funciones diferentes.
+
+La **automatización** permite que una instalación tome determinadas decisiones y ejecute acciones utilizando la información disponible localmente.
+
+La **telemetría**, en cambio, permite transmitir información desde una instalación hacia otro lugar.
+
+Esto significa que un sistema puede estar completamente automatizado sin necesariamente disponer de monitoreo remoto. De la misma forma, es posible transmitir información de una instalación sin utilizarla para ejecutar acciones automáticas.
+
+Cuando ambas tecnologías se integran, una instalación puede operar automáticamente y, al mismo tiempo, entregar información sobre su funcionamiento a operadores o sistemas de supervisión ubicados a distancia.
+
+## Diseñar el sistema completo
+
+Una solución de automatización no debería analizarse únicamente desde el tablero eléctrico o desde la programación del controlador.
+
+Los sensores, equipos hidráulicos, bombas, válvulas, instalaciones eléctricas, sistemas de control y condiciones reales de operación forman parte de un mismo sistema.
+
+Por ejemplo, una lógica de control puede estar correctamente programada, pero si el instrumento que entrega la información no es adecuado para las condiciones de la instalación, el resultado puede no ser confiable.
+
+Por esta razón, el diseño debe considerar **qué necesitamos medir, cómo debemos controlar el proceso y qué debe ocurrir frente a diferentes condiciones de operación o falla**.
+
+La tecnología debe responder a las necesidades del sistema y no al revés.
+
+## La automatización no reemplaza un buen diseño sanitario
+
+Incorporar sensores, PLC, comunicaciones o sistemas de monitoreo puede mejorar significativamente la operación de una instalación, pero estas tecnologías no corrigen por sí mismas un problema de diseño hidráulico o sanitario.
+
+Una planta elevadora, un sistema de impulsión o una instalación de agua potable debe estar correctamente dimensionada antes de definir su estrategia de automatización.
+
+La automatización complementa ese diseño permitiendo **controlar, proteger y conocer mejor el comportamiento de la infraestructura durante su operación**.
+
+## De reaccionar a anticiparse
+
+Uno de los principales beneficios de disponer de información sobre una instalación es la posibilidad de comprender mejor cómo está funcionando.
+
+Conocer estados de equipos, registrar variables y generar alarmas permite pasar gradualmente desde una operación basada únicamente en reaccionar frente a una falla hacia una gestión con mayor información.
+
+Cuando además incorporamos monitoreo remoto, almacenamiento de datos y herramientas de análisis, aparecen nuevas posibilidades para detectar comportamientos anormales, identificar tendencias y mejorar la planificación de la operación y el mantenimiento.
+
+La automatización, por lo tanto, no consiste solamente en hacer funcionar equipos de manera automática. Es también una herramienta para **transformar lo que ocurre en una instalación en información útil para tomar mejores decisiones**.
+
+En **ADDSYS** integramos ingeniería sanitaria, automatización y tecnología considerando que todos estos elementos deben formar parte de una misma solución y responder a las condiciones reales de cada proyecto.`,
+
+  imagen: "/img_pub_3.png",
+
+  destacada: false,
+},
+
 ];
