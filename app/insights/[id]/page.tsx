@@ -3,6 +3,22 @@ import { publicaciones } from "@/data/actualidad";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+function renderConNegritas(texto: string) {
+  const partes = texto.split(/(\*\*.*?\*\*)/g);
+
+  return partes.map((parte, index) => {
+    if (parte.startsWith("**") && parte.endsWith("**")) {
+      return (
+        <strong key={index} className="font-semibold text-slate-900">
+          {parte.slice(2, -2)}
+        </strong>
+      );
+    }
+
+    return parte;
+  });
+}
+
 export function generateStaticParams() {
   return publicaciones.map((publicacion) => ({
     id: String(publicacion.id),
@@ -211,6 +227,26 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
+              if (
+                texto.startsWith(
+                  "Si quieres profundizar en este tema, revisa nuestro artículo sobre telemetría en sistemas sanitarios",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Si quieres profundizar en este tema, revisa nuestro artículo
+                    sobre{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría en sistemas sanitarios
+                    </Link>
+                    .
+                  </p>
+                );
+              }
+
               if (texto === "## ¿Qué encontrarás en ADDSYS Insights?") {
                 return (
                   <div key={index} className="mt-14">
@@ -355,7 +391,7 @@ export default async function InsightPage({ params }: PageProps) {
               // Párrafos normales
               return (
                 <p key={index} className="mb-5">
-                  {texto}
+                  {renderConNegritas(texto)}
                 </p>
               );
             })}

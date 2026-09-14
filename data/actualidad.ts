@@ -234,6 +234,8 @@ Esto significa que un sistema puede estar completamente automatizado sin necesar
 
 Cuando ambas tecnologías se integran, una instalación puede operar automáticamente y, al mismo tiempo, entregar información sobre su funcionamiento a operadores o sistemas de supervisión ubicados a distancia.
 
+Si quieres profundizar en este tema, revisa nuestro artículo sobre telemetría en sistemas sanitarios.
+
 ## Diseñar el sistema completo
 
 Una solución de automatización no debería analizarse únicamente desde el tablero eléctrico o desde la programación del controlador.
@@ -267,6 +269,145 @@ La automatización, por lo tanto, no consiste solamente en hacer funcionar equip
 En **ADDSYS** integramos ingeniería sanitaria, automatización y tecnología considerando que todos estos elementos deben formar parte de una misma solución y responder a las condiciones reales de cada proyecto.`,
 
   imagen: "/img_pub_3.png",
+
+  destacada: false,
+},
+
+{
+  id: 4,
+
+  titulo:
+    "Telemetría en sistemas sanitarios: ¿qué podemos supervisar a distancia?",
+
+  tituloSEO:
+    "Telemetría en sistemas sanitarios: monitoreo remoto y control",
+
+  categoria: "ADDSYS Insights",
+
+  fecha: "14 de septiembre de 2026",
+
+  fechaISO: "2026-09-14",
+
+  fechaPublicacionISO: "2026-09-14T15:07:00-03:00",
+
+  tiempoLectura: "6 min",
+
+  resumen:
+    "La telemetría permite supervisar instalaciones sanitarias a distancia, transmitir alarmas y construir registros de operación. Conoce cómo integrar comunicaciones, almacenamiento local y monitoreo remoto de forma confiable.",
+
+  contenido: `## ¿Qué es la telemetría?
+
+Muchas instalaciones sanitarias operan de manera continua y se encuentran distribuidas en distintos puntos de una ciudad, industria o territorio. Plantas elevadoras, estanques, sistemas de impulsión y otras infraestructuras pueden funcionar durante largos períodos sin la presencia permanente de un operador.
+
+En estas condiciones aparece una pregunta importante: **¿cómo podemos saber qué está ocurriendo en una instalación sin estar físicamente en ella?**
+
+La telemetría permite responder a esta necesidad, transmitiendo información desde una instalación hacia un sistema de supervisión ubicado a distancia.
+
+Su objetivo no es solamente visualizar datos. Bien implementada, puede convertirse en una herramienta para **detectar situaciones anormales, generar alertas y disponer de información útil para apoyar la operación y el mantenimiento de la infraestructura**.
+
+La telemetría es un sistema que permite **medir variables en una instalación y transmitir esa información hacia otro lugar**.
+
+Para hacerlo se requiere obtener información desde sensores, instrumentos, equipos o sistemas de control y disponer de algún medio que permita comunicar esos datos.
+
+La información puede posteriormente visualizarse en una plataforma de supervisión, almacenarse para construir registros históricos o utilizarse para generar alarmas frente a determinadas condiciones.
+
+En un sistema sanitario esto permite conocer lo que ocurre en instalaciones que pueden encontrarse a kilómetros de distancia.
+
+## ¿Qué podemos monitorear?
+
+Las variables que pueden supervisarse dependen de cada instalación y de los objetivos del sistema.
+
+En infraestructura sanitaria es posible monitorear, por ejemplo, **niveles de estanques o cámaras, presiones, caudales, estados de bombas, fallas eléctricas y diferentes condiciones de alarma**.
+
+En una planta elevadora de aguas servidas podríamos conocer a distancia si una bomba se encuentra operando, si existe una falla o si el nivel de la cámara está alcanzando una condición anormal.
+
+En un sistema de agua potable, en cambio, podría ser importante conocer el nivel de un estanque, la presión de una red o el estado de determinados equipos de impulsión.
+
+No se trata de transmitir todas las variables disponibles, sino de determinar **qué información es realmente necesaria para comprender y gestionar adecuadamente la operación**.
+
+## Desde la instalación hasta el operador
+
+Para que una variable pueda visualizarse a distancia debe existir una cadena completa de adquisición y comunicación de información.
+
+Un sensor o instrumento mide una determinada condición. Esa señal puede ser recibida por un controlador o equipo de adquisición de datos, que posteriormente utiliza un sistema de comunicaciones para transmitirla.
+
+Dependiendo de las características del proyecto, pueden utilizarse diferentes tecnologías y medios de comunicación.
+
+Finalmente, la información llega a una plataforma donde puede ser presentada de una manera comprensible para quienes operan o supervisan la infraestructura.
+
+Por esta razón, un sistema de telemetría no debe analizarse únicamente desde las comunicaciones. **Sensores, controladores, alimentación eléctrica, redes de comunicación y plataformas de supervisión forman parte de una misma solución.**
+
+## Telemetría y automatización: sistemas relacionados, pero diferentes
+
+Como vimos en nuestro artículo sobre automatización en sistemas sanitarios, automatización y telemetría cumplen funciones distintas.
+
+La automatización permite que una instalación ejecute determinadas acciones utilizando información disponible localmente. La telemetría permite que parte de esa información pueda conocerse desde otro lugar.
+
+Una bomba puede, por ejemplo, arrancar y detenerse automáticamente de acuerdo con el nivel de una cámara sin necesitar comunicación con un sistema remoto.
+
+La telemetría puede informar posteriormente al operador que la bomba está funcionando, registrar cuánto tiempo estuvo operativa o generar una alerta si se detecta una condición anormal.
+
+Cuando ambas tecnologías trabajan en conjunto, es posible combinar **autonomía local con supervisión remota**.
+
+## ¿Qué ocurre si se pierde la comunicación?
+
+Este es uno de los aspectos más importantes al diseñar sistemas de telemetría para infraestructura sanitaria.
+
+Las comunicaciones pueden interrumpirse por diferentes razones. Por ello, las funciones esenciales de una instalación no deberían depender exclusivamente de mantener permanentemente una conexión con el sistema remoto.
+
+Una planta elevadora, por ejemplo, debería continuar ejecutando su lógica básica de control local aunque temporalmente no pueda transmitir información.
+
+Cuando se recupera la comunicación, el sistema puede restablecer el envío de datos y reportar nuevamente su estado.
+
+Esta separación entre **control local y supervisión remota** permite desarrollar soluciones más robustas y adecuadas para instalaciones donde la continuidad operacional es importante.
+
+## Alarmas: información cuando realmente importa
+
+Una de las aplicaciones más útiles de la telemetría es la posibilidad de informar oportunamente determinadas condiciones.
+
+Un nivel excesivamente alto, una falla de bomba, una pérdida de energía o una presión fuera de los rangos definidos pueden generar una alarma que posteriormente sea transmitida al sistema de supervisión.
+
+Dependiendo de la solución implementada, estas alertas pueden visualizarse en una plataforma o comunicarse a las personas responsables mediante distintos mecanismos.
+
+El objetivo es reducir el tiempo entre **la aparición de una condición anormal y el momento en que alguien toma conocimiento de ella**.
+
+Sin embargo, una buena estrategia de alarmas también debe evitar generar información innecesaria. Si todo genera una alarma, puede resultar difícil distinguir aquello que realmente requiere atención.
+
+## Del monitoreo al registro histórico
+
+La telemetría no solamente permite conocer el estado actual de una instalación.
+
+Cuando los datos se almacenan, comienza a construirse un historial de su funcionamiento.
+
+Esto permite analizar cómo evolucionan determinadas variables, conocer tiempos de operación de equipos, identificar comportamientos repetitivos y comparar diferentes períodos.
+
+Sin embargo, si queremos que este historial represente de manera confiable lo que realmente ocurrió en la instalación, debemos considerar también qué sucede durante una interrupción de las comunicaciones.
+
+Si los datos solamente se registran una vez que llegan al sistema remoto, un corte de comunicación puede generar períodos sin información y dejar incompleto el historial de operación.
+
+Por esta razón, en sistemas donde la continuidad y calidad de los datos es importante, puede ser conveniente disponer de **capacidad de almacenamiento local en la instalación**. De esta manera, las variables continúan registrándose aunque temporalmente no exista comunicación con el sistema remoto.
+
+Cuando la comunicación se restablece, la información almacenada localmente puede ser transmitida y sincronizada con el sistema central, permitiendo **recuperar el período que no pudo enviarse en tiempo real y mantener un historial más íntegro del funcionamiento de la instalación**.
+
+Esto implica una diferencia importante: una interrupción de comunicaciones puede impedir temporalmente la **visualización remota** de los datos, pero no necesariamente debe significar la **pérdida de esos datos**.
+
+Con un historial suficientemente completo y confiable, es posible analizar cómo evolucionan determinadas variables, conocer tiempos de operación de equipos, identificar comportamientos repetitivos y detectar tendencias que serían difíciles de observar mediante inspecciones ocasionales.
+
+Así, la telemetría puede evolucionar desde una herramienta de supervisión hacia una fuente de información para **comprender mejor el comportamiento de la infraestructura y apoyar decisiones de operación y mantenimiento**.
+
+## La tecnología debe responder al proyecto
+
+No todas las instalaciones necesitan transmitir la misma cantidad de información ni requieren la misma arquitectura de comunicaciones.
+
+Las variables que deben medirse, la frecuencia con que deben transmitirse, la criticidad de las alarmas, la disponibilidad de comunicaciones y las condiciones del lugar deben analizarse antes de definir una solución.
+
+Incorporar tecnología solamente porque está disponible no necesariamente mejora una instalación.
+
+Una solución adecuada comienza identificando **qué necesitamos conocer, por qué necesitamos conocerlo y qué decisiones podremos tomar utilizando esa información**.
+
+En **ADDSYS** integramos ingeniería sanitaria, automatización, telemetría y tecnología buscando que cada sistema responda a las condiciones reales de operación y a las necesidades particulares de cada proyecto.`,
+
+  imagen: "/img_pub_4.png",
 
   destacada: false,
 },
