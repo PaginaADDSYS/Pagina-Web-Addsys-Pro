@@ -412,4 +412,163 @@ En **ADDSYS** integramos ingeniería sanitaria, automatización, telemetría y t
   destacada: false,
 },
 
+{
+  id: 5,
+
+  titulo:
+    "¿Qué es una planta de tratamiento de aguas servidas y cómo funciona?",
+
+  tituloSEO:
+    "Planta de tratamiento de aguas servidas: qué es y cómo funciona",
+
+  categoria: "ADDSYS Insights",
+
+  fecha: "20 de septiembre de 2026",
+
+  fechaISO: "2026-09-20",
+
+  fechaPublicacionISO: "2026-09-20T23:33:00-03:00",
+
+  tiempoLectura: "7 min",
+
+  resumen:
+    "Una planta de tratamiento de aguas servidas permite reducir la carga contaminante del agua antes de su descarga o reutilización. Conoce sus principales etapas, procesos y criterios generales de funcionamiento.",
+
+  contenido: `## ¿Qué es una planta de tratamiento de aguas servidas?
+
+Las aguas servidas contienen materia orgánica, sólidos, microorganismos y otros contaminantes que deben ser removidos o reducidos antes de que el agua pueda ser descargada al medio ambiente o destinada a determinados usos posteriores.
+
+Una **planta de tratamiento de aguas servidas**, también conocida como PTAS, es una instalación diseñada para recibir estas aguas y someterlas a diferentes procesos que permitan **mejorar su calidad y reducir su carga contaminante**.
+
+Aunque existen muchas tecnologías y configuraciones posibles, la mayoría de las plantas siguen una lógica similar: recibir el agua, separar los contaminantes, tratar la materia orgánica, retirar los sólidos generados y entregar un efluente con características compatibles con las exigencias del proyecto.
+
+## ¿Por qué es necesario tratar las aguas servidas?
+
+Las aguas servidas provenientes de viviendas, instalaciones comerciales, industrias u otras actividades pueden contener diferentes tipos de contaminantes.
+
+Entre ellos podemos encontrar **sólidos suspendidos, materia orgánica, grasas, nutrientes, microorganismos y otros compuestos** cuya presencia puede afectar cuerpos de agua, suelos o sistemas receptores.
+
+El tratamiento busca reducir estas cargas antes de la descarga.
+
+La calidad que debe alcanzar el agua tratada dependerá de distintos factores, como el lugar donde será descargada, su eventual reutilización y las exigencias sanitarias y ambientales aplicables al proyecto.
+
+Por esta razón, una planta no debe diseñarse solamente para recibir un determinado caudal. También es necesario comprender qué características tiene el **afluente**, es decir, el agua que ingresa a la planta, y qué calidad debe alcanzar el **efluente**, es decir, el agua que sale después del tratamiento.
+
+## ¿Qué ocurre cuando el agua entra a una PTAS?
+
+El tratamiento normalmente se desarrolla mediante distintas etapas.
+
+Primero se retiran aquellos elementos que podrían interferir con los procesos posteriores. Luego se reduce la materia orgánica y se separan los sólidos generados durante el tratamiento.
+
+Dependiendo de la solución implementada, pueden incorporarse además procesos de desinfección, eliminación de nutrientes u otros tratamientos complementarios.
+
+De manera simplificada, una planta puede considerar:
+
+**pretratamiento → tratamiento principal → separación de sólidos → desinfección o tratamiento complementario → descarga o reutilización.**
+
+Cada una de estas etapas cumple una función diferente y debe trabajar coordinadamente con las demás.
+
+## Pretratamiento: proteger el proceso que viene después
+
+Antes de comenzar el tratamiento principal es conveniente retirar aquellos materiales que pueden dañar equipos o afectar el funcionamiento de la planta.
+
+Para ello pueden utilizarse **rejas, tamices, cámaras de desarenado, separadores de grasas u otros sistemas de retención**.
+
+Estos elementos permiten remover sólidos gruesos, arenas, residuos y otros materiales que no deberían ingresar a etapas posteriores.
+
+El pretratamiento puede parecer una etapa simple, pero tiene una función importante: **proteger bombas, tuberías, equipos y procesos biológicos**, además de reducir problemas de operación y mantenimiento.
+
+## El tratamiento biológico
+
+Una parte importante de las aguas servidas corresponde a materia orgánica biodegradable.
+
+Para reducirla, muchas plantas utilizan procesos biológicos en los que microorganismos aprovechan esa materia como fuente de alimento.
+
+Para que estos procesos funcionen adecuadamente, deben mantenerse determinadas condiciones de operación, como disponibilidad de oxígeno cuando el proceso lo requiere, tiempo de contacto, concentración de biomasa y condiciones hidráulicas apropiadas.
+
+Existen diferentes tecnologías de tratamiento biológico.
+
+Entre ellas podemos encontrar sistemas de **lodos activados, aireación extendida, reactores de biomasa adherida, biodiscos o sistemas MBBR**, entre otras alternativas.
+
+No existe una tecnología universalmente mejor que otra. La solución debe seleccionarse considerando las características del agua, el caudal, las variaciones de carga, el espacio disponible, los requerimientos operacionales y los objetivos del tratamiento.
+
+## Separación de sólidos y clarificación
+
+Durante el tratamiento biológico se genera biomasa y otros sólidos que posteriormente deben separarse del agua.
+
+En muchas plantas esta separación se realiza mediante procesos de sedimentación, utilizando unidades donde los sólidos pueden decantar mientras el agua clarificada continúa hacia las etapas siguientes.
+
+Dependiendo de la tecnología empleada, la separación también puede realizarse mediante membranas u otros sistemas.
+
+El objetivo es obtener un **efluente** con una menor concentración de sólidos y disponer de una corriente separada que contiene los lodos generados durante el proceso.
+
+## Desinfección y calidad del efluente
+
+Una vez que se ha reducido la materia orgánica y se han separado los sólidos, puede ser necesario incorporar procesos adicionales.
+
+Uno de ellos es la **desinfección**, cuyo objetivo es reducir la presencia de microorganismos antes de la descarga o reutilización del agua.
+
+Para ello pueden emplearse distintas tecnologías, dependiendo de las condiciones del proyecto.
+
+En otros casos también puede ser necesario reducir nutrientes, mejorar la calidad física del efluente o incorporar etapas adicionales de tratamiento.
+
+Por esta razón, la salida de una PTAS no debe evaluarse solamente observando si el agua parece limpia. La calidad del **efluente** debe comprobarse mediante parámetros técnicos y controles definidos para cada instalación.
+
+## ¿Qué ocurre con los lodos?
+
+Una planta de tratamiento no solamente genera agua tratada.
+
+Como consecuencia de los procesos de separación y tratamiento biológico también se producen **lodos**, formados por sólidos retirados del agua, biomasa y otros materiales.
+
+Estos lodos deben ser almacenados, espesados, deshidratados, estabilizados o retirados de acuerdo con las características del sistema.
+
+Su manejo es una parte importante del diseño de una PTAS.
+
+Una planta que logra tratar correctamente el agua, pero no dispone de una estrategia adecuada para gestionar sus lodos, puede presentar importantes dificultades operacionales.
+
+Por esta razón, el tratamiento del agua y la gestión de lodos deben considerarse como partes de una misma solución.
+
+## ¿Una planta elevadora y una planta de tratamiento son lo mismo?
+
+No.
+
+Una **planta elevadora de aguas servidas** tiene como función principal recibir y bombear aguas servidas desde una cota inferior hacia otra superior, permitiendo continuar su transporte mediante tuberías o redes.
+
+Una **planta de tratamiento de aguas servidas**, en cambio, busca modificar la calidad del agua mediante procesos físicos, biológicos y, cuando corresponde, químicos.
+
+Ambas instalaciones pueden formar parte de un mismo sistema sanitario.
+
+Por ejemplo, una planta elevadora puede impulsar las aguas servidas hacia una PTAS ubicada a varios kilómetros de distancia.
+
+Si quieres profundizar en este tema, revisa nuestro artículo sobre plantas elevadoras de aguas servidas.
+
+## La operación es parte del tratamiento
+
+Una PTAS no termina de funcionar correctamente por el solo hecho de haber sido construida.
+
+Su desempeño depende también de la operación cotidiana, la mantención de equipos, el control de parámetros, la extracción de lodos y la capacidad de detectar condiciones anormales.
+
+Variables como caudal, niveles, estados de bombas, funcionamiento de sopladores, concentraciones de oxígeno u otros parámetros pueden ser monitoreadas para comprender mejor lo que ocurre dentro del proceso.
+
+En este punto, **automatización y telemetría pueden transformarse en herramientas importantes para apoyar la operación de una planta de tratamiento**.
+
+Permiten conocer estados de equipos, generar alarmas, almacenar información histórica y supervisar determinados procesos a distancia.
+
+## Cada planta debe responder a sus condiciones reales
+
+No todas las plantas de tratamiento deben tener la misma configuración.
+
+El caudal, la composición del agua, las variaciones diarias, las condiciones climáticas, el espacio disponible, el consumo energético, la capacidad de operación y mantenimiento y el destino final del efluente influyen directamente en la solución que debe implementarse.
+
+Por esta razón, seleccionar una tecnología solamente por su capacidad nominal o por haber funcionado correctamente en otra instalación puede no ser suficiente.
+
+Una solución adecuada comienza por comprender **qué características tiene el afluente, qué procesos necesita la planta y qué calidad debe alcanzar el efluente**.
+
+En **ADDSYS** abordamos los proyectos sanitarios integrando ingeniería, operación, automatización y tecnología, buscando que cada solución responda a las condiciones reales de funcionamiento y a las necesidades particulares de cada instalación.`,
+
+  imagen: "/img_pub_5.png",
+
+  destacada: false,
+},
+
 ];

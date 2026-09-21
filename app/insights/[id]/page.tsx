@@ -247,6 +247,56 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
+              if (
+                texto.startsWith(
+                  "Si quieres profundizar en este tema, revisa nuestro artículo sobre plantas elevadoras de aguas servidas",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Si quieres profundizar en este tema, revisa nuestro artículo
+                    sobre{" "}
+                    <Link
+                      href="/insights/2"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      plantas elevadoras de aguas servidas
+                    </Link>
+                    .
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
+                  "En este punto, **automatización y telemetría pueden transformarse",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    En este punto,{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización
+                    </Link>{" "}
+                    y{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría
+                    </Link>{" "}
+                    <strong className="font-semibold text-slate-900">
+                      pueden transformarse en herramientas importantes para
+                      apoyar la operación de una planta de tratamiento
+                    </strong>
+                    .
+                  </p>
+                );
+              }
+
               if (texto === "## ¿Qué encontrarás en ADDSYS Insights?") {
                 return (
                   <div key={index} className="mt-14">
