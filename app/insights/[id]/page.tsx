@@ -229,6 +229,27 @@ export default async function InsightPage({ params }: PageProps) {
 
               if (
                 texto.startsWith(
+                  "Si quieres conocer primero cómo funciona una planta en términos generales, revisa nuestro artículo sobre qué es una planta de tratamiento de aguas servidas y cómo funciona",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Si quieres conocer primero cómo funciona una planta en
+                    términos generales, revisa nuestro artículo sobre{" "}
+                    <Link
+                      href="/insights/5"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      qué es una planta de tratamiento de aguas servidas y cómo
+                      funciona
+                    </Link>
+                    .
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
                   "Si quieres profundizar en este tema, revisa nuestro artículo sobre telemetría en sistemas sanitarios",
                 )
               ) {
@@ -242,6 +263,36 @@ export default async function InsightPage({ params }: PageProps) {
                     >
                       telemetría en sistemas sanitarios
                     </Link>
+                    .
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
+                  "Por esta razón, la **automatización** y la **telemetría** pueden transformarse",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Por esta razón, la{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización
+                    </Link>{" "}
+                    y la{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría
+                    </Link>{" "}
+                    <strong className="font-semibold text-slate-900">
+                      pueden transformarse en herramientas importantes para
+                      apoyar la operación
+                    </strong>
                     .
                   </p>
                 );

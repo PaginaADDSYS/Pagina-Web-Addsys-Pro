@@ -571,4 +571,243 @@ En **ADDSYS** abordamos los proyectos sanitarios integrando ingeniería, operaci
   destacada: false,
 },
 
+{
+  id: 6,
+
+  titulo:
+    "¿Qué tipos de tratamiento existen para las aguas servidas?",
+
+  tituloSEO:
+    "Tratamiento de aguas servidas: tipos, procesos y tecnologías",
+
+  categoria: "ADDSYS Insights",
+
+  fecha: "28 de septiembre de 2026",
+
+  fechaISO: "2026-09-28",
+
+  fechaPublicacionISO: "2026-09-28T22:03:00-03:00",
+
+  tiempoLectura: "7 min",
+
+  resumen:
+    "Existen distintas tecnologías para tratar aguas servidas y no todas responden de la misma manera a cada proyecto. Conoce los principales procesos de tratamiento, sus funciones y los criterios que deben considerarse para seleccionar una solución adecuada.",
+
+  contenido: `## ¿Qué tipos de tratamiento existen para las aguas servidas?
+
+El tratamiento de aguas servidas puede realizarse mediante diferentes procesos y tecnologías, dependiendo de las características del agua que ingresa a la planta, el caudal, la carga contaminante, el espacio disponible, las condiciones de operación y la calidad que debe alcanzar el efluente.
+
+No existe una única forma de tratar las aguas servidas.
+
+En algunos proyectos puede ser suficiente una combinación relativamente simple de procesos físicos y biológicos. En otros, pueden requerirse sistemas más avanzados que permitan reducir nutrientes, sólidos, microorganismos u otros contaminantes específicos.
+
+Por esta razón, antes de seleccionar una tecnología es importante comprender qué función cumple cada etapa del tratamiento y cómo se relaciona con las demás.
+
+## El tratamiento se compone de diferentes etapas
+
+De manera general, una planta de tratamiento de aguas servidas puede incorporar varias etapas consecutivas.
+
+Estas pueden incluir:
+
+**pretratamiento → tratamiento primario → tratamiento biológico o secundario → tratamiento terciario → desinfección → descarga o reutilización.**
+
+No todas las plantas incorporan exactamente la misma secuencia.
+
+Algunas tecnologías integran varias funciones dentro de una misma unidad, mientras que otras utilizan procesos separados.
+
+Lo importante es que el sistema completo sea capaz de transformar el **afluente**, es decir, el agua que ingresa a la planta, en un **efluente** con características compatibles con los objetivos del proyecto.
+
+## Pretratamiento: retirar materiales que pueden generar problemas
+
+El pretratamiento constituye normalmente la primera barrera dentro de una planta.
+
+Su objetivo es remover aquellos elementos que podrían dañar equipos, obstruir tuberías o afectar las etapas posteriores del proceso.
+
+Para ello pueden utilizarse:
+
+**rejas, tamices, cámaras de desarenado, separadores de grasas y sistemas de retención de sólidos gruesos.**
+
+Estos procesos no buscan eliminar la mayor parte de la carga orgánica del agua.
+
+Su función principal es **proteger la infraestructura y facilitar el funcionamiento del tratamiento posterior**.
+
+Una adecuada etapa de pretratamiento puede reducir fallas en bombas, acumulación de residuos y problemas de mantenimiento.
+
+## Tratamiento primario: separar sólidos por medios físicos
+
+Después del pretratamiento, algunas plantas incorporan una etapa de tratamiento primario.
+
+En esta etapa se busca separar parte de los sólidos suspendidos mediante procesos físicos.
+
+Uno de los mecanismos más utilizados es la **sedimentación**, que permite que los sólidos con mayor densidad se depositen en el fondo de una unidad mientras el agua continúa hacia las etapas siguientes.
+
+También pueden utilizarse otros procesos de separación dependiendo de las características del agua.
+
+El tratamiento primario puede disminuir parte de la carga contaminante antes de que el agua ingrese al tratamiento biológico.
+
+## Tratamiento biológico o secundario
+
+Una parte importante de la contaminación presente en las aguas servidas corresponde a materia orgánica biodegradable.
+
+Para reducirla se utilizan procesos biológicos en los que microorganismos consumen o transforman esa materia.
+
+Esta etapa constituye uno de los componentes principales de muchas plantas de tratamiento.
+
+Existen diferentes tecnologías capaces de realizar esta función.
+
+## Lodos activados
+
+El sistema de **lodos activados** utiliza microorganismos suspendidos en el agua para degradar la materia orgánica.
+
+Normalmente el proceso considera una unidad de aireación donde se suministra oxígeno y posteriormente una etapa de separación de sólidos.
+
+Parte de la biomasa separada puede retornar al proceso para mantener una concentración adecuada de microorganismos.
+
+Este tipo de sistema puede ofrecer un tratamiento eficiente, pero requiere controlar distintas variables operacionales para mantener condiciones adecuadas para la biomasa.
+
+## Aireación extendida
+
+La **aireación extendida** corresponde a una variante de los procesos de lodos activados.
+
+Se caracteriza por utilizar tiempos de aireación mayores y operar generalmente con una menor carga orgánica respecto de otros sistemas convencionales.
+
+Este tipo de solución puede encontrarse en plantas de menor y mediana escala.
+
+Entre sus características se encuentra una operación biológica relativamente estable cuando el sistema se encuentra correctamente dimensionado y operado.
+
+Sin embargo, al igual que otros procesos aeróbicos, requiere energía para el suministro de aire y una adecuada gestión de los equipos de aireación.
+
+## Sistemas de biomasa adherida
+
+En otros procesos, los microorganismos no permanecen solamente suspendidos en el agua.
+
+También pueden crecer adheridos a superficies especialmente diseñadas para favorecer el desarrollo de biomasa.
+
+Dentro de esta categoría existen diferentes tecnologías.
+
+Un ejemplo son los **biodiscos**, donde la biomasa crece sobre superficies que rotan parcialmente sumergidas en el agua.
+
+Otra alternativa corresponde a sistemas de soporte fijo o móvil donde los microorganismos se desarrollan sobre un medio especialmente diseñado.
+
+## MBBR
+
+Los sistemas **MBBR**, o reactores biológicos de lecho móvil, utilizan pequeños soportes plásticos que se mantienen en movimiento dentro del reactor.
+
+Sobre estos elementos se desarrolla una película biológica que participa en la degradación de la materia orgánica.
+
+Una de las ventajas conceptuales de este sistema es que permite disponer de una elevada superficie para el crecimiento de microorganismos dentro de un volumen relativamente compacto.
+
+Sin embargo, su correcta aplicación requiere considerar aspectos hidráulicos, aireación, retención de los soportes y condiciones de operación.
+
+## Sistemas con membranas
+
+Existen también procesos que incorporan **membranas** para separar sólidos y microorganismos del agua tratada.
+
+Una de las tecnologías conocidas es el **MBR**, o reactor biológico con membranas.
+
+En estos sistemas, el proceso biológico se combina con una separación mediante membranas.
+
+Esto puede permitir obtener un efluente con baja concentración de sólidos suspendidos y una elevada calidad física.
+
+A cambio, estos sistemas pueden requerir mayores niveles de control, mantenimiento y consumo energético.
+
+Por esta razón, su utilización debe evaluarse considerando las condiciones reales del proyecto y los objetivos de tratamiento.
+
+## Tratamiento terciario o avanzado
+
+Después del tratamiento biológico pueden incorporarse procesos adicionales cuando se requiere mejorar aún más la calidad del efluente.
+
+Estos procesos suelen agruparse bajo el concepto de **tratamiento terciario** o tratamiento avanzado.
+
+Dependiendo de los objetivos del proyecto, pueden utilizarse para reducir:
+
+**sólidos remanentes, nutrientes, materia orgánica residual, color, turbidez u otros compuestos específicos.**
+
+Entre las alternativas pueden encontrarse procesos de filtración, tratamientos físico-químicos, sistemas de membranas u otras tecnologías especializadas.
+
+La necesidad de incorporar estas etapas dependerá principalmente de la calidad requerida para el efluente.
+
+## Eliminación de nutrientes
+
+En algunos sistemas puede ser necesario reducir compuestos como nitrógeno y fósforo.
+
+Estos nutrientes pueden tener efectos importantes sobre cuerpos de agua receptores cuando se encuentran en concentraciones elevadas.
+
+Su reducción puede realizarse mediante combinaciones de procesos biológicos y, en algunos casos, químicos.
+
+Para lograrlo es necesario controlar cuidadosamente las condiciones dentro de los reactores.
+
+Por esta razón, la eliminación de nutrientes normalmente requiere un diseño y una estrategia operacional más específicos.
+
+## Desinfección
+
+La desinfección tiene como objetivo reducir la presencia de microorganismos antes de la descarga o reutilización del agua tratada.
+
+Existen diferentes métodos para realizarla.
+
+Entre ellos pueden encontrarse sistemas basados en **cloración, radiación ultravioleta u otras tecnologías**.
+
+La alternativa más adecuada dependerá de factores como el caudal, la calidad del agua, el destino del efluente y las condiciones de operación.
+
+La desinfección no reemplaza las etapas anteriores del tratamiento.
+
+Su eficacia depende también de que el agua haya alcanzado previamente determinadas condiciones de calidad.
+
+## ¿Cuál es la mejor tecnología para tratar aguas servidas?
+
+No existe una tecnología que sea universalmente mejor para todos los proyectos.
+
+Una solución que funciona correctamente en una instalación puede no ser la más adecuada para otra.
+
+La selección debe considerar diferentes variables, entre ellas:
+
+**caudal de diseño, características del afluente, variaciones de carga, espacio disponible, consumo energético, facilidad de operación, disponibilidad de personal, generación de lodos y calidad requerida del efluente.**
+
+También debe evaluarse la capacidad de mantener y operar la instalación durante toda su vida útil.
+
+Una tecnología técnicamente avanzada puede transformarse en una mala solución si la instalación no cuenta con las condiciones necesarias para operarla correctamente.
+
+## La operación también define el resultado
+
+El desempeño de una planta no depende únicamente de la tecnología seleccionada.
+
+También depende de cómo se opera.
+
+Variables como niveles, caudales, aireación, estados de bombas, funcionamiento de sopladores, concentración de oxígeno y condiciones de los reactores pueden afectar directamente el tratamiento.
+
+Por esta razón, la **automatización** y la **telemetría** pueden transformarse en herramientas importantes para apoyar la operación.
+
+La automatización permite controlar equipos y secuencias de funcionamiento, mientras que la telemetría permite supervisar variables, alarmas y estados a distancia.
+
+Cuando estas herramientas se integran correctamente, pueden ayudar a mejorar la continuidad operacional y entregar información útil para comprender el comportamiento de la planta.
+
+## El tratamiento debe analizarse como un sistema completo
+
+Una planta de tratamiento no debe evaluarse observando solamente una tecnología o un equipo individual.
+
+El resultado final depende de cómo interactúan todas sus etapas.
+
+Un sistema puede disponer de un buen reactor biológico, pero presentar problemas si el pretratamiento es insuficiente.
+
+También puede lograr una adecuada reducción de materia orgánica y, sin embargo, tener dificultades si la separación de sólidos o la gestión de lodos no funcionan correctamente.
+
+Por esta razón, el tratamiento debe analizarse como un **sistema integrado**, donde cada proceso cumple una función y condiciona el desempeño de los siguientes.
+
+Si quieres conocer primero cómo funciona una planta en términos generales, revisa nuestro artículo sobre qué es una planta de tratamiento de aguas servidas y cómo funciona.
+
+## Cada proyecto requiere una solución propia
+
+Seleccionar un sistema de tratamiento implica mucho más que comparar capacidades nominales de diferentes equipos.
+
+Es necesario comprender las características del **afluente**, determinar la calidad requerida para el **efluente**, evaluar las condiciones reales de operación y considerar la sostenibilidad de la solución durante toda su vida útil.
+
+La tecnología debe adaptarse al proyecto y no el proyecto a una tecnología seleccionada previamente.
+
+En **ADDSYS** abordamos los sistemas sanitarios integrando ingeniería, operación, automatización y tecnología, buscando soluciones que respondan a las condiciones reales de cada instalación y puedan mantenerse de manera confiable en el tiempo.`,
+
+  imagen: "/img_pub_6.png",
+
+  destacada: false,
+},
+
 ];
