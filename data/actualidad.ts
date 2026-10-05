@@ -810,4 +810,215 @@ En **ADDSYS** abordamos los sistemas sanitarios integrando ingeniería, operaci�
   destacada: false,
 },
 
+{
+  id: 7,
+
+  titulo:
+    "¿Qué normativa sanitaria se debe considerar para diseñar instalaciones de agua potable y alcantarillado en Chile?",
+
+  tituloSEO:
+    "Normativa sanitaria en Chile: agua potable y alcantarillado",
+
+  categoria: "ADDSYS Insights",
+
+  fecha: "5 de octubre de 2026",
+
+  fechaISO: "2026-10-05",
+
+  fechaPublicacionISO: "2026-10-05T00:04:00-03:00",
+
+  tiempoLectura: "8 min",
+
+  resumen:
+    "Diseñar una instalación sanitaria en Chile implica mucho más que dimensionar tuberías. Conoce el marco normativo que regula los proyectos de agua potable y alcantarillado, el rol del RIDAA, la SISS, las empresas sanitarias y los principales antecedentes que deben considerarse antes de ejecutar una obra.",
+
+  contenido: `## ¿Qué normativa sanitaria se debe considerar en Chile?
+
+El diseño de instalaciones de agua potable y alcantarillado debe responder a criterios hidráulicos, constructivos y operacionales, pero también a un marco normativo que establece cómo deben proyectarse, construirse y ponerse en servicio estas instalaciones.
+
+En Chile, uno de los cuerpos normativos más importantes en esta materia es el **Reglamento de Instalaciones Domiciliarias de Agua Potable y de Alcantarillado**, conocido como **RIDAA**.
+
+Este reglamento establece disposiciones aplicables a los proyectos, construcción y puesta en servicio de instalaciones domiciliarias de agua potable y alcantarillado, además de requisitos técnicos que deben considerarse durante su desarrollo.
+
+Sin embargo, el RIDAA no debe analizarse de manera aislada.
+
+Dependiendo del proyecto, también pueden intervenir la Ley General de Servicios Sanitarios, normas chilenas, instrucciones de la Superintendencia de Servicios Sanitarios, disposiciones de la empresa sanitaria correspondiente y exigencias asociadas a urbanismo, construcción, salud u otras materias.
+
+## El RIDAA como referencia principal
+
+El RIDAA fue aprobado mediante el **Decreto Supremo MOP N.º 50 de 2002**.
+
+Su objetivo es regular los proyectos, la construcción y la puesta en servicio de las instalaciones domiciliarias de agua potable y alcantarillado en el territorio nacional.
+
+El reglamento define, entre otros conceptos, qué se entiende por:
+
+**instalación domiciliaria de agua potable, instalación domiciliaria de alcantarillado, arranque de agua potable, unión domiciliaria, conexión y empalme.**
+
+Estas definiciones son importantes porque permiten establecer claramente dónde comienza y dónde termina la responsabilidad de cada parte del sistema.
+
+Por ejemplo, la instalación domiciliaria de agua potable se desarrolla desde la salida de la llave de paso posterior al medidor —o desde un sistema propio de abastecimiento— hasta los artefactos del inmueble.
+
+En alcantarillado, la instalación domiciliaria comprende las obras desde los artefactos hasta la última cámara domiciliaria o hasta un sistema propio de disposición.
+
+## La factibilidad debe revisarse antes de diseñar
+
+Uno de los aspectos importantes del proceso es determinar si existen condiciones para entregar los servicios requeridos.
+
+El RIDAA establece que, **antes de elaborar un proyecto de instalación domiciliaria**, debe solicitarse al prestador sanitario el correspondiente certificado de factibilidad de agua potable o alcantarillado, según corresponda.
+
+Este antecedente puede definir condiciones relevantes para el proyecto.
+
+Entre ellas pueden encontrarse aspectos relacionados con la existencia de redes, puntos de conexión o empalme, condiciones de servicio y otros requerimientos asociados a la infraestructura disponible.
+
+Por esta razón, diseñar primero y revisar la factibilidad después puede generar modificaciones innecesarias o incluso obligar a replantear una solución.
+
+## El proyecto sanitario es más que un plano
+
+Un proyecto sanitario debe representar técnicamente la solución propuesta.
+
+El RIDAA contempla antecedentes como planos, especificaciones técnicas, materiales, procedimientos constructivos, tolerancias y pruebas que deberán cumplirse.
+
+Dependiendo de la magnitud y características del proyecto, puede ser necesario incorporar plantas, detalles, cortes, esquemas isométricos y otra información que permita comprender adecuadamente la instalación.
+
+Además, las instalaciones de agua potable y alcantarillado se representan de manera diferenciada, porque cada sistema posee condiciones hidráulicas, constructivas y operacionales propias.
+
+## Diseño de agua potable
+
+El diseño de una instalación de agua potable debe garantizar un suministro adecuado y preservar la calidad del agua.
+
+El RIDAA establece que el diseño y cálculo de estas instalaciones debe considerar las normas chilenas, instrucciones de la autoridad competente y las prácticas de ingeniería sanitaria aplicables.
+
+También exige que los materiales y la solución adoptada permitan asegurar un funcionamiento adecuado y durabilidad durante la vida útil prevista de la instalación.
+
+Desde el punto de vista de ingeniería, esto significa analizar aspectos como:
+
+**caudal, presión disponible, pérdidas de carga, diámetros, materiales, estanques, sistemas de presurización y condiciones de operación.**
+
+En algunos proyectos también puede ser necesario considerar equipos elevadores de presión o sistemas de almacenamiento.
+
+## Diseño de alcantarillado
+
+En alcantarillado, uno de los principales objetivos es permitir que las aguas servidas sean evacuadas de manera segura.
+
+Siempre que las condiciones lo permiten, el transporte gravitacional constituye una solución especialmente conveniente.
+
+Sin embargo, no todas las instalaciones pueden descargar por gravedad.
+
+Cuando determinadas zonas de una edificación no pueden evacuar por simple gravedad hacia el colector público, puede ser necesario considerar un sistema automático de elevación de aguas residuales.
+
+Este tipo de situación puede dar origen a una **planta elevadora de aguas servidas**, donde bombas y sistemas de control permiten transportar el agua hacia una cota desde la cual pueda continuar su conducción.
+
+## Conexión, empalme y recepción
+
+El proceso no termina cuando el proyecto está diseñado.
+
+El RIDAA contempla distintas etapas administrativas y técnicas, entre ellas:
+
+**factibilidad → presentación del proyecto → inicio de obras → autorización de conexión o empalme → certificación de las instalaciones.**
+
+Esto refuerza una idea importante: una obra sanitaria no debe analizarse únicamente como una instalación construida, sino como un sistema que debe cumplir condiciones técnicas y administrativas para poder ponerse correctamente en servicio.
+
+## ¿Qué rol cumple la SISS?
+
+La **Superintendencia de Servicios Sanitarios**, conocida como **SISS**, cumple funciones de fiscalización dentro del sector sanitario.
+
+Dentro de su ámbito de competencia, participa en la supervisión del cumplimiento de disposiciones legales, reglamentarias y técnicas aplicables a los servicios sanitarios.
+
+Por esta razón, las instrucciones y criterios técnicos asociados al sector también pueden ser relevantes durante el desarrollo de un proyecto.
+
+## ¿Qué rol cumple la empresa sanitaria?
+
+Cuando el proyecto se encuentra dentro del área atendida por una empresa concesionaria, esta participa en diferentes etapas del proceso.
+
+Entre ellas puede encontrarse la entrega de antecedentes de factibilidad, revisión de proyectos, autorización de conexión o empalme y certificación de las instalaciones, de acuerdo con el procedimiento que corresponda.
+
+La empresa sanitaria no reemplaza al proyectista.
+
+El proyectista debe desarrollar una solución técnicamente adecuada y compatible con las condiciones existentes, mientras que el prestador verifica aquellos aspectos que le corresponden dentro de la relación con sus redes y servicios.
+
+## ¿Todas las instalaciones se rigen exactamente por las mismas reglas?
+
+No necesariamente.
+
+Una instalación domiciliaria conectada a redes públicas no presenta exactamente las mismas condiciones que un sistema particular de abastecimiento o disposición.
+
+Tampoco son iguales los requerimientos de una vivienda, un edificio, una instalación industrial, una urbanización o una infraestructura sanitaria de mayor escala.
+
+Además, dependiendo del proyecto, pueden intervenir otras exigencias asociadas a:
+
+**urbanismo, construcción, salud, medio ambiente, aguas lluvias, vialidad, instalaciones eléctricas, reutilización de aguas o intervención de bienes nacionales de uso público.**
+
+Por esta razón, identificar correctamente el tipo de proyecto es una de las primeras tareas que deben realizarse antes de determinar qué normativa resulta aplicable.
+
+## Las normas técnicas también forman parte del diseño
+
+El RIDAA no funciona de manera completamente independiente de otras referencias técnicas.
+
+El propio reglamento establece que el diseño debe considerar normas chilenas, instrucciones de la autoridad competente y prácticas de ingeniería sanitaria.
+
+Esto significa que la revisión normativa no debería limitarse a buscar un único decreto.
+
+Un proyecto puede requerir consultar distintas normas y especificaciones dependiendo de sus materiales, equipos, condiciones hidráulicas, sistemas de bombeo y características constructivas.
+
+## Los materiales también deben cumplir exigencias
+
+Los materiales utilizados en instalaciones sanitarias no deberían seleccionarse solamente por costo o disponibilidad.
+
+El RIDAA contempla requisitos aplicables a los materiales y productos empleados en instalaciones domiciliarias, vinculándolos con normas o especificaciones técnicas correspondientes.
+
+Esto es especialmente relevante porque una instalación puede estar correctamente calculada y, sin embargo, presentar problemas si utiliza materiales inadecuados o incompatibles con las condiciones de servicio.
+
+## Construcción y pruebas
+
+El cumplimiento normativo tampoco termina con el diseño.
+
+Durante la construcción deben respetarse las especificaciones del proyecto y las disposiciones técnicas aplicables.
+
+También deben realizarse las pruebas y verificaciones correspondientes antes de la puesta en servicio.
+
+Estas pruebas permiten comprobar que la instalación construida responde efectivamente a las condiciones definidas en el proyecto.
+
+## Una buena ingeniería comienza antes del cálculo
+
+Uno de los errores más comunes en proyectos sanitarios es comenzar inmediatamente a dimensionar tuberías o seleccionar equipos.
+
+Antes de eso conviene responder algunas preguntas básicas:
+
+**¿Existe factibilidad de servicio?**
+
+**¿Dónde se realizará la conexión o el empalme?**
+
+**¿El sistema puede operar por gravedad?**
+
+**¿Será necesario bombear?**
+
+**¿Qué normativa corresponde aplicar?**
+
+**¿Quién deberá revisar o recibir las obras?**
+
+Estas preguntas pueden modificar completamente la solución técnica.
+
+## Normativa y operación deben analizarse juntas
+
+Cumplir con una norma es una condición necesaria, pero no garantiza por sí sola que una instalación vaya a operar correctamente durante toda su vida útil.
+
+Una solución sanitaria también debe considerar mantenimiento, accesibilidad, continuidad operacional, reposición de equipos y capacidad de supervisión.
+
+En sistemas que incorporan bombas, estanques, plantas elevadoras u otros equipos electromecánicos, la **automatización** y la **telemetría** pueden complementar la ingeniería sanitaria mediante control, alarmas y supervisión de las condiciones de funcionamiento.
+
+## Cada proyecto debe revisar su normativa específica
+
+No existe una lista única y cerrada de normas que pueda aplicarse automáticamente a todos los proyectos sanitarios.
+
+El **RIDAA** constituye una referencia central para instalaciones domiciliarias, pero las exigencias concretas deben determinarse de acuerdo con el tipo de obra, su ubicación, la infraestructura existente y las características particulares del proyecto.
+
+Por esta razón, una revisión normativa adecuada debe realizarse desde las primeras etapas de ingeniería y mantenerse durante el desarrollo del proyecto.
+
+En **ADDSYS** abordamos los proyectos sanitarios integrando diseño, normativa, operación y tecnología, buscando que cada solución pueda construirse, ponerse en servicio y operar de manera confiable bajo las condiciones reales de cada instalación.`,
+
+  imagen: "/img_pub_7.png",
+
+  destacada: false,
+},
+
 ];

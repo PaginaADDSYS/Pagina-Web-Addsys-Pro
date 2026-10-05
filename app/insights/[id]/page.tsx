@@ -229,6 +229,56 @@ export default async function InsightPage({ params }: PageProps) {
 
               if (
                 texto.startsWith(
+                  "Este tipo de situación puede dar origen a una **planta elevadora de aguas servidas**",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Este tipo de situación puede dar origen a una{" "}
+                    <Link
+                      href="/insights/2"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      planta elevadora de aguas servidas
+                    </Link>
+                    , donde bombas y sistemas de control permiten transportar el
+                    agua hacia una cota desde la cual pueda continuar su
+                    conducción.
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
+                  "En sistemas que incorporan bombas, estanques, plantas elevadoras u otros equipos electromecánicos",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    En sistemas que incorporan bombas, estanques, plantas
+                    elevadoras u otros equipos electromecánicos, la{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización
+                    </Link>{" "}
+                    y la{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría
+                    </Link>{" "}
+                    pueden complementar la ingeniería sanitaria mediante
+                    control, alarmas y supervisión de las condiciones de
+                    funcionamiento.
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
                   "Si quieres conocer primero cómo funciona una planta en términos generales, revisa nuestro artículo sobre qué es una planta de tratamiento de aguas servidas y cómo funciona",
                 )
               ) {
