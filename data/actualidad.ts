@@ -1021,4 +1021,411 @@ En **ADDSYS** abordamos los proyectos sanitarios integrando diseño, normativa, 
   destacada: false,
 },
 
+{
+  id: 8,
+
+  titulo:
+    "¿Qué permisos se requieren para ejecutar obras sanitarias en vía pública?",
+
+  tituloSEO:
+    "Permisos para obras sanitarias en vía pública en Chile",
+
+  categoria: "ADDSYS Insights",
+
+  fecha: "10 de octubre de 2026",
+
+  fechaISO: "2026-10-10",
+
+  fechaPublicacionISO: "2026-10-10T12:55:00-03:00",
+
+  tiempoLectura: "10 min",
+
+  resumen:
+    "Ejecutar una obra sanitaria en una calle, vereda o faja vial requiere coordinar aspectos técnicos, administrativos y de seguridad. Conoce qué permisos pueden intervenir, qué antecedentes suelen exigir las distintas instituciones y cuál es el camino habitual hasta la recepción final de la obra.",
+
+  contenido: `## ¿Qué permisos se requieren para ejecutar obras sanitarias en vía pública?
+
+Ejecutar una obra sanitaria en una calle, vereda, calzada o camino público requiere mucho más que definir una excavación y comenzar los trabajos.
+
+Antes de intervenir el espacio público es necesario determinar **quién administra la vía**, qué organismos deben revisar el proyecto, qué permisos sectoriales corresponden y qué condiciones deberán cumplirse durante la ejecución y reposición.
+
+No existe un único permiso aplicable a todas las obras.
+
+El procedimiento dependerá del tipo de infraestructura, del lugar donde se realizará la intervención y de la institución responsable del espacio afectado.
+
+En términos generales, pueden intervenir organismos como la **Municipalidad, SERVIU, la Dirección de Vialidad, organismos relacionados con tránsito, empresas de servicios, administradores ferroviarios, concesionarias viales y propietarios privados**.
+
+## Intervenir una vía pública no es solamente romper pavimento
+
+Cuando una obra sanitaria atraviesa una calle o utiliza parte de una vereda, calzada o faja vial, se está interviniendo un bien nacional de uso público o un espacio sujeto a determinadas condiciones de administración.
+
+Esto significa que una obra puede encontrarse técnicamente bien diseñada y, sin embargo, no estar autorizada para ejecutarse mientras no se obtengan los permisos correspondientes.
+
+Por esta razón, la factibilidad de una obra sanitaria no debe analizarse solamente desde el punto de vista hidráulico.
+
+También debe analizarse desde el punto de vista **territorial, administrativo y jurídico**.
+
+## Lo primero es identificar quién administra la vía
+
+Antes de preparar una solicitud es necesario determinar qué tipo de vía o terreno será intervenido.
+
+Este punto puede cambiar completamente el procedimiento.
+
+Si se trata de una calle urbana, puede existir participación municipal y de SERVIU cuando sea necesario romper y reponer pavimentos.
+
+Si la obra se ejecuta dentro de la faja de un camino público administrado por la Dirección de Vialidad, debe utilizarse el procedimiento correspondiente para paralelismos o atraviesos.
+
+También puede ocurrir que el trazado interfiera con una concesión vial, una vía férrea, terrenos ferroviarios o predios privados.
+
+Por esta razón, una de las primeras preguntas debería ser:
+
+**¿Quién administra o es propietario del terreno por donde queremos ejecutar la obra?**
+
+## La solución sanitaria debe estar definida antes de tramitar
+
+Antes de solicitar permisos debe existir una solución suficientemente desarrollada para saber qué se quiere ejecutar.
+
+Esto normalmente implica definir aspectos como:
+
+**trazado, diámetro de tuberías, profundidades, cámaras, conexiones, cruces, puntos de empalme, método constructivo, superficie a intervenir y reposiciones necesarias.**
+
+También es importante identificar instalaciones existentes que puedan interferir con la obra.
+
+En proyectos conectados a redes sanitarias, normalmente deben estar resueltos además los antecedentes técnicos relacionados con la conexión, empalme o condiciones definidas por la empresa sanitaria.
+
+Sin esta información resulta difícil determinar correctamente qué permisos serán necesarios.
+
+## SERVIU y la rotura y reposición de pavimentos
+
+Cuando una obra requiere intervenir pavimentos urbanos, puede ser necesario obtener el correspondiente permiso de rotura y reposición de pavimentos de SERVIU.
+
+Dependiendo de la región y características de la intervención, pueden exigirse antecedentes del proyecto, superficies afectadas, características de la reposición y documentación del contratista autorizado para ejecutar este tipo de trabajos.
+
+Este permiso puede constituir además un antecedente necesario para continuar posteriormente con la autorización municipal de intervención del bien nacional de uso público.
+
+Esto establece un principio importante:
+
+**los permisos deben tramitarse en un orden lógico, porque algunas instituciones solicitan como antecedente autorizaciones emitidas previamente por otros organismos.**
+
+## ¿Qué ocurre si la obra afecta un camino administrado por Vialidad?
+
+Cuando una tubería debe desarrollarse longitudinalmente dentro de una faja vial o cruzar transversalmente un camino público administrado por la Dirección de Vialidad, el procedimiento es diferente.
+
+En estos casos puede requerirse un permiso de ocupación de faja vial para un paralelismo o atravieso.
+
+De manera general, este proceso contempla distintas etapas:
+
+**factibilidad del emplazamiento → aprobación del proyecto de ingeniería → autorización para construir → recepción de la obra ejecutada.**
+
+Cada etapa debe resolverse antes de avanzar a la siguiente.
+
+## Factibilidad del emplazamiento
+
+Primero debe analizarse si el trazado propuesto puede desarrollarse dentro de la faja vial.
+
+Normalmente se requiere identificar claramente la ubicación de la intervención, el camino afectado, el sector, kilometraje y características generales de la obra.
+
+Si el emplazamiento resulta técnicamente aceptable, pueden establecerse condiciones que posteriormente deberán incorporarse al proyecto de ingeniería.
+
+Por esta razón, no conviene desarrollar completamente un proyecto de atravieso antes de confirmar que su ubicación puede ser aceptada.
+
+## Aprobación del proyecto de ingeniería
+
+Una vez definida la factibilidad del emplazamiento, debe desarrollarse el proyecto de detalle.
+
+En esta etapa pueden revisarse aspectos relacionados con:
+
+**profundidades, protecciones, cruces, distancias, estabilidad, método constructivo, interferencias, cámaras y condiciones de seguridad de la infraestructura vial.**
+
+El proyecto debe responder tanto a las necesidades sanitarias como a las condiciones establecidas por la administración del camino.
+
+## Autorización para construir
+
+Tener aprobado el proyecto no significa necesariamente que la construcción pueda comenzar de inmediato.
+
+Antes del inicio de los trabajos pueden requerirse antecedentes adicionales como:
+
+**solicitud de ocupación, garantías, plan de señalización, programa de trabajo y coordinación con la inspección correspondiente.**
+
+Solo una vez completadas las autorizaciones de ejecución debería iniciarse la intervención.
+
+## Recepción de la obra
+
+Terminados los trabajos puede ser necesario solicitar formalmente la recepción.
+
+En esta etapa pueden exigirse planos conforme a obra, certificados de materiales, antecedentes de compactación y otros documentos que permitan demostrar que la construcción se ejecutó de acuerdo con lo aprobado.
+
+Esto demuestra que el permiso no termina cuando se autoriza la excavación.
+
+**La recepción final también forma parte del procedimiento.**
+
+## Señalización y seguridad durante los trabajos
+
+Toda intervención que afecte la circulación vehicular o peatonal debe considerar medidas de seguridad.
+
+Dependiendo del tipo de vía y de la comuna, pueden requerirse antecedentes asociados a:
+
+**señalización temporal, cierres parciales, desvíos, control de tránsito, protección de peatones y delimitación de la zona de trabajo.**
+
+En determinadas situaciones también puede ser necesaria la revisión de organismos relacionados con tránsito antes de autorizar la intervención.
+
+La señalización no debe entenderse solamente como una exigencia administrativa.
+
+Forma parte de la seguridad de trabajadores, peatones y usuarios de la vía.
+
+## ¿Qué pide una Municipalidad?
+
+Las exigencias exactas dependen de cada comuna.
+
+Para solicitar la ocupación o rotura de un bien nacional de uso público, una Municipalidad puede solicitar antecedentes como fotografías del lugar, superficie a intervenir, plazo solicitado y permisos sectoriales previamente obtenidos.
+
+Cuando existe rotura de pavimentos, puede ser necesario acompañar la autorización de SERVIU.
+
+Si la intervención afecta una calzada, pueden solicitarse además antecedentes relacionados con tránsito y señalización.
+
+También pueden requerirse certificados o información de empresas de servicios existentes para verificar interferencias.
+
+Esto muestra por qué el permiso municipal normalmente no debe entenderse como el primer trámite.
+
+En muchos casos, la Municipalidad espera que determinadas autorizaciones sectoriales ya hayan sido obtenidas.
+
+## Interferencias especiales que pueden cambiar completamente el proyecto
+
+Además de calles, veredas, pavimentos y caminos públicos, una obra sanitaria puede encontrarse con otras restricciones territoriales que no siempre son evidentes durante las primeras etapas.
+
+Entre ellas pueden aparecer:
+
+**vías férreas, terrenos ferroviarios, concesiones viales, predios privados, instalaciones de otros servicios o franjas sujetas a derechos de terceros.**
+
+Estas interferencias deben identificarse desde el comienzo, porque pueden requerir autorizaciones adicionales y, en algunos casos, modificar completamente el trazado inicialmente pensado.
+
+## Cruces o paralelismos con ferrocarriles
+
+Una situación especialmente sensible ocurre cuando una tubería debe cruzar o desarrollarse próxima a infraestructura ferroviaria.
+
+Esto puede ocurrir tanto en zonas urbanas como rurales.
+
+Incluso una línea férrea que aparentemente se encuentre en desuso no debería asumirse automáticamente como un terreno disponible para intervenir.
+
+Puede seguir existiendo una faja ferroviaria, infraestructura bajo administración de una empresa ferroviaria o restricciones asociadas a la propiedad del terreno.
+
+Por esta razón, cuando el trazado se aproxima o cruza un corredor ferroviario, es necesario identificar al propietario o administrador y gestionar previamente las autorizaciones que correspondan.
+
+Este análisis debe realizarse antes de cerrar definitivamente el trazado del proyecto.
+
+## Concesiones viales
+
+También pueden existir caminos o autopistas cuya explotación y administración se encuentre asociada a una concesión vial.
+
+En esos casos, no siempre basta con revisar solamente la intervención con los organismos públicos relacionados con la vía.
+
+Puede ser necesario coordinar técnicamente la solución con la **sociedad concesionaria** y con la autoridad sectorial correspondiente.
+
+Esto es especialmente relevante cuando se proyectan atraviesos, paralelismos, excavaciones o trabajos que puedan afectar la infraestructura concesionada.
+
+Aquí nuevamente es fundamental identificar esta condición durante la etapa de ingeniería y no cuando la obra ya está adjudicada o próxima a ejecutarse.
+
+## Predios privados y servidumbres de paso
+
+Otra situación frecuente aparece cuando el trazado técnicamente conveniente requiere atravesar un terreno de propiedad privada.
+
+En ese caso, disponer de un buen proyecto hidráulico no significa necesariamente que exista derecho para construir la tubería.
+
+Puede ser necesario obtener previamente una autorización del propietario o constituir una **servidumbre de paso o servidumbre para las instalaciones correspondientes**, según la naturaleza del proyecto y el marco jurídico aplicable.
+
+Por esta razón, la disponibilidad jurídica del terreno también debe considerarse como una condición de factibilidad.
+
+## El trazado técnicamente más corto no siempre es el mejor
+
+Este punto es especialmente importante para inmobiliarias, constructoras y mandantes.
+
+Un trazado puede parecer óptimo desde el punto de vista hidráulico porque es más corto, requiere menos profundidad, reduce cantidad de tubería o permite llegar directamente al punto de conexión.
+
+Sin embargo, si ese trazado atraviesa una vía férrea, una concesión vial o un predio privado sin autorización disponible, la solución puede volverse **más lenta, más costosa o incluso inviable**.
+
+Por eso conviene analizar desde el comienzo no solo:
+
+**¿Por dónde conviene pasar la tubería?**
+
+sino también:
+
+**¿Tenemos derecho y autorización para construir por ahí?**
+
+Este análisis puede evitar desarrollar una ingeniería completa sobre un trazado que posteriormente deba descartarse.
+
+## ¿Cuál es entonces el camino para autorizar una obra sanitaria?
+
+Aunque el procedimiento puede variar según la comuna, la vía y las instituciones involucradas, una secuencia práctica puede resumirse de la siguiente manera.
+
+Primero debe desarrollarse una **ingeniería preliminar** que permita comprender qué obra se necesita ejecutar.
+
+Después debe realizarse una **revisión territorial y de interferencias**, identificando calles, caminos, ferrocarriles, concesiones, predios privados y redes existentes.
+
+Con esa información puede determinarse quién administra o es propietario de cada sector afectado.
+
+Luego debe definirse un **trazado realmente factible**, considerando tanto la ingeniería sanitaria como la posibilidad efectiva de obtener las autorizaciones necesarias.
+
+Posteriormente pueden tramitarse los **permisos sectoriales**, autorizaciones de SERVIU, Vialidad, administradores ferroviarios, concesionarias, empresas de servicios y, cuando corresponda, servidumbres sobre terrenos privados.
+
+A continuación deben resolverse las condiciones asociadas a **tránsito y señalización**.
+
+Con estos antecedentes puede solicitarse la autorización municipal para ocupación o rotura del bien nacional de uso público cuando corresponda.
+
+Solo después deberían iniciarse las obras.
+
+Terminada la construcción deben realizarse las reposiciones, inspecciones y recepciones correspondientes.
+
+En forma resumida:
+
+**ingeniería preliminar → revisión territorial e interferencias → identificación de propietarios y administradores → definición del trazado factible → permisos sectoriales y servidumbres → tránsito y señalización → autorización municipal → ejecución → reposición → recepciones finales.**
+
+## ¿Qué suele revisar cada institución?
+
+La empresa sanitaria revisa principalmente la compatibilidad del proyecto con sus redes, condiciones de factibilidad, conexiones, empalmes y posteriormente las condiciones necesarias para recibir la infraestructura sanitaria.
+
+SERVIU puede intervenir en materias asociadas a rotura y reposición de pavimentos urbanos.
+
+La Dirección de Vialidad revisa los paralelismos y atraviesos que afectan caminos y fajas viales bajo su administración.
+
+Los organismos relacionados con tránsito revisan las condiciones necesarias para mantener una circulación segura durante las obras.
+
+La Municipalidad o Dirección de Obras Municipales puede revisar la ocupación o rotura del bien nacional de uso público y exigir los permisos sectoriales correspondientes.
+
+Los administradores ferroviarios pueden revisar cruces o paralelismos que afecten terrenos o infraestructura ferroviaria.
+
+Las concesionarias viales pueden intervenir cuando la obra afecta infraestructura concesionada.
+
+Los propietarios privados deben autorizar la utilización de terrenos particulares o participar en la constitución de las servidumbres necesarias.
+
+Por esta razón, el mapa de autorizaciones debe construirse específicamente para cada proyecto.
+
+## La reposición también forma parte de la obra sanitaria
+
+Un error común es considerar que la obra termina cuando la tubería ya está instalada.
+
+En realidad, cuando se interviene el espacio público también debe restituirse adecuadamente lo que fue afectado.
+
+Esto puede incluir:
+
+**rellenos compactados, bases, pavimentos, aceras, soleras, áreas verdes y otros elementos urbanos.**
+
+Una reposición deficiente puede generar asentamientos, deterioro del pavimento, problemas de seguridad y futuras reparaciones.
+
+Por esta razón, la metodología de reposición debe considerarse desde la etapa de proyecto y no solamente después de terminar la excavación.
+
+## Las interferencias deben revisarse antes de excavar
+
+Las calles concentran una gran cantidad de infraestructura.
+
+Bajo una misma calzada o vereda pueden existir redes de agua potable, alcantarillado, gas, electricidad, telecomunicaciones y aguas lluvias.
+
+También pueden existir estructuras, canalizaciones o instalaciones que no sean evidentes a simple vista.
+
+Iniciar una excavación sin revisar previamente estas interferencias puede generar riesgos importantes.
+
+Además de afectar otros servicios, una interferencia no detectada puede obligar a modificar el trazado, profundidad o incluso el método constructivo durante la ejecución.
+
+## No siempre es necesario abrir completamente la calzada
+
+Dependiendo del proyecto, pueden evaluarse métodos constructivos que reduzcan la intervención superficial.
+
+En determinados casos es posible considerar atraviesos mediante perforación u otros sistemas sin zanja.
+
+Sin embargo, utilizar una tecnología de este tipo no elimina automáticamente la necesidad de permisos.
+
+La solución debe seguir siendo revisada y autorizada por las instituciones correspondientes.
+
+## La secuencia de permisos importa
+
+Solicitar autorizaciones en un orden incorrecto puede generar retrasos importantes.
+
+Por ejemplo, una Municipalidad puede pedir como antecedente una autorización sectorial que todavía no ha sido obtenida.
+
+También puede ocurrir que un permiso ferroviario, una autorización de concesionaria o una servidumbre modifiquen las condiciones bajo las cuales había sido desarrollado el proyecto.
+
+Por eso es recomendable definir el **mapa completo de permisos antes de iniciar la tramitación**.
+
+Esto permite saber qué documentos dependen de otros y evita desarrollar antecedentes que luego deban modificarse.
+
+## La recepción sanitaria puede condicionar la recepción municipal
+
+En muchos proyectos, obtener los permisos para ejecutar la obra no es suficiente.
+
+Una vez terminada la infraestructura sanitaria, la empresa sanitaria debe realizar las revisiones, inspecciones y recepciones que correspondan antes de emitir los certificados asociados a la correcta ejecución y dotación del servicio.
+
+Esto es especialmente relevante cuando parte de la infraestructura construida quedará posteriormente incorporada o vinculada a las redes operadas por la empresa sanitaria.
+
+Por esta razón, es habitual que durante el proceso de recepción se solicite acreditar que las obras fueron ejecutadas contando con los permisos y autorizaciones correspondientes.
+
+Esto puede incluir, según el proyecto:
+
+**permisos de rotura y reposición de pavimentos, autorizaciones municipales, permisos de Vialidad, autorizaciones ferroviarias, permisos de concesionarias, servidumbres y otros antecedentes asociados al trazado de las redes.**
+
+La razón es práctica.
+
+Una infraestructura puede quedar posteriormente bajo operación o administración de la empresa sanitaria, por lo que recibir una obra ejecutada sin las autorizaciones necesarias podría trasladar hacia el operador problemas administrativos, jurídicos o de mantención que deberían haber sido resueltos durante la ejecución.
+
+## Saltarse un permiso puede aparecer como problema al final
+
+Durante la construcción puede ocurrir que una obra avance físicamente sin que todos los permisos hayan sido obtenidos.
+
+Desde el punto de vista del proyecto, esto puede generar una falsa sensación de que el problema ya está resuelto: la tubería está instalada, la calle está repuesta y la obra aparentemente está terminada.
+
+Sin embargo, el problema puede aparecer durante la recepción.
+
+Si la empresa sanitaria exige comprobar las autorizaciones asociadas a la obra y falta alguno de estos antecedentes, puede no estar en condiciones de recibir la infraestructura o emitir el certificado correspondiente.
+
+Esto puede generar una cadena de consecuencias:
+
+**permiso faltante → observación de la sanitaria → imposibilidad de cerrar la recepción sanitaria → falta de certificado de dotación → dificultad para obtener la recepción definitiva municipal.**
+
+Por esta razón, una inmobiliaria o constructora que omite una autorización durante la ejecución puede descubrir el problema cuando el proyecto ya se encuentra próximo a ser entregado.
+
+En ese momento, regularizar un atravieso ferroviario, una ocupación de faja vial, una servidumbre o una intervención de pavimento puede ser considerablemente más complejo que haberlo previsto antes de construir.
+
+## La recepción debe pensarse desde el inicio del proyecto
+
+Una buena planificación no debería preguntarse solamente:
+
+**¿Qué permisos necesito para construir?**
+
+También debería preguntarse:
+
+**¿Qué antecedentes me van a exigir para que la sanitaria reciba la obra y para que posteriormente la DOM pueda otorgar la recepción definitiva?**
+
+Ese cambio de enfoque es importante.
+
+El objetivo no es simplemente terminar físicamente una obra sanitaria, sino completar todo el ciclo:
+
+**proyectar → autorizar → construir → reponer → recibir sanitariamente → obtener certificados → cerrar la recepción municipal.**
+
+Una obra técnicamente terminada no necesariamente es una obra administrativamente recibible.
+
+## El procedimiento puede variar entre comunas y proyectos
+
+No todas las municipalidades utilizan exactamente los mismos formularios, antecedentes ni mecanismos de ingreso.
+
+Tampoco todas las obras tienen las mismas interferencias o requieren las mismas autorizaciones.
+
+Por esta razón, la secuencia descrita debe entenderse como una estructura general.
+
+Antes de iniciar un proyecto debe confirmarse con la Municipalidad, SERVIU, Dirección de Vialidad, empresa sanitaria, administrador ferroviario, concesionaria o institución correspondiente cuáles son los requisitos aplicables al caso específico.
+
+## Una obra sanitaria comienza mucho antes de la excavación
+
+La ejecución en terreno es solamente una parte del proyecto.
+
+Antes de que llegue una excavadora deberían haberse resuelto aspectos como:
+
+**ingeniería, interferencias, propiedad de los terrenos, permisos, servidumbres, seguridad, señalización, metodología constructiva, plazos, reposiciones y condiciones de recepción.**
+
+Cuando estas materias se analizan desde el principio, la obra puede ejecutarse con mayor control y con menos posibilidades de enfrentar detenciones, modificaciones de trazado o dificultades durante la recepción.
+
+En **ADDSYS** abordamos las obras sanitarias integrando ingeniería, coordinación técnica, tramitación y ejecución en terreno, considerando desde las primeras etapas las condiciones reales del proyecto y las exigencias necesarias para que la solución pueda no solo construirse, sino también ser correctamente recibida y puesta en servicio.`,
+
+  imagen: "/img_pub_8.png",
+
+  destacada: false,
+},
+
 ];

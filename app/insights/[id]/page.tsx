@@ -279,6 +279,30 @@ export default async function InsightPage({ params }: PageProps) {
 
               if (
                 texto.startsWith(
+                  "Antes de iniciar un proyecto debe confirmarse con la Municipalidad, SERVIU, Dirección de Vialidad",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Antes de iniciar un proyecto debe confirmarse con la
+                    Municipalidad, SERVIU, Dirección de Vialidad, empresa
+                    sanitaria, administrador ferroviario, concesionaria o
+                    institución correspondiente cuáles son los requisitos
+                    aplicables al caso específico. Para profundizar en el marco
+                    general, revisa nuestro artículo sobre{" "}
+                    <Link
+                      href="/insights/7"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      normativa sanitaria en Chile
+                    </Link>
+                    .
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
                   "Si quieres conocer primero cómo funciona una planta en términos generales, revisa nuestro artículo sobre qué es una planta de tratamiento de aguas servidas y cómo funciona",
                 )
               ) {
