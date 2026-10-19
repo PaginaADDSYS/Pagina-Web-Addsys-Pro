@@ -279,6 +279,88 @@ export default async function InsightPage({ params }: PageProps) {
 
               if (
                 texto.startsWith(
+                  "En Chile, el diseño de las instalaciones domiciliarias de agua potable y alcantarillado",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    En Chile, el diseño de las instalaciones domiciliarias de
+                    agua potable y alcantarillado se encuentra regulado por el{" "}
+                    <Link
+                      href="/insights/7"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      Reglamento de Instalaciones Domiciliarias de Agua Potable
+                      y Alcantarillado (RIDAA)
+                    </Link>
+                    .
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
+                  "Una **planta elevadora de aguas servidas** recibe y bombea aguas residuales",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Una{" "}
+                    <Link
+                      href="/insights/2"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      planta elevadora de aguas servidas
+                    </Link>{" "}
+                    recibe y bombea aguas residuales cuando estas no pueden
+                    desplazarse gravitacionalmente hacia el punto de descarga.
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
+                  "La automatización permite además establecer secuencias de funcionamiento",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    La{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización
+                    </Link>{" "}
+                    permite además establecer secuencias de funcionamiento,
+                    alternar bombas, incorporar equipos de apoyo y ejecutar
+                    acciones de protección frente a determinadas fallas.
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
+                  "La telemetría permite llevar parte de esa información fuera de la sala de bombas",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    La{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría
+                    </Link>{" "}
+                    permite llevar parte de esa información fuera de la sala de
+                    bombas.
+                  </p>
+                );
+              }
+
+              if (
+                texto.startsWith(
                   "Antes de iniciar un proyecto debe confirmarse con la Municipalidad, SERVIU, Dirección de Vialidad",
                 )
               ) {
@@ -419,6 +501,158 @@ export default async function InsightPage({ params }: PageProps) {
                     </strong>
                     .
                   </p>
+                );
+              }
+
+              // LISTA 1 — Cuándo puede ser necesaria una PEAP
+              if (
+                texto ===
+                "En términos generales, una planta elevadora puede ser necesaria cuando:"
+              ) {
+                return (
+                  <div key={index} className="mb-8">
+                    <p className="mb-6 text-slate-700">
+                      En términos generales, una planta elevadora puede ser
+                      necesaria cuando:
+                    </p>
+
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {[
+                        "La presión disponible en la red pública es insuficiente",
+                        "Existen consumos ubicados a una cota considerablemente superior al punto de alimentación",
+                        "Las pérdidas de carga de la instalación reducen significativamente la presión disponible",
+                        "Se requiere mantener condiciones de presión más estables frente a variaciones de consumo",
+                        "El proyecto contempla almacenamiento de agua y posterior presurización de la red interior",
+                      ].map((item) => (
+                        <div
+                          key={item}
+                          className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 px-5 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50/60 hover:shadow-sm"
+                        >
+                          <span className="mt-1.5 flex h-3 w-3 shrink-0 rounded-full bg-sky-400 ring-4 ring-sky-100 transition-all duration-300 group-hover:bg-sky-500 group-hover:ring-sky-200" />
+                          <span className="text-base font-medium leading-6 text-slate-700">
+                            {item}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              // LISTA 2 — Aspectos sanitarios y operacionales
+              if (
+                texto ===
+                "Además de su volumen, deben considerarse aspectos sanitarios y operacionales como:"
+              ) {
+                return (
+                  <div key={index} className="mb-8">
+                    <p className="mb-6 text-slate-700">
+                      Además de su volumen, deben considerarse aspectos
+                      sanitarios y operacionales como:
+                    </p>
+
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {[
+                        "Materialidad apta para agua potable",
+                        "Protección frente al ingreso de contaminantes",
+                        "Ventilación adecuada",
+                        "Rebalse",
+                        "Desagüe",
+                        "Accesibilidad para inspección y limpieza",
+                        "Control de niveles",
+                        "Condiciones que permitan realizar mantenimiento",
+                      ].map((item) => (
+                        <div
+                          key={item}
+                          className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 px-5 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50/60 hover:shadow-sm"
+                        >
+                          <span className="mt-1.5 flex h-3 w-3 shrink-0 rounded-full bg-sky-400 ring-4 ring-sky-100 transition-all duration-300 group-hover:bg-sky-500 group-hover:ring-sky-200" />
+                          <span className="text-base font-medium leading-6 text-slate-700">
+                            {item}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              // LISTA 3 — Antecedentes para diseñar una PEAP
+              if (
+                texto === "Entre los principales antecedentes se encuentran:"
+              ) {
+                return (
+                  <div key={index} className="mb-8">
+                    <p className="mb-6 text-slate-700">
+                      Entre los principales antecedentes se encuentran:
+                    </p>
+
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {[
+                        "Presión disponible informada por la empresa sanitaria",
+                        "Caudal requerido",
+                        "Características y cantidad de consumos",
+                        "Altura geométrica de la instalación",
+                        "Trazado y diámetros de tuberías",
+                        "Pérdidas de carga",
+                        "Presión requerida en los puntos de consumo",
+                        "Capacidad de almacenamiento",
+                        "Disponibilidad eléctrica",
+                        "Espacio disponible para estanques, bombas y tableros",
+                        "Condiciones de operación y mantenimiento",
+                        "Requerimientos de respaldo y continuidad operacional",
+                      ].map((item) => (
+                        <div
+                          key={item}
+                          className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 px-5 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50/60 hover:shadow-sm"
+                        >
+                          <span className="mt-1.5 flex h-3 w-3 shrink-0 rounded-full bg-sky-400 ring-4 ring-sky-100 transition-all duration-300 group-hover:bg-sky-500 group-hover:ring-sky-200" />
+                          <span className="text-base font-medium leading-6 text-slate-700">
+                            {item}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              // LISTA 4 — Variables supervisadas por el sistema de control
+              if (
+                texto ===
+                "El sistema de control puede supervisar variables como:"
+              ) {
+                return (
+                  <div key={index} className="mb-8">
+                    <p className="mb-6 text-slate-700">
+                      El sistema de control puede supervisar variables como:
+                    </p>
+
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {[
+                        "Presión de impulsión",
+                        "Nivel del estanque",
+                        "Estado de las bombas",
+                        "Frecuencia o velocidad de funcionamiento",
+                        "Fallas eléctricas",
+                        "Disponibilidad de equipos",
+                        "Horas de operación",
+                        "Número de partidas",
+                        "Alarmas de nivel alto o bajo",
+                        "Condiciones anormales de presión",
+                      ].map((item) => (
+                        <div
+                          key={item}
+                          className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 px-5 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50/60 hover:shadow-sm"
+                        >
+                          <span className="mt-1.5 flex h-3 w-3 shrink-0 rounded-full bg-sky-400 ring-4 ring-sky-100 transition-all duration-300 group-hover:bg-sky-500 group-hover:ring-sky-200" />
+                          <span className="text-base font-medium leading-6 text-slate-700">
+                            {item}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 );
               }
 

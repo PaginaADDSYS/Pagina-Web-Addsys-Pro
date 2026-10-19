@@ -1428,4 +1428,304 @@ En **ADDSYS** abordamos las obras sanitarias integrando ingeniería, coordinaci�
   destacada: false,
 },
 
+{
+  id: 9,
+  categoria: "ADDSYS Insights",
+  titulo: "¿Qué es una planta elevadora de agua potable y cuándo se necesita?",
+  tituloSEO: "Planta elevadora de agua potable: qué es y cuándo se necesita",
+  fecha: "19 de octubre de 2026",
+  fechaISO: "2026-10-19",
+  fechaPublicacionISO: "2026-10-19T03:58:00-03:00",
+  tiempoLectura: "9 min",
+  resumen:
+    "Una planta elevadora de agua potable permite garantizar el caudal y la presión necesarios cuando las condiciones de la red no permiten abastecer adecuadamente una instalación. Conoce cómo funciona una PEAP, qué establece el RIDAA sobre presión, estanques, sistemas de elevación y bypass, y qué aspectos deben considerarse para su correcto diseño y operación.",
+  contenido: `
+## ¿Qué es una planta elevadora de agua potable y cuándo se necesita?
+
+Una planta elevadora de agua potable, también conocida como **PEAP**, es un sistema destinado a impulsar y presurizar agua potable cuando la presión disponible no permite abastecer adecuadamente todos los puntos de consumo de una instalación.
+
+Este tipo de solución es habitual en edificios, condominios, instalaciones industriales, establecimientos educacionales, centros comerciales y otros proyectos donde las condiciones de presión de la red pública, la altura de la edificación o las características hidráulicas de la instalación hacen necesario incorporar un sistema de bombeo.
+
+Aunque su principio de funcionamiento puede parecer sencillo, una PEAP debe diseñarse considerando simultáneamente **caudal, presión, almacenamiento, continuidad operacional, condiciones sanitarias, automatización y seguridad del abastecimiento**.
+
+## ¿Cuándo se necesita una planta elevadora de agua potable?
+
+La necesidad de instalar una PEAP no depende solamente de la cantidad de pisos de un edificio.
+
+El criterio fundamental es determinar si la presión disponible permite abastecer correctamente el punto hidráulicamente más desfavorable de la instalación, considerando la diferencia de altura, las pérdidas de carga en tuberías y accesorios y la presión mínima requerida para el funcionamiento adecuado de los artefactos.
+
+Por esta razón, dos edificios de una misma altura pueden requerir soluciones diferentes dependiendo de la presión disponible en la red, de sus características constructivas y del diseño de sus instalaciones interiores.
+
+En términos generales, una planta elevadora puede ser necesaria cuando:
+
+- la presión disponible en la red pública es insuficiente;
+- existen consumos ubicados a una cota considerablemente superior al punto de alimentación;
+- las pérdidas de carga de la instalación reducen significativamente la presión disponible;
+- se requiere mantener condiciones de presión más estables frente a variaciones de consumo;
+- el proyecto contempla almacenamiento de agua y posterior presurización de la red interior.
+
+La necesidad definitiva debe establecerse mediante el análisis hidráulico del proyecto y los antecedentes entregados por la empresa sanitaria.
+
+## Presión y caudal no son lo mismo
+
+Una confusión frecuente consiste en considerar que disponer de suficiente agua significa necesariamente disponer de suficiente presión.
+
+El **caudal** representa la cantidad de agua que debe transportarse durante un determinado período, mientras que la **presión** representa la energía disponible para hacer que esa agua pueda desplazarse y llegar a los puntos de consumo en las condiciones requeridas.
+
+Una instalación puede disponer del caudal necesario y, sin embargo, no contar con presión suficiente para abastecer los pisos superiores.
+
+También puede ocurrir lo contrario: existir una presión adecuada bajo determinadas condiciones, pero que la instalación no tenga capacidad para satisfacer correctamente los consumos simultáneos.
+
+Por eso una PEAP no debe seleccionarse solamente por la potencia de las bombas o por el diámetro de las tuberías. **Caudal y presión deben analizarse conjuntamente.**
+
+## ¿Qué establece el RIDAA respecto de los sistemas de elevación?
+
+En Chile, el diseño de las instalaciones domiciliarias de agua potable y alcantarillado se encuentra regulado por el **Reglamento de Instalaciones Domiciliarias de Agua Potable y Alcantarillado (RIDAA)**.
+
+En materia de elevación de agua potable, el reglamento establece que debe proyectarse y construirse un sistema de elevación cuando las condiciones topográficas o de diseño de la edificación hagan que la presión informada por la empresa sanitaria en el Certificado de Factibilidad no garantice un abastecimiento adecuado y permanente a todos los pisos.
+
+Esto refuerza un principio fundamental: **la necesidad de una planta elevadora se determina a partir de las condiciones reales de presión y del diseño de la instalación, y no exclusivamente por la altura del edificio.**
+
+## ¿Desde qué altura se necesita una planta elevadora de agua potable?
+
+No existe una regla general que permita afirmar simplemente que todo edificio a partir de un determinado número de pisos debe disponer obligatoriamente de una PEAP.
+
+Sin embargo, el RIDAA establece exigencias específicas para los edificios de **cuatro o más pisos**, particularmente respecto de los sistemas de regulación y almacenamiento asociados al abastecimiento mediante elevación.
+
+Para estos edificios se contempla la utilización de estanques de regulación inferiores, o inferiores y superiores, bajo las condiciones establecidas por el reglamento.
+
+Esto no significa que llegar al cuarto piso haga automáticamente obligatoria una planta elevadora.
+
+Un edificio de menor altura podría necesitar elevación si la presión disponible resulta insuficiente, mientras que las condiciones de otro proyecto deben analizarse considerando la presión informada por la sanitaria, las cotas y las características hidráulicas de la instalación.
+
+Por eso, antes de definir una PEAP, es fundamental revisar el **Certificado de Factibilidad**, el proyecto sanitario y las condiciones reales de abastecimiento.
+
+## ¿Qué presión debe entregar la red pública de agua potable?
+
+La presión disponible en una red pública no es necesariamente constante. Puede variar según el sector, la topografía, las condiciones de operación de la red y los niveles de consumo.
+
+Para el diseño de las instalaciones domiciliarias no debe considerarse simplemente una medición puntual realizada en terreno.
+
+El RIDAA establece que la presión mínima para el diseño de la instalación domiciliaria debe ajustarse a la NCh 2485 y contempla como referencia una presión de **14 m.c.a. después de la llave de paso ubicada aguas abajo del medidor**. Cuando esta condición no puede alcanzarse en los casos de excepción contemplados por la norma, el prestador debe justificar técnicamente la situación, teniendo presente que la red pública debe cumplir las presiones mínimas establecidas en la NCh 691.
+
+A su vez, la normativa aplicable a las redes públicas considera una presión mínima de diseño de **15 m.c.a. a nivel de terreno sobre la tubería para la condición de caudal máximo horario**.
+
+Por esta razón, la presión informada en el Certificado de Factibilidad constituye un antecedente fundamental para el proyecto. Esta presión puede ser más conservadora que una medición realizada circunstancialmente en terreno, ya que las condiciones reales de operación de una red pueden variar con el tiempo.
+
+Un proyecto podría medir hoy una presión considerablemente superior a la mínima y, sin embargo, esa condición no necesariamente estará disponible permanentemente durante toda la vida útil de la instalación.
+
+Por eso una planta elevadora debe analizarse utilizando las condiciones de diseño informadas por la empresa sanitaria y no solamente la presión observada durante una medición puntual.
+
+## ¿Cómo funciona una planta elevadora de agua potable?
+
+Conceptualmente, una PEAP recibe agua potable desde la red de abastecimiento, la almacena en un estanque y posteriormente utiliza una o más bombas para entregar el caudal requerido a la presión necesaria hacia la instalación interior.
+
+El esquema general puede representarse como:
+
+**red de agua potable → estanque de acumulación → sistema de bombeo → red interior → puntos de consumo**
+
+Cuando la presión de la instalación disminuye debido al consumo, el sistema de control pone en funcionamiento las bombas necesarias.
+
+A medida que cambia la demanda, el sistema puede aumentar o disminuir la capacidad de bombeo para mantener las condiciones de presión definidas en el proyecto.
+
+## ¿Puede una bomba succionar directamente desde la red pública?
+
+No.
+
+El RIDAA establece que los equipos de bombeo deben alimentarse desde un **depósito especial o estanque de acumulación sin presión** y no directamente desde la red pública de agua potable.
+
+Esta condición es importante porque evita que el funcionamiento de las bombas produzca efectos indeseados sobre la red pública y permite independizar hidráulicamente el sistema interior de elevación respecto del abastecimiento exterior.
+
+Por esta razón, una configuración típica contempla primero el llenado de un estanque y posteriormente la impulsión mediante bombas hacia la instalación interior.
+
+## ¿Para qué sirve el estanque de acumulación?
+
+El estanque cumple una función fundamental dentro de una PEAP.
+
+Permite almacenar agua proveniente de la red y generar una separación hidráulica entre el abastecimiento público y el sistema de bombeo interior.
+
+Su capacidad debe definirse de acuerdo con las características del proyecto y las exigencias reglamentarias correspondientes.
+
+Además de su volumen, deben considerarse aspectos sanitarios y operacionales como:
+
+- materialidad apta para agua potable;
+- protección frente al ingreso de contaminantes;
+- ventilación adecuada;
+- rebalse;
+- desagüe;
+- accesibilidad para inspección y limpieza;
+- control de niveles;
+- condiciones que permitan realizar mantenimiento.
+
+El almacenamiento de agua potable no debe considerarse solamente como un problema de volumen. **El estanque forma parte de una instalación sanitaria y debe preservar la calidad del agua almacenada.**
+
+## Bombas de servicio y equipos de respaldo
+
+Una planta elevadora normalmente no se diseña dependiendo de una única bomba.
+
+El RIDAA contempla equipos de reserva, de manera que una falla o mantenimiento no deje necesariamente al sistema completamente fuera de servicio.
+
+Dependiendo de la magnitud y características del proyecto pueden existir configuraciones con dos o más bombas que funcionen de manera alternada, escalonada o simultánea.
+
+La automatización puede distribuir las horas de funcionamiento entre los equipos, incorporar una bomba adicional cuando aumenta el consumo y mantener unidades disponibles como respaldo.
+
+Esto mejora tanto la continuidad operacional como la vida útil del sistema.
+
+## ¿Qué función cumplen los variadores de frecuencia?
+
+En muchos sistemas modernos las bombas son controladas mediante **variadores de frecuencia**.
+
+Estos dispositivos permiten modificar la velocidad de funcionamiento del motor y adaptar la capacidad de bombeo a la demanda real de la instalación.
+
+Si el consumo es reducido, la bomba puede funcionar a una velocidad menor. Cuando aumenta la demanda, el sistema incrementa progresivamente su velocidad o incorpora bombas adicionales.
+
+De esta manera es posible mantener una presión más estable y evitar, dentro de los límites de diseño del sistema, ciclos continuos de partida y detención.
+
+El resultado puede ser una operación más eficiente, estable y controlada.
+
+## ¿Se puede instalar un bypass a una planta elevadora de agua potable?
+
+Este es un punto especialmente importante.
+
+El RIDAA establece que **no se permite el uso de una tubería de derivación o bypass en el sistema de elevación**.
+
+Por lo tanto, no corresponde diseñar una tubería cuya función sea simplemente puentear la PEAP para alimentar la misma instalación interior directamente desde la red pública cuando el sistema de elevación se encuentra fuera de servicio.
+
+Esto se relaciona también con la exigencia de que las bombas no succionen directamente desde la red pública.
+
+Sin embargo, existe una diferencia importante entre un bypass y el diseño de sectores que puedan abastecerse directamente desde la red.
+
+## Abastecimiento directo y bypass no significan lo mismo
+
+El RIDAA contempla que determinadas instalaciones que normalmente dispongan de presión suficiente puedan abastecerse sin necesidad de elevación.
+
+Esto permite que, dependiendo de las condiciones del proyecto, puedan existir sectores abastecidos directamente desde la red y otros abastecidos mediante la planta elevadora.
+
+Por ejemplo, conceptualmente podría existir un sector de menor cota con presión suficiente para abastecimiento directo, mientras los sectores superiores requieren elevación.
+
+Eso **no corresponde a un bypass** si ambas redes forman parte del diseño hidráulico aprobado y tienen funciones claramente definidas.
+
+Un bypass, en cambio, pretende establecer una derivación para evitar o puentear el sistema de elevación.
+
+La diferencia debe quedar correctamente resuelta desde la etapa de proyecto.
+
+## ¿Qué ocurre si se corta la energía eléctrica?
+
+Una PEAP depende de energía para impulsar el agua.
+
+Por esta razón, la continuidad del abastecimiento debe analizarse desde el diseño, especialmente en instalaciones donde una interrupción prolongada pueda producir consecuencias relevantes.
+
+El estanque puede proporcionar cierta capacidad de almacenamiento, pero cuando el abastecimiento hacia los consumos depende exclusivamente de bombas, disponer de agua almacenada no significa necesariamente poder distribuirla.
+
+Dependiendo de las características y criticidad de la instalación, puede ser necesario evaluar sistemas de respaldo eléctrico u otras medidas de continuidad operacional.
+
+El RIDAA contempla además la necesidad de considerar una fuente de energía de emergencia cuando las características del proyecto así lo requieran.
+
+## ¿Cuál es la diferencia entre una PEAP y una planta elevadora de aguas servidas?
+
+Aunque ambas utilizan bombas, cumplen funciones completamente diferentes.
+
+Una **planta elevadora de agua potable** impulsa agua destinada al consumo humano y debe mantener las condiciones sanitarias correspondientes a este tipo de suministro.
+
+Una **planta elevadora de aguas servidas** recibe y bombea aguas residuales cuando estas no pueden desplazarse gravitacionalmente hacia el punto de descarga.
+
+Por esta razón, sus bombas, estanques, válvulas, materiales, sistemas de control y criterios de operación son diferentes.
+
+En una PEAP el objetivo principal es garantizar **caudal, presión y calidad sanitaria del agua**.
+
+En una planta elevadora de aguas servidas el objetivo es transportar correctamente el efluente evitando rebalses, obstrucciones y fallas operacionales.
+
+## ¿Qué información se necesita para diseñar una PEAP?
+
+Antes de seleccionar bombas o definir la capacidad del estanque es necesario conocer las condiciones reales del proyecto.
+
+Entre los principales antecedentes se encuentran:
+
+- presión disponible informada por la empresa sanitaria;
+- caudal requerido;
+- características y cantidad de consumos;
+- altura geométrica de la instalación;
+- trazado y diámetros de tuberías;
+- pérdidas de carga;
+- presión requerida en los puntos de consumo;
+- capacidad de almacenamiento;
+- disponibilidad eléctrica;
+- espacio disponible para estanques, bombas y tableros;
+- condiciones de operación y mantenimiento;
+- requerimientos de respaldo y continuidad operacional.
+
+A partir de estos antecedentes puede determinarse conceptualmente la solución y posteriormente realizarse el dimensionamiento hidráulico.
+
+## Una bomba más grande no significa necesariamente una mejor solución
+
+Sobredimensionar una bomba no constituye una forma adecuada de resolver incertidumbres de diseño.
+
+Una bomba excesivamente grande puede producir presiones innecesarias, mayores consumos eléctricos, funcionamiento inestable, ciclos inadecuados y mayores esfuerzos sobre tuberías, válvulas y accesorios.
+
+Una bomba insuficiente, por otro lado, puede ser incapaz de entregar el caudal o presión requeridos durante los períodos de mayor demanda.
+
+La selección debe realizarse a partir del **punto de operación requerido por el sistema**, considerando conjuntamente caudal, altura, pérdidas de carga y características de la bomba.
+
+Estos criterios serán desarrollados con mayor profundidad al analizar cómo se dimensiona conceptualmente una planta elevadora de agua potable.
+
+## Automatización de una planta elevadora de agua potable
+
+Una PEAP moderna puede funcionar automáticamente de acuerdo con las condiciones reales de la instalación.
+
+El sistema de control puede supervisar variables como:
+
+- presión de impulsión;
+- nivel del estanque;
+- estado de las bombas;
+- frecuencia o velocidad de funcionamiento;
+- fallas eléctricas;
+- disponibilidad de equipos;
+- horas de operación;
+- número de partidas;
+- alarmas de nivel alto o bajo;
+- condiciones anormales de presión.
+
+La automatización permite además establecer secuencias de funcionamiento, alternar bombas, incorporar equipos de apoyo y ejecutar acciones de protección frente a determinadas fallas.
+
+El objetivo no es solamente encender y apagar bombas, sino conseguir que el sistema responda correctamente frente a las distintas condiciones de operación.
+
+## ¿Qué aporta la telemetría?
+
+La telemetría permite llevar parte de esa información fuera de la sala de bombas.
+
+Mediante un sistema de supervisión remota es posible conocer el estado de la planta, visualizar variables de operación, registrar históricos y generar alarmas frente a condiciones anormales.
+
+Esto resulta especialmente útil en instalaciones que operan sin personal permanente.
+
+Una alarma temprana por bajo nivel, pérdida de presión, falla de una bomba o interrupción eléctrica puede permitir actuar antes de que el problema se transforme en una pérdida completa del suministro.
+
+La telemetría no reemplaza una correcta automatización local. **Ambas tecnologías cumplen funciones complementarias:** el sistema local debe ser capaz de operar de manera segura y autónoma, mientras la supervisión remota proporciona información y capacidad de gestión.
+
+## Operación y mantenimiento también forman parte del diseño
+
+Una planta elevadora no termina cuando se instala y pone en marcha.
+
+Bombas, válvulas, estanques, sensores, tableros eléctricos e instrumentos requieren inspección y mantenimiento durante su vida útil.
+
+Por esta razón, el diseño debe considerar desde el comienzo espacios adecuados para acceder a los equipos, retirar bombas, intervenir válvulas, limpiar estanques y realizar trabajos eléctricos de manera segura.
+
+También es conveniente registrar horas de funcionamiento, alternancia de equipos, presiones y eventos relevantes para identificar cambios en el comportamiento de la instalación.
+
+Una PEAP correctamente mantenida puede ofrecer muchos años de operación confiable.
+
+## Una planta elevadora debe diseñarse como un sistema completo
+
+Una planta elevadora de agua potable no es simplemente una bomba conectada a una tubería.
+
+Es un sistema compuesto por **almacenamiento, bombeo, regulación hidráulica, válvulas, instrumentación, electricidad, automatización y condiciones sanitarias**, que debe funcionar coordinadamente para garantizar el abastecimiento.
+
+La solución adecuada comienza conociendo la presión disponible y las necesidades reales de la instalación, continúa con un correcto diseño hidráulico y termina con una operación que permita mantener el sistema en condiciones seguras y confiables.
+
+En ADDSYS abordamos las plantas elevadoras de agua potable integrando ingeniería sanitaria, equipamiento hidráulico, electricidad, automatización y telemetría, buscando soluciones que no solo permitan alcanzar la presión requerida, sino que puedan operar, mantenerse y supervisarse adecuadamente durante toda su vida útil.
+`,
+  imagen: "/img_pub_9.png",
+  
+  destacada: false,
+},
+
 ];
