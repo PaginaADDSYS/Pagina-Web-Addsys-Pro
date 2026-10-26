@@ -1728,4 +1728,477 @@ En ADDSYS abordamos las plantas elevadoras de agua potable integrando ingenierí
   destacada: false,
 },
 
+{
+  id: 10,
+  categoria: "ADDSYS Insights",
+  titulo: "¿Cómo se dimensiona una planta elevadora de agua potable?",
+  tituloSEO:
+    "Dimensionamiento de una planta elevadora de agua potable (PEAP)",
+  resumen:
+    "Dimensionar una planta elevadora de agua potable requiere determinar el caudal, la presión, la altura geométrica y las pérdidas de carga de la instalación. Conoce cómo se relacionan estos parámetros, cómo se seleccionan las bombas y qué aspectos deben considerarse para diseñar una PEAP eficiente y confiable.",
+  contenido: `
+## ¿Cómo se dimensiona una planta elevadora de agua potable?
+
+Dimensionar una planta elevadora de agua potable (PEAP) significa determinar las condiciones hidráulicas que debe satisfacer el sistema para entregar el caudal y la presión necesarios en los distintos puntos de consumo de una instalación.
+
+Aunque muchas veces el proceso se asocia principalmente a la selección de una bomba, el dimensionamiento de una PEAP involucra bastante más.
+
+Es necesario analizar la demanda de agua, la presión disponible desde la red pública, las diferencias de altura dentro de la instalación, las pérdidas de carga de las tuberías, la presión requerida en los puntos de consumo, el almacenamiento disponible y la forma en que operarán las bombas frente a las variaciones de demanda.
+
+Por esta razón, **una planta elevadora de agua potable debe dimensionarse como un sistema hidráulico completo y no como un conjunto aislado de bombas**.
+
+## ¿Qué información se necesita para dimensionar una PEAP?
+
+Antes de seleccionar bombas, estanques o equipos de control es necesario conocer las condiciones reales del proyecto.
+
+Entre los principales antecedentes se encuentran:
+
+- presión disponible informada por la empresa sanitaria
+- caudal requerido por la instalación
+- cantidad y tipo de artefactos o consumos
+- altura geométrica entre la alimentación y los puntos más desfavorables
+- trazado y longitud de las tuberías
+- diámetros y materialidad de las conducciones
+- singularidades como válvulas, fittings y otros accesorios
+- pérdidas de carga de la instalación
+- presión requerida en los puntos de consumo
+- capacidad de almacenamiento requerida
+- características del suministro eléctrico
+- requerimientos de continuidad operacional
+- espacio disponible para estanques, bombas, tableros y mantenimiento
+
+La calidad de estos antecedentes es fundamental. Un sistema correctamente calculado a partir de información incorrecta puede igualmente presentar problemas durante su operación.
+
+## El primer paso: determinar la demanda de agua
+
+Una instalación no consume permanentemente el caudal correspondiente a todos sus artefactos funcionando al mismo tiempo.
+
+En viviendas, edificios, establecimientos educacionales, instalaciones comerciales o industriales, los consumos se producen de manera variable a lo largo del día.
+
+Por eso, para dimensionar una instalación de agua potable no basta con sumar indiscriminadamente todos los consumos.
+
+El diseño debe considerar la demanda esperada y la simultaneidad de uso de los distintos artefactos.
+
+## ¿Cómo se calculan el gasto instalado y el gasto máximo probable?
+
+El dimensionamiento comienza determinando cuánto caudal puede requerir la instalación.
+
+El **gasto instalado (QI)** se obtiene sumando los gastos correspondientes a los distintos artefactos considerados en el proyecto, utilizando los valores establecidos para cada uno de ellos.
+
+Conceptualmente:
+
+**QI = q₁ + q₂ + q₃ + ... + qₙ**
+
+Donde:
+
+- **QI** = gasto instalado de la instalación, en L/min
+- **q₁, q₂, q₃...** = gastos instalados correspondientes a cada artefacto
+
+Sin embargo, en una instalación normal no todos los artefactos funcionan simultáneamente.
+
+Por esta razón, el RIDAA establece para ramales con grifería corriente una relación que permite determinar el **gasto máximo probable (QMP)** a partir del gasto instalado:
+
+**QMP = 1,7391 × QI^0,6891**
+
+Donde:
+
+- **QI** = gasto instalado, en L/min
+- **QMP** = gasto máximo probable, en L/min
+
+El resultado permite representar de mejor manera la demanda simultánea esperable de la instalación.
+
+Por ejemplo, si una instalación posee un gasto instalado total de **300 L/min**, la aplicación de la ecuación entrega aproximadamente:
+
+**QMP ≈ 88,4 L/min**
+
+Esto no significa que el sistema nunca pueda experimentar otras condiciones de consumo. El propio RIDAA permite utilizar, bajo determinadas condiciones y con la debida justificación, un gasto de diseño diferente del QMP.
+
+Por eso el QMP constituye una herramienta fundamental para el dimensionamiento, pero debe analizarse dentro de las características particulares de cada proyecto.
+
+## Caudal y presión no son lo mismo
+
+Uno de los errores más frecuentes al analizar sistemas de bombeo es confundir **caudal** con **presión**.
+
+El caudal indica cuánto volumen de agua debe transportar el sistema durante un determinado período.
+
+La presión, en cambio, representa la energía disponible para permitir que el agua se desplace por la instalación y llegue a los puntos de consumo en condiciones adecuadas.
+
+Una bomba debe ser capaz de satisfacer ambas condiciones simultáneamente:
+
+**entregar el caudal requerido y hacerlo a la presión necesaria.**
+
+Por esta razón, decir que una bomba entrega determinado caudal no es suficiente para saber si funcionará correctamente en una instalación.
+
+## ¿Cómo influye la presión disponible de la red pública?
+
+La presión disponible desde la red pública constituye uno de los antecedentes fundamentales para determinar si una instalación requiere elevación.
+
+Esta información debe analizarse junto con las características hidráulicas y topográficas del proyecto.
+
+El RIDAA establece criterios para el diseño de las instalaciones domiciliarias de agua potable y relaciona la necesidad de sistemas de elevación con las condiciones de presión disponibles y las características de la instalación.
+
+En consecuencia, **no es recomendable dimensionar una PEAP basándose únicamente en una medición puntual de presión realizada en terreno**.
+
+La presión de una red puede variar según las condiciones de operación, los consumos del sector y otros factores.
+
+Para efectos de diseño debe considerarse la información correspondiente al proyecto y, particularmente, los antecedentes entregados por el prestador sanitario.
+
+## ¿Qué es la altura geométrica?
+
+La altura geométrica corresponde a la diferencia vertical existente entre distintos puntos de la instalación.
+
+Por ejemplo, si el sistema de bombeo se encuentra en un nivel inferior y debe abastecer consumos ubicados varios pisos más arriba, la bomba necesita aportar energía para vencer esa diferencia de altura.
+
+Mientras mayor sea la diferencia de cotas, mayor será la presión necesaria para elevar el agua.
+
+Sin embargo, **la altura geométrica no corresponde por sí sola a la altura que debe entregar la bomba**.
+
+Todavía deben considerarse otros componentes del sistema.
+
+## ¿Qué son las pérdidas de carga?
+
+Cuando el agua circula por una tubería pierde parte de su energía debido al roce con las paredes de la conducción.
+
+Estas pérdidas dependen, entre otros factores, de:
+
+- caudal circulante
+- diámetro de las tuberías
+- longitud de las conducciones
+- materialidad
+- velocidad del agua
+- válvulas
+- codos
+- tees
+- fittings y otros accesorios
+
+A estas pérdidas se las denomina **pérdidas de carga**.
+
+En términos generales, aumentar el caudal a través de una misma tubería aumenta las pérdidas de carga.
+
+Por eso, una instalación puede funcionar adecuadamente con consumos pequeños y presentar problemas de presión cuando aumenta la demanda.
+
+## ¿Cómo se determina la altura que debe entregar la bomba?
+
+Conceptualmente, la bomba debe aportar suficiente energía para vencer las condiciones hidráulicas del sistema y conservar una presión adecuada en el punto de consumo más desfavorable.
+
+De manera simplificada, puede entenderse mediante la siguiente relación:
+
+**Altura requerida ≈ altura geométrica + pérdidas de carga + presión residual requerida**
+
+Dependiendo de la configuración del proyecto también deben considerarse las condiciones de presión existentes en el punto desde donde comienza el análisis hidráulico.
+
+Esta relación es conceptual. El cálculo definitivo requiere desarrollar hidráulicamente la instalación y determinar las condiciones reales de operación.
+
+## ¿Qué presión debe mantenerse en el punto más desfavorable?
+
+Una vez determinados el caudal y las pérdidas hidráulicas, el diseño debe verificar que exista presión suficiente en el punto más desfavorable de la instalación.
+
+Este aspecto es especialmente importante en una planta elevadora, porque no basta con lograr que el agua alcance el punto de consumo: debe llegar con presión suficiente para permitir su funcionamiento adecuado.
+
+El RIDAA establece que, sobre el punto de salida del artefacto situado más desfavorablemente, no se acepta una presión inferior a:
+
+- **4 m.c.a.** para instalaciones domiciliarias alimentadas desde la matriz
+- **7 m.c.a.** cuando el abastecimiento se realiza mediante medios mecánicos
+
+En una instalación abastecida mediante una planta elevadora de agua potable, la referencia de **7 m.c.a.** resulta particularmente relevante.
+
+Por lo tanto, cuando expresamos conceptualmente:
+
+**Altura requerida ≈ altura geométrica + pérdidas de carga + presión residual requerida**
+
+esa presión residual no debe entenderse como un valor arbitrario.
+
+El cálculo hidráulico debe permitir que, incluso después de vencer la diferencia de altura y las pérdidas de carga de la instalación, se conserve la presión reglamentaria correspondiente en el punto más desfavorable.
+
+Esto también ayuda a comprender por qué seleccionar una bomba solamente considerando la altura del edificio puede producir un sistema incorrectamente dimensionado.
+
+## ¿Cuál es el punto más desfavorable de una instalación?
+
+El punto más desfavorable no necesariamente es solamente el artefacto ubicado a mayor altura.
+
+Puede existir otro punto que, debido a la longitud de las tuberías, diámetros, accesorios o caudal transportado, presente condiciones hidráulicas más exigentes.
+
+Por eso el diseño debe comprobar que la instalación mantenga condiciones adecuadas en los distintos escenarios de operación.
+
+El objetivo no es simplemente hacer llegar agua hasta el último piso.
+
+El objetivo es que llegue **con el caudal y la presión necesarios para que la instalación funcione correctamente**.
+
+## ¿Cómo se selecciona una bomba?
+
+Una bomba no posee un único caudal ni una única presión de funcionamiento.
+
+Cada bomba dispone de una **curva característica** que relaciona el caudal entregado con la altura o presión que puede desarrollar.
+
+Por otra parte, la instalación posee su propia curva hidráulica o curva del sistema.
+
+El punto donde ambas condiciones se encuentran determina el **punto de operación**.
+
+Por esta razón, seleccionar correctamente una bomba requiere analizar simultáneamente:
+
+- caudal requerido
+- altura requerida
+- curva de la bomba
+- comportamiento hidráulico de la instalación
+- eficiencia
+- rango esperado de operación
+- estrategia de control
+- condiciones de respaldo
+
+No basta con comparar únicamente la potencia del motor o el diámetro de las conexiones.
+
+## ¿Una bomba más grande es siempre mejor?
+
+No.
+
+Sobredimensionar una bomba puede generar tantos problemas como seleccionar una bomba insuficiente.
+
+Un equipo excesivamente grande puede producir:
+
+- presiones superiores a las necesarias
+- funcionamiento alejado de su zona eficiente
+- mayor consumo energético
+- ciclos frecuentes de partida y detención
+- mayores esfuerzos sobre tuberías y accesorios
+- dificultades de regulación
+- desgaste prematuro de determinados componentes
+
+El objetivo del diseño no es instalar la bomba más potente posible.
+
+Es seleccionar **el sistema que mejor se adapte a las condiciones hidráulicas reales del proyecto**.
+
+## ¿Cómo se dimensiona el almacenamiento de agua?
+
+Cuando una planta elevadora incorpora un estanque de acumulación, su volumen no debe definirse simplemente por el espacio disponible.
+
+Debe analizarse la demanda del proyecto, las condiciones de abastecimiento, la estrategia de operación de las bombas y los requerimientos de continuidad del servicio.
+
+Dependiendo de las características de la instalación también pueden existir exigencias normativas específicas relacionadas con el almacenamiento.
+
+El estanque, además, debe diseñarse considerando aspectos sanitarios y operacionales.
+
+Entre ellos:
+
+- materialidad compatible con agua potable
+- protección frente a contaminación
+- ventilación
+- rebalse
+- desagüe
+- accesibilidad para inspección
+- facilidad de limpieza
+- medición y control de nivel
+- condiciones adecuadas para mantenimiento
+
+El almacenamiento y el bombeo deben analizarse conjuntamente, porque el comportamiento de uno influye directamente sobre el otro.
+
+## ¿Conviene instalar una bomba o varias bombas?
+
+En muchas plantas elevadoras resulta conveniente distribuir la capacidad de bombeo entre varios equipos.
+
+Esto permite adaptar mejor el funcionamiento a las variaciones de demanda.
+
+Por ejemplo, durante períodos de bajo consumo puede operar una sola bomba, mientras que frente a una demanda mayor pueden incorporarse equipos adicionales.
+
+Una configuración con varias bombas también puede permitir:
+
+- alternancia de funcionamiento
+- distribución de horas de operación
+- apoyo durante períodos de mayor consumo
+- mantenimiento de un equipo sin detener completamente el sistema
+- disponibilidad de equipos de respaldo
+
+La cantidad de bombas y su configuración deben definirse de acuerdo con las características particulares del proyecto.
+
+## ¿Cómo influye la configuración de las bombas?
+
+Cuando una planta elevadora utiliza más de una bomba, la forma en que estas se conectan hidráulicamente modifica el comportamiento del conjunto.
+
+Las dos configuraciones fundamentales son **bombas en serie** y **bombas en paralelo**.
+
+### Bombas en serie
+
+En una configuración en serie, la descarga de una bomba alimenta la siguiente.
+
+Conceptualmente, para un determinado caudal:
+
+**Htotal ≈ H₁ + H₂**
+
+Es decir, las alturas desarrolladas por las bombas se suman, mientras el caudal atraviesa sucesivamente los equipos.
+
+Esta configuración resulta útil cuando el sistema necesita desarrollar una altura o presión considerable.
+
+El mismo principio hidráulico se encuentra internamente en las **bombas multietapa**, donde varios impulsores trabajan sucesivamente dentro de una misma bomba para desarrollar una mayor altura.
+
+### Bombas en paralelo
+
+En una configuración en paralelo, varias bombas reciben agua desde una aspiración común y descargan hacia un colector común.
+
+Conceptualmente, para una determinada altura:
+
+**Qtotal ≈ Q₁ + Q₂**
+
+En este caso, la configuración permite aumentar principalmente la capacidad de caudal del sistema.
+
+Este esquema es particularmente útil en plantas elevadoras donde la demanda varía durante el día.
+
+Por ejemplo, frente a un consumo reducido puede funcionar una sola bomba. Si aumenta la demanda, el sistema puede incorporar una segunda o una tercera bomba.
+
+Esto permite adaptar la capacidad de bombeo a las condiciones reales de consumo y facilita además estrategias de alternancia y respaldo.
+
+### La suma no es exacta en la instalación real
+
+Las relaciones anteriores permiten comprender conceptualmente las diferencias entre ambas configuraciones, pero el comportamiento real depende de las curvas características de las bombas y de la curva hidráulica de la instalación.
+
+Al conectar bombas en paralelo, por ejemplo, dos bombas que individualmente entregan un determinado caudal no necesariamente entregarán exactamente el doble cuando funcionen juntas.
+
+El nuevo punto de operación surge de la interacción entre la curva combinada de las bombas y la curva del sistema.
+
+Por esta razón, la selección final debe realizarse utilizando las curvas de los equipos y verificando sus puntos de funcionamiento.
+
+En términos simples:
+
+**Serie → principalmente mayor altura o presión.**
+
+**Paralelo → principalmente mayor capacidad de caudal.**
+
+La elección depende de las condiciones hidráulicas y operacionales que debe satisfacer cada proyecto.
+
+## Bombas de servicio y equipos de respaldo
+
+En instalaciones donde la continuidad del abastecimiento es importante, el diseño puede considerar equipos de reserva.
+
+Esto permite mantener capacidad de bombeo frente a determinadas fallas o durante trabajos de mantenimiento.
+
+Sin embargo, disponer de una bomba de respaldo no significa simplemente instalar un equipo que permanezca detenido permanentemente.
+
+Mediante una estrategia adecuada de automatización, las bombas pueden alternarse para distribuir las horas de funcionamiento y comprobar periódicamente su disponibilidad.
+
+## ¿Qué función cumplen los variadores de frecuencia?
+
+Los variadores de frecuencia permiten modificar la velocidad de funcionamiento de determinados motores eléctricos.
+
+En una PEAP pueden utilizarse para adaptar el funcionamiento de las bombas a las variaciones de consumo y mantener una presión controlada en la impulsión.
+
+Cuando disminuye la demanda, el sistema puede reducir la velocidad de las bombas.
+
+Cuando aumenta el consumo, puede incrementar su velocidad o incorporar equipos adicionales.
+
+Esto permite que la planta responda de manera más flexible a condiciones que cambian durante el día.
+
+## ¿Qué ocurre cuando cambia la demanda?
+
+La demanda de agua de una instalación rara vez permanece constante.
+
+Durante determinados períodos puede ser muy baja y, en otros momentos, aumentar considerablemente.
+
+Por esta razón, una PEAP correctamente diseñada debe poder operar dentro de un rango de condiciones y no solamente en un único punto teórico.
+
+La estrategia de control puede establecer:
+
+- presión objetivo
+- secuencia de partida de bombas
+- alternancia entre equipos
+- incorporación de bombas de apoyo
+- detención frente a bajo nivel
+- protección frente a condiciones anormales
+- generación de alarmas
+
+De esta forma, el dimensionamiento hidráulico y la automatización forman parte de un mismo sistema.
+
+## ¿Qué puede aportar la telemetría?
+
+La telemetría permite supervisar a distancia variables relevantes para conocer el comportamiento de una planta elevadora.
+
+Entre las variables que pueden monitorearse se encuentran:
+
+- presión de impulsión
+- nivel del estanque
+- estado de las bombas
+- frecuencia de funcionamiento
+- horas de operación
+- número de partidas
+- fallas eléctricas
+- alarmas
+- disponibilidad de equipos
+- condiciones anormales de presión o nivel
+
+Registrar esta información permite analizar tendencias y detectar comportamientos que pueden no ser evidentes durante una inspección puntual.
+
+Además, los datos reales de operación pueden utilizarse para evaluar si el sistema está funcionando de acuerdo con las condiciones consideradas durante su diseño.
+
+## Errores frecuentes al dimensionar una PEAP
+
+Algunos problemas pueden originarse desde la etapa de diseño.
+
+Entre los errores que deben evitarse se encuentran:
+
+- seleccionar bombas solamente por potencia
+- confundir caudal con presión
+- considerar únicamente la altura del edificio
+- ignorar las pérdidas de carga
+- utilizar una medición puntual como única referencia de presión disponible
+- sobredimensionar equipos “por seguridad”
+- no considerar variaciones de demanda
+- no analizar la operación conjunta de varias bombas
+- dimensionar el estanque independientemente del sistema de bombeo
+- no considerar mantenimiento y respaldo
+- diseñar la hidráulica sin considerar posteriormente la estrategia de control
+
+Un buen dimensionamiento busca equilibrar **capacidad, presión, eficiencia, continuidad operacional y mantenibilidad**.
+
+## Ejemplo conceptual de dimensionamiento
+
+Supongamos una instalación donde los puntos de consumo superiores se encuentran a una cota considerablemente mayor que el sector donde se ubica la planta elevadora.
+
+El procedimiento conceptual sería:
+
+1. determinar la demanda y el caudal de diseño
+2. identificar las condiciones de presión disponibles
+3. determinar el punto hidráulicamente más desfavorable
+4. calcular la diferencia de altura
+5. calcular las pérdidas de carga de tuberías y accesorios
+6. establecer la presión que debe mantenerse en el punto de consumo
+7. determinar la condición de caudal y altura que debe satisfacer el sistema de bombeo
+8. seleccionar una configuración de bombas capaz de operar adecuadamente dentro del rango esperado
+9. definir almacenamiento, respaldo y estrategia de control
+10. verificar el comportamiento del sistema en distintos escenarios de consumo
+
+Este ejemplo muestra por qué **no existe una bomba estándar que pueda seleccionarse únicamente a partir del número de pisos de un edificio**.
+
+Dos instalaciones de la misma altura pueden necesitar soluciones completamente diferentes debido a sus caudales, tuberías, pérdidas de carga, presión disponible y condiciones de operación.
+
+## El dimensionamiento termina cuando el sistema puede operar correctamente
+
+Una planta elevadora no debería considerarse correctamente dimensionada solamente porque una bomba puede entregar el caudal y la presión calculados.
+
+También debe analizarse cómo funcionará el sistema durante su vida útil.
+
+Esto implica considerar acceso para mantenimiento, alternancia de equipos, respaldo, protecciones eléctricas e hidráulicas, instrumentación, automatización y, cuando corresponda, supervisión remota.
+
+En proyectos donde el abastecimiento de agua es crítico, estos aspectos pueden ser tan importantes como el cálculo hidráulico inicial.
+
+## Una PEAP debe diseñarse como un sistema completo
+
+El dimensionamiento de una planta elevadora de agua potable comienza con la demanda de la instalación, pero debe integrar hidráulica, almacenamiento, bombeo, electricidad, control y operación.
+
+El caudal determina cuánto agua necesita transportar el sistema.
+
+La altura geométrica, las pérdidas de carga y la presión requerida determinan las condiciones hidráulicas que deben satisfacer las bombas.
+
+El almacenamiento permite gestionar la disponibilidad de agua.
+
+La automatización coordina el funcionamiento de los equipos.
+
+Y la telemetría permite conocer cómo está operando realmente la instalación.
+
+En **ADDSYS** abordamos estos sistemas desde una perspectiva integral, combinando ingeniería sanitaria, equipos de bombeo, automatización y monitoreo para desarrollar soluciones adaptadas a las condiciones reales de cada proyecto.
+`,
+  imagen: "/img_pub_10.png",
+  fecha: "26 de octubre de 2026",
+  fechaISO: "2026-10-26",
+  fechaPublicacionISO: "2026-10-26T01:56:45-03:00",
+  tiempoLectura: "13 min",
+  destacada: false,
+},
+
 ];

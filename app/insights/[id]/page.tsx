@@ -198,9 +198,10 @@ export default async function InsightPage({ params }: PageProps) {
       {/* CUERPO DEL ARTÍCULO */}
       <article className="mx-auto max-w-4xl px-6 py-12 md:py-12">
         <div className="mx-auto max-w-3xl text-lg leading-8 text-slate-700">
-          {publicacion.contenido
-            .split("\n")
-            .map((linea: string, index: number) => {
+          {(() => {
+            const lineas = publicacion.contenido.split("\n");
+
+            return lineas.map((linea: string, index: number) => {
               const texto = linea.trim();
 
               if (!texto) {
@@ -506,8 +507,9 @@ export default async function InsightPage({ params }: PageProps) {
 
               // LISTA 1 — Cuándo puede ser necesaria una PEAP
               if (
+                publicacion.id === 9 &&
                 texto ===
-                "En términos generales, una planta elevadora puede ser necesaria cuando:"
+                  "En términos generales, una planta elevadora puede ser necesaria cuando:"
               ) {
                 return (
                   <div key={index} className="mb-8">
@@ -541,8 +543,9 @@ export default async function InsightPage({ params }: PageProps) {
 
               // LISTA 2 — Aspectos sanitarios y operacionales
               if (
+                publicacion.id === 9 &&
                 texto ===
-                "Además de su volumen, deben considerarse aspectos sanitarios y operacionales como:"
+                  "Además de su volumen, deben considerarse aspectos sanitarios y operacionales como:"
               ) {
                 return (
                   <div key={index} className="mb-8">
@@ -579,6 +582,7 @@ export default async function InsightPage({ params }: PageProps) {
 
               // LISTA 3 — Antecedentes para diseñar una PEAP
               if (
+                publicacion.id === 9 &&
                 texto === "Entre los principales antecedentes se encuentran:"
               ) {
                 return (
@@ -619,8 +623,9 @@ export default async function InsightPage({ params }: PageProps) {
 
               // LISTA 4 — Variables supervisadas por el sistema de control
               if (
+                publicacion.id === 9 &&
                 texto ===
-                "El sistema de control puede supervisar variables como:"
+                  "El sistema de control puede supervisar variables como:"
               ) {
                 return (
                   <div key={index} className="mb-8">
@@ -727,6 +732,18 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
+              // Subtítulos H3 dentro de una sección
+              if (texto.startsWith("### ")) {
+                return (
+                  <h3
+                    key={index}
+                    className="mb-4 mt-8 text-xl font-bold leading-tight text-slate-900 md:text-2xl"
+                  >
+                    {texto.replace("### ", "")}
+                  </h3>
+                );
+              }
+
               // Títulos
               if (texto.startsWith("## ")) {
                 return (
@@ -754,7 +771,49 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
-              // Lista de temas de ADDSYS Insights
+              // Listas genéricas con viñetas desde el artículo 10
+              if (publicacion.id >= 10 && texto.startsWith("- ")) {
+                const lineaAnterior = lineas[index - 1]?.trim();
+
+                if (lineaAnterior?.startsWith("- ")) {
+                  return null;
+                }
+
+                const items: string[] = [];
+
+                for (let i = index; i < lineas.length; i++) {
+                  const item = lineas[i].trim();
+
+                  if (!item.startsWith("- ")) {
+                    break;
+                  }
+
+                  items.push(item.slice(2).trim());
+                }
+
+                return (
+                  <div
+                    key={index}
+                    className="mb-8 mt-2 grid gap-3 sm:grid-cols-2"
+                  >
+                    {items.map((item) => (
+                      <div
+                        key={item}
+                        className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 px-5 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50/60 hover:shadow-sm"
+                      >
+                        <span className="mt-1.5 flex h-3 w-3 shrink-0 rounded-full bg-sky-400 ring-4 ring-sky-100 transition-all duration-300 group-hover:bg-sky-500 group-hover:ring-sky-200" />
+
+                        <span className="text-base font-medium leading-6 text-slate-700">
+                          {renderConNegritas(item)}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                );
+              }
+
+              // Las listas de artículos anteriores continúan dependiendo
+              // de sus bloques especiales
               if (texto.startsWith("- ")) {
                 return null;
               }
@@ -797,13 +856,129 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
+              // Listas numeradas desde el artículo 10
+              const coincidenciaNumerada = texto.match(/^(\d+)\.\s+(.+)$/);
+
+              if (publicacion.id >= 10 && coincidenciaNumerada) {
+                const numero = coincidenciaNumerada[1];
+                const contenido = coincidenciaNumerada[2].replace(/[;.]$/, "");
+
+                return (
+                  <div
+                    key={index}
+                    className="mb-3 flex items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 px-5 py-4"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sm font-bold text-sky-700">
+                      {numero}
+                    </span>
+
+                    <span className="pt-0.5 text-base font-medium leading-7 text-slate-700">
+                      {renderConNegritas(contenido)}
+                    </span>
+                  </div>
+                );
+              }
+
+              // Artículo 10 → Artículo 9: Planta elevadora de agua potable
+              if (
+                publicacion.id === 10 &&
+                texto.startsWith(
+                  "Dimensionar una planta elevadora de agua potable (PEAP) significa",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Dimensionar una{" "}
+                    <Link
+                      href="/insights/9"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      planta elevadora de agua potable (PEAP)
+                    </Link>{" "}
+                    significa determinar las condiciones hidráulicas que debe
+                    satisfacer el sistema para entregar el caudal y la presión
+                    necesarios en los distintos puntos de consumo de una
+                    instalación.
+                  </p>
+                );
+              }
+
+              // Artículo 10 → Artículo 7: RIDAA
+              if (
+                publicacion.id === 10 &&
+                texto.startsWith(
+                  "El RIDAA establece criterios para el diseño de las instalaciones domiciliarias",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    El{" "}
+                    <Link
+                      href="/insights/7"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      RIDAA
+                    </Link>{" "}
+                    establece criterios para el diseño de las instalaciones
+                    domiciliarias de agua potable y relaciona la necesidad de
+                    sistemas de elevación con las condiciones de presión
+                    disponibles y las características de la instalación.
+                  </p>
+                );
+              }
+
+              // Artículo 10 → Artículo 3: Automatización
+              if (
+                publicacion.id === 10 &&
+                texto.startsWith(
+                  "Mediante una estrategia adecuada de automatización, las bombas pueden alternarse",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Mediante una estrategia adecuada de{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización
+                    </Link>
+                    , las bombas pueden alternarse para distribuir las horas de
+                    funcionamiento y comprobar periódicamente su disponibilidad.
+                  </p>
+                );
+              }
+
+              // Artículo 10 → Artículo 4: Telemetría
+              if (
+                publicacion.id === 10 &&
+                texto.startsWith(
+                  "La telemetría permite supervisar a distancia variables relevantes",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    La{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría
+                    </Link>{" "}
+                    permite supervisar a distancia variables relevantes para
+                    conocer el comportamiento de una planta elevadora.
+                  </p>
+                );
+              }
+
               // Párrafos normales
               return (
                 <p key={index} className="mb-5">
                   {renderConNegritas(texto)}
                 </p>
               );
-            })}
+            });
+          })()}
         </div>
 
         {/* CIERRE */}
