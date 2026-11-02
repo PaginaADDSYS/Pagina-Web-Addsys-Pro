@@ -2201,4 +2201,587 @@ En **ADDSYS** abordamos estos sistemas desde una perspectiva integral, combinand
   destacada: false,
 },
 
+{
+  id: 11,
+  categoria: "ADDSYS Insights",
+  titulo:
+    "PEAP vs. PEAS: diferencias entre plantas elevadoras de agua potable y aguas servidas",
+  tituloSEO:
+    "PEAP vs. PEAS: diferencias, diseño y funcionamiento",
+  resumen:
+    "Conoce las diferencias entre una PEAP y una PEAS, cómo funcionan, cuándo se necesitan y qué aspectos deben considerarse para diseñar plantas elevadoras de agua potable y aguas servidas seguras y confiables.",
+  contenido: `
+## PEAP vs. PEAS: diferencias entre plantas elevadoras de agua potable y aguas servidas
+
+Una planta elevadora de agua potable (PEAP) y una planta elevadora de aguas servidas (PEAS) utilizan bombas, tuberías, sistemas eléctricos y elementos de control para transportar agua mediante impulsión. Sin embargo, **cumplen funciones completamente diferentes y sus criterios de diseño, operación y seguridad no son equivalentes**.
+
+Mientras una PEAP busca garantizar que el agua potable llegue a los puntos de consumo con el caudal y la presión necesarios, una PEAS permite evacuar aguas servidas cuando las condiciones del terreno o las cotas de una instalación impiden conducirlas gravitacionalmente hacia el sistema de alcantarillado.
+
+Comprender esta diferencia es fundamental para seleccionar correctamente los equipos, definir la infraestructura necesaria y diseñar un sistema confiable.
+
+## ¿Qué es una planta elevadora de agua potable?
+
+Una planta elevadora de agua potable o **PEAP** es un sistema destinado a impulsar agua potable cuando la presión disponible no permite abastecer adecuadamente una instalación.
+
+El RIDAA establece que, cuando la presión informada por la empresa sanitaria en el Certificado de Factibilidad no permita garantizar un abastecimiento adecuado y permanente, debe proyectarse y construirse un sistema de elevación.
+
+Esto puede ocurrir, por ejemplo, en edificios, instalaciones industriales, establecimientos educacionales, condominios u otras infraestructuras donde la presión disponible, las diferencias de altura y las características hidráulicas de la instalación hacen necesaria la elevación mecánica.
+
+Una PEAP puede incorporar:
+
+- estanque de acumulación de agua potable
+- dos o más bombas según la configuración requerida
+- equipo de bombeo de reserva
+- colectores de aspiración e impulsión
+- válvulas de corte y retención
+- sensores o transmisores de presión
+- estanques hidroneumáticos
+- variadores de frecuencia
+- tablero eléctrico y sistema de control
+- protecciones por bajo nivel
+- alarmas y sistemas de telemetría
+
+El objetivo final es mantener condiciones adecuadas de **caudal y presión** en la instalación.
+
+## Una PEAP no debe succionar directamente desde la red pública
+
+Este es un aspecto fundamental del diseño.
+
+El RIDAA establece que los equipos de bombeo deben abastecerse desde un **depósito especial o estanque de acumulación sin presión** y que no pueden hacerlo directamente desde la red pública.
+
+Por lo tanto, conceptualmente el sistema puede representarse de la siguiente manera:
+
+**Red pública → estanque de acumulación → bombas → red interior presurizada**
+
+El estanque permite separar hidráulicamente el abastecimiento proveniente de la red pública respecto de la aspiración de las bombas.
+
+Esto evita que la operación de los equipos de bombeo afecte directamente las condiciones hidráulicas de la red pública y constituye una diferencia importante respecto de una instalación que simplemente utiliza la presión disponible desde la sanitaria.
+
+## ¿Qué es una planta elevadora de aguas servidas?
+
+Una planta elevadora de aguas servidas o **PEAS** es un sistema destinado a elevar aguas residuales desde una cota inferior hacia otra desde la cual puedan continuar su recorrido, normalmente mediante conducción gravitacional.
+
+En una red de alcantarillado se intenta utilizar la gravedad siempre que sea posible. Sin embargo, existen proyectos donde determinados artefactos sanitarios, edificios, instalaciones o sectores del terreno se encuentran en condiciones que impiden descargar gravitacionalmente hacia el punto de conexión.
+
+En esas condiciones puede ser necesario instalar una PEAS.
+
+Sus principales componentes pueden incluir:
+
+- cámara o estanque de acumulación de aguas servidas
+- bombas para aguas servidas
+- tuberías de impulsión
+- válvulas de retención
+- válvulas de corte
+- sistemas de medición de nivel
+- tablero eléctrico y sistema de control
+- alarmas de alto nivel
+- ventilación
+- sistemas de telemetría
+- cámara de descarga de la impulsión
+
+A diferencia de una PEAP, una PEAS trabaja con un fluido que puede contener sólidos y materia orgánica, por lo que sus equipos y condiciones de operación deben estar diseñados específicamente para ese servicio.
+
+## ¿Cuándo se necesita elevar las aguas servidas?
+
+El principio general de una instalación de alcantarillado es conducir las aguas servidas gravitacionalmente hacia el punto de conexión.
+
+El RIDAA establece que cuando las aguas servidas de un inmueble no puedan ser evacuadas gravitacionalmente al punto de conexión señalado en el Certificado de Factibilidad, estas deben descargar gravitacionalmente a un estanque de acumulación y ser evacuadas mediante una planta elevadora o eyectora, considerando las condiciones y excepciones establecidas por el propio reglamento.
+
+Por esta razón, antes de definir una PEAS es fundamental conocer:
+
+- la cota de los puntos que deben ser evacuados
+- la cota del punto de conexión
+- la profundidad del colector existente
+- las pendientes disponibles
+- el caudal esperado de aguas servidas
+- la distancia y altura de impulsión
+- las características del trazado
+- las condiciones establecidas por la empresa sanitaria
+
+La necesidad de una PEAS surge, por tanto, principalmente de un **problema de cotas y evacuación**.
+
+## PEAP vs. PEAS: ¿cuál es la principal diferencia?
+
+Aunque ambas utilizan bombas, el problema hidráulico que resuelven es distinto.
+
+**PEAP → abastecer agua potable con el caudal y la presión necesarios.**
+
+**PEAS → evacuar aguas servidas cuando no pueden salir gravitacionalmente.**
+
+Esta diferencia modifica prácticamente todos los criterios posteriores de diseño.
+
+### PEAP
+
+- trabaja con agua potable
+- su objetivo principal es proporcionar caudal y presión
+- las bombas se abastecen desde un estanque de acumulación sin presión
+- no debe existir succión directa de las bombas desde la red pública
+- utiliza bombas aptas para agua potable
+- el control se relaciona principalmente con presión, nivel y demanda
+- debe protegerse la calidad sanitaria del agua
+- puede incorporar variadores de frecuencia para regular la presión
+- debe considerar equipo de bombeo de reserva
+- su impulsión abastece una red interior de consumo
+
+### PEAS
+
+- trabaja con aguas servidas
+- su objetivo principal es evacuar el efluente
+- recibe las aguas servidas gravitacionalmente en una cámara o estanque
+- utiliza bombas diseñadas para aguas residuales
+- el control normalmente depende principalmente del nivel de la cámara
+- debe considerar sólidos, materia orgánica y gases
+- debe disponer de redundancia de bombeo
+- requiere especial atención a alarmas y condiciones de falla
+- su impulsión descarga a un punto desde el cual el flujo continúa gravitacionalmente
+
+## ¿Cómo se dimensiona una PEAP?
+
+El dimensionamiento de una PEAP busca determinar principalmente el **caudal que debe suministrarse y la altura o presión que debe entregar el sistema**.
+
+Para ello deben analizarse variables como:
+
+- demanda de agua potable
+- gasto instalado
+- gasto máximo probable
+- presión informada por la empresa sanitaria
+- altura geométrica
+- pérdidas de carga
+- presión residual requerida
+- diámetros de tuberías
+- configuración de las bombas
+- volumen de almacenamiento
+- condiciones de operación mínima y máxima
+
+La presión disponible desde la red sigue siendo un antecedente fundamental del proyecto, aunque las bombas no succionen directamente desde ella.
+
+Permite determinar las condiciones de abastecimiento del estanque y evaluar si la presión informada por la sanitaria hace necesario implementar un sistema de elevación.
+
+La bomba debe seleccionarse considerando simultáneamente el caudal y la altura requerida por la instalación.
+
+Por esta razón, seleccionar una bomba únicamente por potencia no constituye un criterio adecuado de diseño.
+
+## ¿Cómo se dimensiona una PEAS?
+
+En una PEAS también deben determinarse el caudal y la altura de impulsión, pero aparecen otras variables asociadas a la naturaleza del fluido y al funcionamiento de la cámara de acumulación.
+
+Entre los principales antecedentes se encuentran:
+
+- caudal de aguas servidas
+- caudal máximo esperado
+- volumen útil de la cámara
+- niveles de partida y detención de las bombas
+- nivel de alarma
+- altura geométrica de impulsión
+- pérdidas de carga
+- diámetro de la impulsión
+- velocidad dentro de la tubería
+- características de los sólidos presentes
+- tipo de bomba
+- condiciones de ventilación
+- redundancia de equipos
+- condiciones de descarga de la impulsión
+
+El volumen de acumulación y la capacidad de bombeo no pueden definirse independientemente.
+
+El RIDAA establece como criterios de diseño que **el período máximo de retención de las aguas servidas sea de 12 horas** y que los equipos instalados sean capaces de **evacuar las aguas servidas del estanque en una hora**.
+
+Esto obliga a relacionar correctamente el volumen útil, el caudal de ingreso y la capacidad de las bombas.
+
+## Los estanques de una PEAP y una PEAS cumplen funciones diferentes
+
+En una PEAP, el estanque de acumulación recibe el agua proveniente del sistema de abastecimiento y permite que las bombas presuricen la instalación **sin succionar directamente desde la red pública**.
+
+Además de proporcionar almacenamiento, el estanque produce la separación hidráulica necesaria entre la red pública y los equipos de bombeo.
+
+En una PEAS, en cambio, la cámara recibe las aguas servidas que llegan gravitacionalmente y proporciona el volumen necesario para controlar los ciclos de bombeo.
+
+Esto significa que **no basta con dimensionar una cámara de aguas servidas simplemente buscando el mayor volumen posible**.
+
+Un volumen excesivo puede aumentar el tiempo de permanencia de las aguas servidas, mientras que un volumen útil demasiado pequeño puede provocar una cantidad excesiva de arranques y detenciones de las bombas.
+
+El dimensionamiento debe encontrar un equilibrio entre almacenamiento, ciclos de bombeo, capacidad de evacuación y tiempo de retención.
+
+## ¿Cómo debe construirse el estanque de acumulación de una PEAS?
+
+El estanque de acumulación forma parte fundamental de la planta y debe permitir tanto una operación hidráulica adecuada como el acceso para inspección y mantenimiento.
+
+El RIDAA establece condiciones específicas para su construcción.
+
+Entre ellas se encuentran:
+
+- la estructura debe ser estanca
+- las superficies interiores deben ser lisas e impermeables
+- el fondo debe tener una pendiente mínima del 3 % hacia el punto de succión
+- debe existir una escotilla que permita retirar los equipos instalados
+- la escotilla debe tener al menos 0,80 m libres por lado
+- la tapa debe ser estanca a líquidos y gases
+- el estanque debe disponer de ventilación
+
+Estas características tienen una finalidad práctica.
+
+La pendiente del fondo facilita la conducción de las aguas servidas hacia el punto de succión, mientras que un acceso correctamente dimensionado permite extraer las bombas y realizar las labores de mantenimiento necesarias.
+
+Por esta razón, la mantenibilidad debe considerarse desde el diseño y no solamente después de construir la planta.
+
+## Las bombas de una PEAP y una PEAS tampoco son equivalentes
+
+Las bombas utilizadas en una PEAP están destinadas al manejo de agua potable y deben seleccionarse de acuerdo con las condiciones hidráulicas y sanitarias del sistema.
+
+En una PEAS, en cambio, las bombas deben ser adecuadas para aguas residuales.
+
+Dependiendo de las características de la instalación pueden utilizarse equipos con diferentes tipos de impulsores y capacidad de paso de sólidos.
+
+Cuando las aguas servidas que llegan al estanque provienen de inodoros, el RIDAA establece que los equipos deben ser capaces de **bombear sólidos mayores de 50 mm** y que la tubería de impulsión debe tener un **diámetro interior mínimo de 50 mm**.
+
+Además de estas exigencias, la selección de una bomba debe considerar:
+
+- caudal
+- altura requerida
+- paso de sólidos cuando corresponda
+- características del impulsor
+- rendimiento
+- condiciones de instalación
+- facilidad de extracción
+- mantenimiento
+- disponibilidad de repuestos
+
+La confiabilidad y facilidad de mantenimiento adquieren especial importancia debido a las consecuencias que puede producir una falla en una planta elevadora.
+
+## Tanto una PEAP como una PEAS deben considerar respaldo
+
+La redundancia no es exclusiva de las plantas de aguas servidas.
+
+En una instalación de elevación de agua potable, el RIDAA exige disponer de **al menos un equipo de bombeo de reserva con capacidad igual al mayor de los equipos básicos**.
+
+También contempla controles automáticos que permitan el funcionamiento alternativo de las unidades, incluyendo el equipo de reserva.
+
+En una PEAS, la redundancia adquiere una importancia especialmente crítica porque una falla puede terminar en un **rebalse de aguas servidas**, afectando instalaciones, personas y condiciones sanitarias del lugar.
+
+Para estos sistemas, el RIDAA establece un **mínimo de dos bombas**, con funcionamiento alternado, y exige que **al menos una sea de reserva**.
+
+Por lo tanto, en ambos sistemas el respaldo forma parte del diseño, aunque las consecuencias y condiciones de una falla sean diferentes.
+
+## ¿Cómo se controla una PEAP?
+
+Una PEAP puede utilizar diferentes estrategias de control dependiendo de su configuración.
+
+Entre las principales variables se encuentran:
+
+- presión de impulsión
+- nivel del estanque
+- estado de las bombas
+- demanda de agua
+- frecuencia de funcionamiento
+- condiciones de alarma
+
+El RIDAA contempla controles automáticos para garantizar la alternancia de las unidades, incluyendo el equipo de reserva.
+
+También deben existir controles manuales que permitan operar al menos un equipo en caso de falla del automatismo.
+
+Otra protección importante corresponde al nivel mínimo del estanque.
+
+El sistema debe evitar que las bombas continúen funcionando cuando el nivel de agua alcanza una condición que pueda provocar una operación inadecuada por falta de agua.
+
+De esta manera, la automatización no solamente mantiene la presión: también protege los equipos y mejora la disponibilidad del sistema.
+
+## ¿Cómo funciona normalmente el control de una PEAS?
+
+Una PEAS suele operar en función del nivel existente dentro de la cámara de acumulación.
+
+Conceptualmente pueden establecerse diferentes niveles de control:
+
+1. Nivel de detención
+2. Nivel de partida de la bomba de servicio
+3. Nivel de incorporación de otra bomba cuando corresponda
+4. Nivel de alarma y actuación de respaldo
+
+Cuando las aguas servidas ingresan a la cámara, el nivel aumenta.
+
+Al alcanzar el nivel de partida, el sistema ordena el funcionamiento de una bomba. Cuando el nivel desciende hasta el punto establecido, la bomba se detiene.
+
+El RIDAA establece además condiciones respecto del nivel máximo de partida y contempla un elemento de aviso cuando dicho nivel es sobrepasado, junto con el **accionamiento automático de la bomba de reserva**.
+
+Por lo tanto, la instrumentación de nivel no solamente permite controlar los ciclos normales de bombeo: también forma parte de la estrategia de protección frente a una condición anormal.
+
+## La alarma de alto nivel es una protección fundamental en una PEAS
+
+Una de las variables más importantes de una PEAS es el **alto nivel de la cámara**.
+
+Esta condición puede indicar situaciones como:
+
+- falla de una bomba
+- obstrucción de la impulsión
+- problemas eléctricos
+- falla del sistema de control
+- ingreso de un caudal superior al previsto
+- problemas en válvulas
+- indisponibilidad de los equipos
+
+Detectar esta condición anticipadamente permite intervenir antes de que se produzca un rebalse.
+
+Por esta razón, la alarma de nivel y la actuación del equipo de respaldo constituyen elementos fundamentales del sistema de control.
+
+Cuando además existe supervisión remota, la condición puede ser informada oportunamente al personal responsable de la operación.
+
+## Las válvulas también forman parte del sistema de bombeo
+
+Una planta elevadora no está formada solamente por bombas y tuberías.
+
+En una PEAP, cada motobomba debe disponer de los elementos de corte correspondientes en aspiración e impulsión y de una válvula de retención en la impulsión.
+
+En una PEAS, el RIDAA establece igualmente las válvulas de corte correspondientes y **válvulas de retención de paso completo**, las cuales no deben instalarse dentro del estanque.
+
+La impulsión general de la PEAS debe disponer además de un retorno con válvula de corte que permita su desagüe.
+
+Estos elementos tienen importancia hidráulica y operacional, ya que permiten aislar equipos, impedir retornos no deseados y facilitar determinadas labores de mantenimiento.
+
+## ¿Qué ocurre después de la tubería de impulsión de una PEAS?
+
+Este es un aspecto importante que algunas veces recibe menos atención que la selección de las bombas.
+
+La impulsión transporta las aguas servidas mediante presión, pero eventualmente debe existir un punto donde el sistema vuelva a operar gravitacionalmente.
+
+El RIDAA establece que **toda tubería de impulsión debe descargar a una cámara de inspección**, ubicada a una cota que permita desde allí el escurrimiento gravitacional hacia el colector público.
+
+Por lo tanto, el diseño de una PEAS no termina en la bomba ni en la tubería de impulsión.
+
+También debe resolverse correctamente **la transición entre la conducción a presión y la conducción gravitacional**.
+
+## ¿Qué función cumple una cámara reductora de velocidad?
+
+Cuando las aguas servidas llegan al final de una impulsión pueden hacerlo con una velocidad y energía significativas.
+
+Dependiendo de las condiciones hidráulicas del proyecto, puede ser necesario incorporar una solución que permita **reducir la velocidad y disipar parte de esa energía antes de continuar por el sistema gravitacional**.
+
+Este tipo de solución puede ayudar a controlar fenómenos como:
+
+- turbulencia excesiva
+- impacto directo del flujo
+- desgaste de elementos
+- condiciones hidráulicas desfavorables en la cámara de descarga
+- problemas en la transición hacia el conducto gravitacional
+
+No debe confundirse, sin embargo, la **cámara de inspección donde descarga la impulsión, exigida por el RIDAA**, con la necesidad de incorporar siempre una cámara reductora de velocidad específica.
+
+La necesidad y configuración de una solución de disipación dependerá de factores como:
+
+- velocidad de descarga
+- caudal impulsado
+- diámetro de la tubería
+- diferencia de cotas
+- geometría de la cámara
+- características de la conducción gravitacional posterior
+- condiciones particulares establecidas para la conexión
+
+Por esta razón, la descarga debe analizarse hidráulicamente como parte integral del proyecto.
+
+## ¿Puede la empresa sanitaria establecer condiciones particulares para la descarga?
+
+El proyecto debe considerar las condiciones del Certificado de Factibilidad y los requisitos técnicos aplicables a la conexión con la infraestructura sanitaria existente.
+
+Dependiendo de las características del proyecto y de la forma en que la impulsión se incorpora al sistema gravitacional, pueden existir condiciones particulares que deban considerarse para resolver adecuadamente la descarga.
+
+Por esta razón, una configuración conceptual puede representarse de la siguiente manera:
+
+**PEAS → impulsión a presión → cámara de inspección / eventual disipación de energía → conducción gravitacional → colector público**
+
+La solución definitiva debe responder tanto al cálculo hidráulico como a las condiciones de conexión aplicables al proyecto.
+
+## La ventilación también forma parte del diseño de una PEAS
+
+La naturaleza de las aguas servidas hace que la ventilación tenga una importancia considerablemente mayor que en una instalación convencional de bombeo de agua potable.
+
+El RIDAA establece condiciones de ventilación para el estanque y para el recinto donde se ubica la planta.
+
+Una ventilación correctamente resuelta contribuye a manejar los gases generados y forma parte de las condiciones necesarias para una instalación sanitaria adecuada.
+
+Sin embargo, la existencia de ventilación no elimina los riesgos asociados a una cámara de aguas servidas.
+
+Las labores de inspección y mantenimiento deben considerar siempre procedimientos de seguridad apropiados y evaluar los riesgos asociados a las condiciones reales del recinto.
+
+## ¿Qué diferencias existen en la automatización de una PEAP y una PEAS?
+
+Ambos sistemas utilizan automatización, pero las variables principales son diferentes.
+
+En una PEAP el sistema puede controlar:
+
+- presión de impulsión
+- nivel del estanque
+- estado de bombas
+- alternancia de equipos
+- frecuencia de funcionamiento
+- caudal
+- bajo nivel
+- alarmas
+- horas de operación
+
+En una PEAS normalmente adquieren especial relevancia:
+
+- nivel de la cámara
+- estado de las bombas
+- alternancia de equipos
+- alto nivel
+- falla de bombas
+- horas de funcionamiento
+- número de partidas
+- estado eléctrico
+- alarmas de control
+
+En ambos casos, una estrategia adecuada de automatización permite gestionar equipos de servicio y respaldo y detectar condiciones anormales antes de que produzcan una falla operacional.
+
+## ¿Qué puede aportar la telemetría?
+
+La telemetría permite supervisar remotamente variables relevantes de una planta elevadora.
+
+En una PEAP puede utilizarse para conocer presión, nivel del estanque, funcionamiento de bombas y condiciones de abastecimiento.
+
+En una PEAS adquiere especial valor porque permite conocer rápidamente condiciones que podrían terminar en un rebalse.
+
+Entre las variables que pueden supervisarse se encuentran:
+
+- nivel
+- presión cuando corresponda
+- estado de las bombas
+- fallas de equipos
+- horas de operación
+- número de partidas
+- estado del tablero
+- pérdida de energía
+- activación de protecciones
+- condiciones de alarma
+
+Dependiendo del sistema implementado, estas alarmas pueden transmitirse hacia plataformas de supervisión o directamente al personal responsable de la operación.
+
+## El mantenimiento también es diferente
+
+Una PEAP trabaja con agua potable, mientras que una PEAS opera con aguas residuales y sólidos.
+
+Esto modifica significativamente las condiciones de mantenimiento.
+
+En una PEAP debe prestarse atención a:
+
+- estado de bombas
+- válvulas
+- sensores y transmisores
+- estanque de acumulación
+- sistemas de control
+- equipos de respaldo
+- condiciones sanitarias del almacenamiento
+
+En una PEAS adquieren además especial importancia:
+
+- acumulación de sólidos
+- elementos atrapados en las bombas
+- estado de los impulsores
+- sensores de nivel
+- válvulas de retención
+- sistemas de extracción de bombas
+- sedimentos dentro de la cámara
+- ventilación
+- estado de las alarmas
+- funcionamiento de los equipos de respaldo
+
+El diseño debe facilitar la extracción de bombas, inspección de válvulas, limpieza y demás intervenciones necesarias durante la vida útil de la instalación.
+
+También deben considerarse procedimientos de seguridad adecuados para cualquier intervención asociada a cámaras de aguas servidas y recintos que puedan presentar atmósferas peligrosas.
+
+## La operación de una planta elevadora debe quedar documentada
+
+Una planta elevadora no termina con su construcción y puesta en marcha.
+
+Las características y disposición de la instalación y sus obras complementarias deben quedar correctamente documentadas.
+
+Además, los sistemas de elevación requieren información que permita al propietario comprender su operación, control y condiciones de seguridad.
+
+Esto resulta especialmente importante para definir aspectos como:
+
+- funcionamiento normal del sistema
+- operación de las bombas
+- condiciones de alarma
+- equipos de respaldo
+- procedimientos de inspección
+- consideraciones de mantenimiento
+- condiciones de seguridad
+
+Una planta correctamente diseñada debe ser también una planta que pueda operarse y mantenerse correctamente durante toda su vida útil.
+
+## Errores frecuentes al diseñar una PEAP
+
+Entre los errores habituales se encuentran:
+
+- considerar succión directa desde la red pública
+- seleccionar bombas únicamente por potencia
+- no considerar la presión informada por la sanitaria
+- ignorar las pérdidas de carga
+- sobredimensionar las bombas
+- no analizar el punto más desfavorable
+- diseñar solamente para una condición de funcionamiento
+- no considerar el equipo de reserva
+- no proteger las bombas frente a bajo nivel
+- omitir automatización y monitoreo
+
+Una PEAP debe analizarse como un sistema hidráulico completo.
+
+## Errores frecuentes al diseñar una PEAS
+
+En una PEAS pueden aparecer además errores específicos como:
+
+- dimensionar incorrectamente el volumen útil de la cámara
+- no considerar el tiempo de retención
+- no considerar adecuadamente los sólidos
+- seleccionar bombas sin verificar su condición real de operación
+- utilizar una impulsión con características hidráulicas inadecuadas
+- no disponer de la redundancia requerida
+- no considerar correctamente alarmas y actuación de respaldo
+- no resolver adecuadamente la ventilación
+- ignorar la transición entre impulsión y alcantarillado gravitacional
+- no analizar las condiciones de descarga
+- diseñar sin considerar mantenimiento y extracción de equipos
+- no verificar las condiciones establecidas para la conexión
+
+Estos errores pueden disminuir significativamente la confiabilidad del sistema y dificultar posteriormente su operación.
+
+## ¿Cómo saber si un proyecto necesita una PEAP o una PEAS?
+
+La pregunta inicial es sencilla:
+
+**¿El problema consiste en abastecer agua potable y la presión disponible no permite garantizar las condiciones necesarias en los puntos de consumo?**
+
+En ese caso puede ser necesario implementar una **PEAP**.
+
+**¿El problema consiste en evacuar aguas servidas desde un punto que no puede descargar gravitacionalmente hacia el alcantarillado?**
+
+En ese caso puede ser necesaria una **PEAS**.
+
+Un mismo proyecto incluso puede requerir ambos sistemas.
+
+Por ejemplo, una instalación ubicada en un terreno complejo podría necesitar una PEAP para garantizar presión de agua potable y, simultáneamente, una PEAS para evacuar sectores que no pueden conectarse gravitacionalmente al alcantarillado.
+
+Son sistemas distintos y deben diseñarse de manera independiente de acuerdo con sus respectivas condiciones hidráulicas.
+
+## PEAP y PEAS: dos sistemas de bombeo con objetivos completamente diferentes
+
+Las plantas elevadoras permiten resolver problemas que la gravedad o la presión disponible no pueden solucionar por sí solas.
+
+Sin embargo, **una PEAP y una PEAS no deben entenderse simplemente como dos variantes de una misma instalación de bombeo**.
+
+Una PEAP debe garantizar abastecimiento, caudal y presión, utilizando un estanque de acumulación que independiza hidráulicamente los equipos de bombeo respecto de la red pública.
+
+Una PEAS debe garantizar la evacuación segura y confiable de aguas servidas cuando estas no pueden continuar gravitacionalmente hacia el punto de conexión.
+
+Ambas requieren considerar respaldo, control, válvulas, condiciones de operación y mantenimiento, aunque las características del fluido y las consecuencias de una falla sean muy diferentes.
+
+En ambos casos, el desempeño final depende de integrar correctamente hidráulica, bombas, tuberías, almacenamiento, electricidad, automatización, telemetría, mantenimiento y condiciones reales de operación.
+
+En **ADDSYS** desarrollamos soluciones de bombeo, automatización y telemetría aplicadas a infraestructura sanitaria, considerando el sistema completo desde su diseño hidráulico hasta su operación, mantenimiento y supervisión.
+`,
+  imagen: "/img_pub_11.png",
+  fecha: "2 de noviembre de 2026",
+  fechaISO: "2026-11-02",
+  fechaPublicacionISO: "2026-11-02T16:55:15-03:00",
+  tiempoLectura: "15 min",
+  destacada: false,
+},
+
 ];

@@ -971,6 +971,98 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
+              // Enlace interno artículo 11 → artículo 9
+              if (
+                publicacion.id === 11 &&
+                texto.startsWith(
+                  "Una planta elevadora de agua potable o **PEAP** es un sistema destinado",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Una{" "}
+                    <Link
+                      href="/insights/9"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      planta elevadora de agua potable
+                    </Link>{" "}
+                    o <strong>PEAP</strong> es un sistema destinado a impulsar
+                    agua potable cuando la presión disponible no permite
+                    abastecer adecuadamente una instalación.
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 11 → artículo 10
+              if (
+                publicacion.id === 11 &&
+                texto.startsWith(
+                  "El dimensionamiento de una PEAP busca determinar principalmente",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    El{" "}
+                    <Link
+                      href="/insights/10"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      dimensionamiento de una PEAP
+                    </Link>{" "}
+                    busca determinar principalmente el{" "}
+                    <strong>
+                      caudal que debe suministrarse y la altura o presión que
+                      debe entregar el sistema
+                    </strong>
+                    .
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 11 → artículo 3
+              if (
+                publicacion.id === 11 &&
+                texto.startsWith(
+                  "Ambos sistemas utilizan automatización, pero las variables principales",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Ambos sistemas utilizan{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización
+                    </Link>
+                    , pero las variables principales son diferentes.
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 11 → artículo 4
+              if (
+                publicacion.id === 11 &&
+                texto.startsWith(
+                  "La telemetría permite supervisar remotamente variables relevantes",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    La{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría
+                    </Link>{" "}
+                    permite supervisar remotamente variables relevantes de una
+                    planta elevadora.
+                  </p>
+                );
+              }
+
               // Párrafos normales
               return (
                 <p key={index} className="mb-5">
