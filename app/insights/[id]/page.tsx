@@ -1063,6 +1063,146 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
+              // Enlace interno artículo 11 → artículo 12
+              if (
+                publicacion.id === 11 &&
+                texto.startsWith(
+                  "En una PEAS también deben determinarse el caudal y la altura de impulsión",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Al{" "}
+                    <Link
+                      href="/insights/12"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      dimensionar una PEAS
+                    </Link>{" "}
+                    también deben determinarse el caudal y la altura de
+                    impulsión, pero aparecen otras variables asociadas a la
+                    naturaleza del fluido y al funcionamiento de la cámara de
+                    acumulación.
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 12 → artículo 11
+              if (
+                publicacion.id === 12 &&
+                texto.startsWith(
+                  "Una planta elevadora de aguas servidas (PEAS) permite evacuar",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Una{" "}
+                    <Link
+                      href="/insights/11"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      planta elevadora de aguas servidas (PEAS)
+                    </Link>{" "}
+                    permite evacuar aguas residuales desde sectores donde no es
+                    posible, o no resulta seguro, conducirlas gravitacionalmente
+                    hacia el sistema de alcantarillado.
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 12 → artículo 7
+              if (
+                publicacion.id === 12 &&
+                texto.startsWith(
+                  "Además, es importante distinguir entre las exigencias establecidas",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Además, es importante distinguir entre las exigencias
+                    establecidas por el Reglamento de Instalaciones
+                    Domiciliarias de Agua Potable y Alcantarillado ({" "}
+                    <Link
+                      href="/insights/7"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      RIDAA
+                    </Link>
+                    ) y los criterios de ingeniería que deben definirse
+                    específicamente para cada proyecto.
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 12 → artículo 3
+              if (
+                publicacion.id === 12 &&
+                texto.startsWith(
+                  "La variable principal de control normalmente es el",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    La variable principal de control en la{" "}
+                    <Link
+                      href="/insights/3"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      automatización
+                    </Link>{" "}
+                    de una PEAS normalmente es el{" "}
+                    <strong>nivel de aguas servidas dentro de la cámara</strong>
+                    .
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 12 → artículo 4
+              if (
+                publicacion.id === 12 &&
+                texto.startsWith(
+                  "Mediante telemetría es posible transmitir información como:",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Mediante{" "}
+                    <Link
+                      href="/insights/4"
+                      className="font-semibold text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      telemetría
+                    </Link>{" "}
+                    es posible transmitir información como:
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 12 → artículo 2
+              if (
+                publicacion.id === 12 &&
+                texto.startsWith(
+                  "Por lo tanto, **la primera etapa del dimensionamiento de una PEAS",
+                )
+              ) {
+                return (
+                  <p
+                    key={index}
+                    className="mb-6 font-semibold leading-8 text-slate-700"
+                  >
+                    Por lo tanto, la primera etapa del dimensionamiento de una
+                    PEAS consiste en determinar correctamente{" "}
+                    <Link
+                      href="/insights/2"
+                      className="text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      si la elevación es realmente necesaria
+                    </Link>{" "}
+                    y qué parte de la instalación debe ser elevada.
+                  </p>
+                );
+              }
+
               // Párrafos normales
               return (
                 <p key={index} className="mb-5">

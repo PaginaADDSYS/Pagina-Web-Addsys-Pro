@@ -2784,4 +2784,775 @@ En **ADDSYS** desarrollamos soluciones de bombeo, automatización y telemetría 
   destacada: false,
 },
 
+{
+  id: 12,
+  categoria: "ADDSYS Insights",
+  titulo: "¿Cómo se dimensiona una planta elevadora de aguas servidas (PEAS)?",
+  tituloSEO: "Cómo dimensionar una PEAS: cálculo, bombas e impulsión",
+  resumen:
+    "Aprende cómo dimensionar una planta elevadora de aguas servidas (PEAS): cotas, pendientes, caudal, cámara, bombas, HMT, impulsión, control y criterios del RIDAA.",
+  imagen: "/img_pub_12.png",
+  fecha: "9 de noviembre de 2026",
+  fechaISO: "2026-11-09",
+  fechaPublicacionISO: "2026-11-09T00:26:00-03:00",
+  tiempoLectura: "20 min",
+  destacada: false,
+  contenido: `
+
+## ¿Qué es una PEAS?
+
+Una planta elevadora de aguas servidas (PEAS) permite evacuar aguas residuales desde sectores donde no es posible, o no resulta seguro, conducirlas gravitacionalmente hacia el sistema de alcantarillado.
+
+Su diseño no consiste simplemente en construir una cámara e instalar una bomba capaz de alcanzar determinada altura. Una PEAS debe analizarse como un sistema completo, considerando las **cotas del proyecto, pendientes, riesgo de rebase, caudal de aguas servidas, volumen de acumulación, niveles de operación, bombas, impulsión, pérdidas de carga, válvulas, descarga, automatización, alarmas y condiciones de mantenimiento**.
+
+Además, es importante distinguir entre las exigencias establecidas por el **Reglamento de Instalaciones Domiciliarias de Agua Potable y Alcantarillado (RIDAA)** y los criterios de ingeniería que deben definirse específicamente para cada proyecto.
+
+## ¿Cuándo se necesita una PEAS?
+
+El principio general de una instalación de alcantarillado es evacuar las aguas servidas mediante gravedad.
+
+Sin embargo, para determinar si esto es realmente posible no basta con comparar la profundidad de un artefacto sanitario con la profundidad del colector público.
+
+Deben analizarse conjuntamente:
+
+- cotas de los artefactos sanitarios
+- cotas de las bocas de admisión
+- cotas de las cámaras interiores
+- longitud de los recorridos
+- pendientes disponibles
+- cota de la unión domiciliaria
+- cota de solera correspondiente
+- nivel del terreno sobre el colector
+- condiciones establecidas en el Certificado de Factibilidad
+- y riesgo de rebase de la instalación
+
+El RIDAA establece que cuando las aguas servidas de un inmueble no puedan ser evacuadas gravitacionalmente al punto de conexión señalado en el Certificado de Factibilidad, deberán descargar gravitacionalmente a un estanque de acumulación y posteriormente ser evacuadas mediante una planta elevadora o eyectora, de acuerdo con las condiciones reglamentarias aplicables.
+
+Por lo tanto, **la primera etapa del dimensionamiento de una PEAS consiste en determinar correctamente si la elevación es realmente necesaria y qué parte de la instalación debe ser elevada**.
+
+## La cota de solera puede determinar la necesidad de una PEAS
+
+Este es uno de los aspectos más importantes al estudiar una instalación de alcantarillado.
+
+El RIDAA establece que las **bocas de admisión deben tener una cota superior a la cota de solera en que se ubique la unión domiciliaria de la propiedad**.
+
+Si esta condición no se cumple, el reglamento establece que la propiedad no puede desaguar gravitacionalmente y debe considerarse una solución mediante elevación de las aguas servidas conforme a las disposiciones correspondientes.
+
+Este requisito tiene además una explicación hidráulica importante.
+
+Una instalación puede encontrarse físicamente sobre la tubería del colector y disponer aparentemente de pendiente suficiente para llegar hasta ella. Sin embargo, esto no significa necesariamente que esté protegida frente a una obstrucción de la red.
+
+Si se produce una obstrucción aguas abajo, el nivel de las aguas servidas puede comenzar a elevarse hasta encontrar un punto por donde descargar.
+
+Una ducha, un desagüe de piso, un WC, una cámara interior u otra boca de admisión ubicada a una cota desfavorable puede transformarse en ese punto.
+
+Por esta razón, el análisis de cotas no debe limitarse a preguntar:
+
+**¿Puede la tubería llegar al colector por gravedad?**
+
+También debe preguntarse:
+
+**¿La instalación queda protegida frente a un eventual rebase de la red?**
+
+Este análisis resulta especialmente importante en:
+
+- subterráneos
+- estacionamientos subterráneos
+- baños bajo nivel de terreno
+- duchas y camarines
+- desagües de piso
+- recintos emplazados en terrenos bajos
+- y cámaras interiores
+
+## La pendiente disponible también determina si la descarga gravitacional es viable
+
+Además de las cotas de seguridad, debe existir diferencia de nivel suficiente para desarrollar las tuberías con las pendientes exigidas por el RIDAA.
+
+El artículo 88 establece que la **pendiente de diseño de las tuberías que conduzcan materias fecales o grasosas puede fluctuar entre un 3% y un 15%**.
+
+En tuberías ubicadas en losas u otros casos especiales debidamente justificados puede considerarse una **pendiente mínima de hasta un 1%**.
+
+Para la **unión domiciliaria**, el mismo artículo establece normalmente una pendiente comprendida **entre un 3% y un 33%**, permitiendo llegar a un **mínimo de 1% en casos especiales debidamente justificados**.
+
+Por lo tanto, no debería asumirse simplemente que una tubería puede proyectarse al 1% para conseguir llegar al colector. La condición normal de diseño comienza en 3%, mientras que una pendiente inferior corresponde a situaciones especiales que deben estar justificadas.
+
+El RIDAA establece además que los diámetros y pendientes de las tuberías horizontales deben determinarse mediante cálculo racional o conforme a los anexos correspondientes y que el **diámetro nominal mínimo de la unión domiciliaria es de 100 mm**.
+
+Esto significa que puede existir suficiente diferencia de cota para alcanzar físicamente el colector, pero no necesariamente suficiente altura para desarrollar todo el recorrido cumpliendo las condiciones reglamentarias.
+
+## Cada centímetro de cota puede ser importante
+
+Un error frecuente durante el trazado consiste en profundizar innecesariamente tuberías o cámaras al comienzo de la instalación.
+
+En recorridos largos o terrenos con poca diferencia de nivel respecto del colector, cada centímetro perdido aguas arriba puede resultar determinante al llegar al punto de conexión.
+
+Por esta razón, antes de decidir la incorporación de una PEAS resulta conveniente desarrollar un **perfil de cotas completo**, desde los artefactos más desfavorables hasta la unión domiciliaria.
+
+La pregunta correcta no es solamente:
+
+**¿Puedo llegar físicamente al colector?**
+
+Sino:
+
+**¿Puedo llegar cumpliendo simultáneamente las cotas de seguridad, las pendientes reglamentarias y las condiciones de la unión domiciliaria?**
+
+Si la respuesta es negativa, deberá analizarse qué sectores pueden continuar descargando gravitacionalmente y cuáles necesitan independizarse y elevarse.
+
+## No necesariamente debe elevarse todo el inmueble
+
+Cuando solamente un sector presenta problemas de cota, puede resultar innecesario conducir todas las aguas servidas hacia la PEAS.
+
+Por ejemplo, un edificio podría disponer de varios pisos que descargan normalmente por gravedad y un subterráneo cuya cota obliga a elevar sus aguas servidas.
+
+En ese caso, siempre que las condiciones del proyecto lo permitan, puede resultar conveniente mantener la mayor cantidad posible de la instalación funcionando gravitacionalmente y elevar únicamente el sector que lo necesita.
+
+Esto reduce el caudal que debe manejar la planta y disminuye la dependencia de equipos electromecánicos.
+
+La gravedad, cuando puede utilizarse correctamente y de manera segura, sigue siendo la solución más simple.
+
+## El dimensionamiento comienza por determinar el caudal
+
+Una vez definida la necesidad de elevar las aguas servidas y qué sectores aportarán a la planta, debe determinarse el caudal que llegará a ella.
+
+Este dependerá, entre otros factores, del tipo de establecimiento, cantidad y naturaleza de los artefactos sanitarios, simultaneidad de uso y características particulares del proyecto.
+
+Es importante diferenciar el **caudal que ingresa a la cámara** del **caudal que impulsará la bomba**.
+
+La cámara permite acumular temporalmente las aguas servidas entre ciclos de funcionamiento. Por esta razón, el sistema puede recibir un determinado caudal mientras las bombas permanecen detenidas y posteriormente evacuarlo mediante un caudal de bombeo mayor.
+
+La relación entre:
+
+**caudal entrante + volumen útil + caudal de bombeo**
+
+constituye una de las bases del dimensionamiento.
+
+## ¿Cómo se dimensiona la cámara de acumulación?
+
+La cámara o estanque de acumulación recibe gravitacionalmente las aguas servidas antes de su bombeo.
+
+Su volumen debe permitir una operación adecuada sin generar ciclos excesivamente frecuentes ni tiempos de permanencia innecesariamente elevados.
+
+Dentro de la cámara pueden definirse conceptualmente diferentes niveles:
+
+1. nivel mínimo o de detención
+2. nivel de partida de una bomba
+3. nivel de incorporación de otro equipo cuando corresponda
+4. nivel máximo de operación
+5. nivel de alarma
+
+La diferencia de volumen comprendida entre determinados niveles constituye el **volumen útil de operación**.
+
+Una cámara demasiado pequeña puede provocar una cantidad excesiva de partidas.
+
+Una cámara excesivamente grande puede aumentar innecesariamente el tiempo de permanencia de las aguas servidas.
+
+Por lo tanto, **una cámara más grande no necesariamente representa una PEAS mejor diseñada**.
+
+## Volumen útil, altura de la cámara y ciclos de bombeo deben optimizarse conjuntamente
+
+El volumen útil disponible entre el nivel de partida y el nivel de detención depende de la geometría de la cámara y de la diferencia vertical entre ambos niveles.
+
+Conceptualmente, en una cámara de sección constante:
+
+**Volumen útil = área útil de la cámara × diferencia entre niveles**
+
+Por lo tanto, un mismo volumen de operación puede conseguirse mediante diferentes combinaciones de sección y altura.
+
+Una cámara de mayor sección puede proporcionar el volumen requerido con una menor diferencia entre niveles, mientras que una cámara de menor sección necesitará una mayor altura útil para acumular el mismo volumen.
+
+Sin embargo, la decisión no debe basarse únicamente en conseguir una determinada cantidad de litros.
+
+Deben analizarse conjuntamente:
+
+- caudal entrante
+- caudal de bombeo
+- volumen útil entre partida y detención
+- frecuencia de partidas admisible para los equipos
+- altura física disponible
+- cota de llegada de las tuberías
+- nivel mínimo requerido para la correcta operación de las bombas
+- nivel de alarma
+- volumen disponible para contingencias
+- tiempo de retención
+- profundidad total de excavación
+- accesibilidad
+- y condiciones de mantenimiento
+
+Durante el período en que la bomba permanece detenida, el caudal entrante aumenta progresivamente el nivel hasta alcanzar la condición de partida.
+
+Una vez que la bomba comienza a funcionar, continúa ingresando agua a la cámara mientras el equipo evacua un caudal mayor, reduciendo el nivel hasta alcanzar la condición de detención.
+
+Conceptualmente:
+
+**caudal entrante → llenado → nivel de partida → bombeo → nivel de detención → nuevo ciclo**
+
+Aumentar excesivamente el caudal de la bomba no necesariamente mejora esta operación. Una bomba demasiado grande puede disminuir muy rápidamente el nivel, generar tiempos de funcionamiento demasiado cortos y favorecer una mayor frecuencia de ciclos.
+
+Por el contrario, aumentar indiscriminadamente el volumen de la cámara para disminuir las partidas puede incrementar el tiempo de retención y la profundidad o dimensiones de la estructura.
+
+El objetivo no consiste en conseguir que la bomba vacíe la cámara lo más rápido posible, sino en obtener **ciclos de funcionamiento razonables y compatibles con las características del equipo seleccionado y con las condiciones sanitarias de almacenamiento**.
+
+El número admisible de partidas debe verificarse de acuerdo con las características del motor, sistema de partida y recomendaciones del fabricante.
+
+También debe considerarse que obtener volumen aumentando la profundidad puede incrementar el costo de excavación y generar mayores exigencias relacionadas con napa, estabilidad del terreno, estructura, acceso y mantenimiento.
+
+En algunos proyectos puede resultar más conveniente aumentar la sección de la cámara; en otros, las restricciones de espacio pueden obligar a desarrollar una solución más profunda.
+
+Por esta razón, **la cámara y las bombas deben dimensionarse como un conjunto y no como componentes independientes**.
+
+## Retención y capacidad de evacuación
+
+El RIDAA establece condiciones importantes que deben relacionarse con el dimensionamiento de la cámara y de los equipos.
+
+El **período máximo de retención de las aguas servidas es de 12 horas**.
+
+Asimismo, los equipos deben tener capacidad para **evacuar las aguas servidas del estanque en una hora**.
+
+Estas condiciones deben verificarse conjuntamente con el caudal entrante, el volumen útil, la capacidad de bombeo y la estrategia de control.
+
+Las 12 horas corresponden a un límite máximo reglamentario y no deben interpretarse como un tiempo deseable de permanencia.
+
+En operación normal resulta conveniente evitar retenciones innecesariamente prolongadas.
+
+## ¿Cuántas bombas debe tener una PEAS?
+
+La redundancia constituye un elemento fundamental.
+
+El RIDAA establece un mínimo de **dos bombas**, con funcionamiento alternado, debiendo existir al menos una bomba de reserva.
+
+Una configuración básica puede representarse conceptualmente como:
+
+**Bomba 1 → servicio / alternancia**
+
+**Bomba 2 → servicio / alternancia / reserva**
+
+La alternancia permite distribuir las horas de funcionamiento entre los equipos.
+
+Dependiendo del tamaño y criticidad de la instalación pueden utilizarse configuraciones con más bombas.
+
+El diseño debe analizar no solamente la operación normal, sino también qué ocurrirá si uno de los equipos queda fuera de servicio.
+
+## ¿Cómo se determina el caudal de bombeo?
+
+La bomba debe ser capaz de reducir adecuadamente el nivel de la cámara mientras continúa ingresando agua servida.
+
+Esto significa que su capacidad debe ser superior al aporte que pretende controlar en esa condición de funcionamiento.
+
+Sin embargo, seleccionar una bomba excesivamente grande tampoco constituye necesariamente una ventaja.
+
+Un caudal de bombeo sobredimensionado puede provocar:
+
+- ciclos excesivamente cortos
+- mayores velocidades en la impulsión
+- mayores pérdidas de carga
+- condiciones desfavorables en la descarga
+- funcionamiento alejado del punto conveniente de la bomba
+- y mayor potencia instalada de la necesaria
+
+Por el contrario, una bomba insuficiente puede ser incapaz de disminuir el nivel cuando el caudal entrante aumenta.
+
+Por eso, **caudal entrante, volumen útil y capacidad de bombeo deben analizarse conjuntamente**.
+
+## La bomba no se selecciona solamente por potencia
+
+Una bomba debe entregar el caudal requerido venciendo simultáneamente la resistencia hidráulica del sistema.
+
+Para determinar esta condición deben analizarse principalmente:
+
+- altura geométrica
+- pérdidas de carga en la tubería
+- pérdidas en accesorios
+- válvulas
+- y condiciones de descarga
+
+La combinación de estos elementos permite determinar la **Altura Manométrica Total (HMT)**.
+
+Conceptualmente:
+
+**HMT = altura geométrica + pérdidas de carga**
+
+En un proyecto real deben considerarse las condiciones hidráulicas específicas de la instalación y los distintos niveles de operación de la cámara.
+
+Por esta razón, indicar únicamente que una bomba tiene una potencia de 2 HP, 3 HP o 5 HP no permite saber si es adecuada para una determinada PEAS.
+
+## ¿Qué es la altura geométrica?
+
+La altura geométrica corresponde fundamentalmente a la diferencia de elevación que debe vencer el sistema entre la condición considerada en la cámara de bombeo y el punto de descarga de la impulsión.
+
+Debe determinarse a partir de las cotas reales del proyecto.
+
+Dos plantas que impulsan el mismo caudal pueden requerir bombas completamente diferentes si una debe vencer pocos metros de desnivel y la otra una diferencia de elevación considerable.
+
+Pero la altura geométrica constituye solamente una parte de la HMT.
+
+## ¿Qué son las pérdidas de carga?
+
+Cuando un fluido circula por una tubería pierde energía debido al rozamiento y a los diferentes elementos presentes en la conducción.
+
+Las pérdidas dependen, entre otros factores, de:
+
+- caudal
+- diámetro interior
+- longitud
+- material y características de la tubería
+- velocidad
+- curvas
+- tees
+- válvulas
+- y otros accesorios
+
+Generalmente, al aumentar el caudal aumentan también las pérdidas de carga.
+
+Por esta razón, utilizar una impulsión de diámetro insuficiente puede obligar a la bomba a trabajar contra una resistencia considerablemente mayor.
+
+## El diámetro de impulsión afecta a todo el sistema
+
+El diámetro de la tubería no debe seleccionarse únicamente a partir de la conexión disponible en la bomba.
+
+Un diámetro menor puede generar mayores velocidades y pérdidas de carga.
+
+Un diámetro mayor puede reducirlas, pero también modifica las condiciones de transporte del fluido y debe evaluarse considerando las características de las aguas servidas.
+
+Por lo tanto, deben analizarse conjuntamente:
+
+**caudal + diámetro + velocidad + pérdidas de carga + características del fluido**
+
+Cuando las aguas servidas provienen de inodoros, el RIDAA establece además condiciones específicas: los equipos deben ser capaces de bombear sólidos mayores de **50 mm** y la tubería de impulsión debe tener un **diámetro interior mínimo de 50 mm**.
+
+Ese mínimo reglamentario no significa que 50 mm sea automáticamente el diámetro correcto para cualquier proyecto.
+
+El diámetro definitivo debe resultar del diseño hidráulico.
+
+## Curva de la bomba y curva del sistema
+
+Las pérdidas de carga cambian con el caudal.
+
+Por lo tanto, la resistencia que debe vencer una bomba tampoco permanece constante para todos los caudales posibles.
+
+La relación entre caudal y resistencia hidráulica puede representarse mediante la **curva del sistema**.
+
+Por otra parte, el fabricante entrega una curva característica de la bomba que indica el caudal que puede proporcionar para diferentes alturas.
+
+La intersección entre ambas permite determinar aproximadamente el **punto de operación** del equipo.
+
+Una selección adecuada debe comprobar que la bomba opere dentro de una zona conveniente de su curva y que pueda satisfacer las condiciones reales del sistema.
+
+## Las aguas servidas condicionan el tipo de bomba
+
+Una PEAS no transporta agua limpia.
+
+Dependiendo del establecimiento puede recibir:
+
+- sólidos
+- papel
+- fibras
+- materia orgánica
+- grasas
+- textiles
+- elementos sanitarios desechables
+- y objetos que nunca deberían haber ingresado a la red
+
+Por esta razón, además de caudal y HMT, deben analizarse:
+
+- paso de sólidos
+- tipo de impulsor
+- diámetro de descarga
+- riesgo de obstrucción
+- facilidad de desmontaje
+- disponibilidad de repuestos
+- y condiciones de mantenimiento
+
+Una bomba puede cumplir hidráulicamente con el caudal y la HMT requeridos y, aun así, no ser adecuada para las características reales del efluente.
+
+## ¿Cuándo conviene incorporar una cámara de rejas?
+
+Dependiendo del tipo de establecimiento y de los elementos que puedan ingresar a la red, puede resultar conveniente instalar una **cámara de rejas o sistema de retención de sólidos gruesos antes de la cámara de bombeo**.
+
+Su objetivo es interceptar elementos de tamaño o características capaces de atascar, bloquear o dañar las bombas.
+
+Esta solución puede resultar especialmente útil en instalaciones donde, por su uso, exista una mayor probabilidad de ingreso de elementos extraños al sistema.
+
+La reja actúa entonces como una barrera adicional de protección:
+
+**alcantarillado gravitacional → cámara de rejas → cámara de bombeo → bombas → impulsión**
+
+Sin embargo, incorporar una reja introduce también un nuevo punto de mantenimiento.
+
+El material retenido debe ser retirado periódicamente y la instalación debe diseñarse considerando:
+
+- facilidad de acceso
+- extracción del material
+- limpieza
+- disposición de los residuos retenidos
+- seguridad del personal
+- y comportamiento hidráulico frente a una eventual colmatación
+
+Una reja sin mantenimiento puede transformarse en el propio punto de obstrucción de la instalación y generar un rebalse aguas arriba.
+
+Por eso, su incorporación debe evaluarse según las características y condiciones de operación de cada establecimiento.
+
+**Agregar elementos de protección puede aumentar la confiabilidad y vida útil de los equipos, pero también genera nuevas tareas de mantenimiento que deben incorporarse al plan de operación.**
+
+## Las válvulas también forman parte del diseño
+
+Cada bomba debe poder aislarse para permitir inspección, reparación o reemplazo.
+
+El RIDAA contempla válvulas de corte y válvulas de retención de paso completo, las que no deben quedar instaladas dentro del estanque.
+
+La válvula de retención evita que, al detenerse una bomba, el contenido de la impulsión retorne hacia la cámara a través del equipo.
+
+Las válvulas de corte permiten aislar hidráulicamente equipos o sectores.
+
+Su ubicación debe facilitar la operación y el mantenimiento, evitando intervenciones innecesarias dentro de la cámara de aguas servidas.
+
+## La impulsión debe poder vaciarse para mantenimiento
+
+Una tubería de impulsión puede permanecer llena de aguas servidas aun cuando las bombas se encuentren detenidas.
+
+Por esta razón, además de las válvulas de corte y retención asociadas a los equipos, debe considerarse un **retorno de la impulsión general hacia la cámara de acumulación, provisto de una válvula de corte**, que permita vaciar o “despichar” la impulsión cuando sea necesario realizar trabajos de mantenimiento.
+
+Conceptualmente:
+
+**impulsión general → válvula de retorno → cámara de acumulación**
+
+Este retorno permite vaciar de manera controlada el contenido retenido en la conducción antes de intervenir determinados componentes del sistema.
+
+Su ubicación debe permitir una operación segura y accesible, evitando que una tarea de mantenimiento obligue a manipular innecesariamente una impulsión que todavía contiene aguas servidas.
+
+Este elemento refuerza un principio fundamental del diseño de una PEAS: **la instalación debe proyectarse pensando no solamente en cómo funcionará, sino también en cómo podrá aislarse, vaciarse y mantenerse posteriormente**.
+
+## ¿Dónde debe descargar la impulsión?
+
+La conducción a presión debe finalizar en un punto correctamente definido.
+
+El RIDAA establece que la impulsión debe descargar a una **cámara de inspección**, ubicada a una cota desde la cual las aguas servidas puedan continuar gravitacionalmente hacia el colector.
+
+Conceptualmente:
+
+**PEAS → impulsión a presión → cámara de inspección → alcantarillado gravitacional → colector público**
+
+Por eso, dimensionar una PEAS no termina al seleccionar las bombas.
+
+También debe diseñarse correctamente la transición entre la conducción presurizada y la red gravitacional.
+
+## ¿Cuándo puede ser necesaria una cámara reductora de velocidad?
+
+Al finalizar una impulsión, las aguas servidas pueden llegar con una velocidad y energía importantes.
+
+Dependiendo de las condiciones hidráulicas puede resultar necesario incorporar una solución que permita disipar esa energía antes de continuar gravitacionalmente.
+
+Deben analizarse factores como:
+
+- caudal
+- velocidad
+- diámetro de impulsión
+- diferencia de cotas
+- geometría de la cámara receptora
+- y características de la tubería gravitacional posterior
+
+Esto no significa que toda PEAS requiera obligatoriamente una cámara reductora de velocidad específica.
+
+Lo que siempre debe resolverse es una **descarga hidráulicamente adecuada de la impulsión**.
+
+## La construcción de la cámara también es parte del diseño
+
+El estanque debe permitir una operación sanitaria y un mantenimiento adecuados.
+
+Entre las condiciones contempladas por el RIDAA se encuentran:
+
+- estructura estanca
+- superficies interiores lisas e impermeables
+- pendiente mínima del fondo de 3% hacia el punto de succión
+- acceso que permita retirar los equipos
+- escotilla de dimensiones adecuadas
+- tapa estanca a líquidos y gases
+- y ventilación
+
+El acceso debe permitir retirar efectivamente las bombas instaladas.
+
+Una cámara donde posteriormente no pueda extraerse un equipo sin demoler parte de la estructura constituye un problema de diseño, aunque hidráulicamente la planta funcione.
+
+## La ventilación debe considerarse desde el proyecto
+
+Las aguas servidas pueden generar gases y olores.
+
+Por esta razón, la ventilación forma parte del diseño de la planta y debe resolverse conforme a las condiciones reglamentarias y particulares de la instalación.
+
+Además, disponer de ventilación no significa que una cámara de aguas servidas pueda considerarse automáticamente segura para el ingreso de personas.
+
+Las intervenciones de mantenimiento deben evaluar los riesgos existentes y utilizar procedimientos de trabajo apropiados.
+
+## ¿Cómo se automatiza una PEAS?
+
+La variable principal de control normalmente es el **nivel de aguas servidas dentro de la cámara**.
+
+Una secuencia conceptual puede considerar:
+
+1. nivel de detención
+2. nivel de partida
+3. nivel de operación adicional cuando corresponda
+4. nivel máximo
+5. nivel de alarma
+
+Cuando el agua alcanza el nivel de partida, el sistema activa una bomba.
+
+Al descender hasta el nivel de detención, la bomba se detiene.
+
+En el siguiente ciclo puede operar el otro equipo, permitiendo alternar las bombas y distribuir sus horas de funcionamiento.
+
+El sistema de control debe además gestionar condiciones anormales.
+
+## Los sensores de nivel deben ser adecuados para aguas servidas
+
+La automatización de una PEAS depende directamente de una detección confiable del nivel.
+
+Sin embargo, una cámara de aguas servidas constituye un ambiente exigente para los instrumentos. Puede contener sólidos, grasas, fibras, espuma, sedimentos y elementos flotantes capaces de afectar determinadas tecnologías de medición.
+
+Por esta razón, los **interruptores o sensores de nivel deben ser aptos específicamente para trabajar con aguas servidas** y seleccionarse considerando las características reales del efluente.
+
+Dependiendo de la tecnología utilizada, un elemento de medición puede ensuciarse, quedar cubierto por residuos, bloquearse mecánicamente o entregar una lectura incorrecta cuando trabaja en un medio para el cual no fue diseñado.
+
+Esto resulta especialmente importante porque una falla en la detección de nivel puede:
+
+- impedir la partida de una bomba
+- provocar una partida tardía
+- mantener un equipo funcionando cuando no corresponde
+- impedir una detención correcta
+- o evitar que se detecte oportunamente una condición de alto nivel
+
+La selección de los elementos de nivel debería considerar, entre otros factores:
+
+- resistencia al ensuciamiento
+- comportamiento frente a sólidos y elementos flotantes
+- compatibilidad con el efluente
+- facilidad de limpieza
+- accesibilidad para inspección y mantenimiento
+- confiabilidad
+- y comportamiento del sistema frente a una falla del sensor
+
+En instalaciones críticas también resulta conveniente evaluar que la **alarma de alto nivel disponga de una detección suficientemente independiente del sistema normal de control**, de manera que una falla del elemento utilizado para comandar las bombas no elimine simultáneamente la última advertencia antes de un posible rebalse.
+
+## ¿Qué ocurre si falla la bomba que debía funcionar?
+
+Esta es una de las razones por las que la redundancia y el control son fundamentales.
+
+Si el nivel continúa aumentando por sobre la condición normal de partida, el sistema debe detectar la anomalía.
+
+El RIDAA contempla un elemento de aviso al superarse el nivel máximo correspondiente y el **accionamiento automático de la bomba de reserva**.
+
+La estrategia de control busca recuperar capacidad de bombeo antes de alcanzar una condición de rebalse.
+
+## Telemetría: detectar el problema antes del rebalse
+
+Una PEAS puede funcionar durante largos períodos sin personal permanentemente presente.
+
+Por esta razón, una alarma que solamente pueda observarse junto al tablero puede resultar insuficiente para instalaciones críticas.
+
+Mediante telemetría es posible transmitir información como:
+
+- alarma de alto nivel
+- bomba en funcionamiento
+- falla de bomba
+- pérdida de energía
+- actuación de protecciones
+- horas de funcionamiento
+- cantidad de partidas
+- estados eléctricos
+- y otras alarmas relevantes
+
+Esto permite conocer una anomalía y organizar una respuesta antes de que necesariamente termine produciéndose un rebalse.
+
+La necesidad y alcance de la telemetría dependerán de la criticidad y condiciones operacionales de cada instalación.
+
+## ¿Qué ocurre durante un corte de energía?
+
+Una PEAS necesita energía eléctrica para evacuar las aguas servidas.
+
+Durante un corte, las bombas dejan de operar mientras el caudal puede continuar ingresando a la cámara.
+
+La capacidad temporal disponible dependerá del volumen existente entre el nivel al momento de la falla y el nivel máximo admisible.
+
+Por eso, el análisis de contingencia debería considerar:
+
+- volumen disponible
+- caudal entrante
+- tiempo estimado hasta alcanzar una condición crítica
+- posibilidad de reducir o detener aportes
+- criticidad de la instalación
+- duración posible de la interrupción
+- capacidad de respuesta del operador
+- y sistemas de respaldo disponibles
+
+Dependiendo de la criticidad del proyecto pueden evaluarse grupos electrógenos, sistemas de respaldo u otras estrategias de contingencia.
+
+No debe suponerse que construir una cámara excesivamente grande reemplaza automáticamente el análisis de una falla prolongada de energía.
+
+## Ejemplo conceptual del proceso de dimensionamiento
+
+El dimensionamiento completo puede resumirse mediante la siguiente secuencia:
+
+**1. Analizar las cotas de los artefactos y bocas de admisión**
+
+Se verifica su relación con la cota de solera y las condiciones de seguridad frente a rebase.
+
+**2. Analizar las pendientes disponibles**
+
+Se comprueba si la red interior y la unión domiciliaria pueden desarrollarse cumpliendo las condiciones del RIDAA.
+
+**3. Determinar qué sectores realmente necesitan elevación**
+
+Siempre que sea posible, los sectores que puedan evacuar gravitacionalmente de manera segura deberían mantenerse independientes de la planta.
+
+**4. Determinar el caudal de diseño**
+
+Se analiza la instalación sanitaria que descargará hacia la PEAS.
+
+**5. Evaluar la necesidad de pretratamiento o cámara de rejas**
+
+Se consideran las características del establecimiento y los sólidos que potencialmente pueden ingresar al sistema.
+
+**6. Definir los niveles de la cámara**
+
+Se establecen niveles de detención, partida, operación adicional y alarma.
+
+**7. Determinar y optimizar el volumen útil**
+
+A partir de la geometría de la cámara y los niveles de control se obtiene el volumen disponible para los ciclos de bombeo, buscando una relación adecuada entre sección, altura útil y frecuencia de partidas.
+
+**8. Verificar tiempos de operación**
+
+Se comprueba la retención, capacidad de evacuación, duración de los ciclos y frecuencia esperada de partidas.
+
+**9. Definir el caudal de bombeo**
+
+Debe permitir disminuir adecuadamente el nivel mientras continúa ingresando agua servida, sin sobredimensionar innecesariamente los equipos.
+
+**10. Calcular la altura geométrica**
+
+Se determina la diferencia de cotas que debe vencer la impulsión.
+
+**11. Definir preliminarmente el diámetro de impulsión**
+
+Se estudian caudal, velocidad, características del fluido y exigencias reglamentarias.
+
+**12. Calcular las pérdidas de carga**
+
+Se consideran tuberías, longitud, accesorios, válvulas y demás elementos.
+
+**13. Determinar la HMT**
+
+Se combina la altura geométrica con las pérdidas correspondientes al caudal analizado.
+
+**14. Analizar la curva del sistema**
+
+Se determina cómo varía la resistencia hidráulica frente al caudal.
+
+**15. Seleccionar las bombas**
+
+Se comparan las curvas de los equipos disponibles con las condiciones calculadas del sistema.
+
+**16. Verificar el manejo de sólidos**
+
+Se comprueba que bombas, impulsión y demás componentes sean adecuados para las aguas servidas reales.
+
+**17. Diseñar la redundancia**
+
+Se define la configuración de equipos de servicio y reserva.
+
+**18. Diseñar válvulas, retorno y mantenibilidad**
+
+Debe ser posible aislar y desmontar los equipos y vaciar controladamente la impulsión cuando sea necesario intervenirla.
+
+**19. Seleccionar los elementos de detección de nivel**
+
+Deben ser adecuados para aguas servidas y compatibles con las condiciones reales de sólidos, grasas y elementos flotantes presentes en la cámara.
+
+**20. Diseñar control y alarmas**
+
+Se establecen niveles, alternancia, actuación del respaldo y condiciones de alarma.
+
+**21. Resolver la descarga**
+
+Se diseña la transición desde la impulsión hacia el sistema gravitacional.
+
+**22. Analizar contingencias**
+
+Se estudian fallas de bombas, sensores, obstrucciones, cortes de energía y capacidad de respuesta.
+
+Este proceso demuestra por qué **la selección de la bomba debe ser una consecuencia del dimensionamiento y no el punto de partida del proyecto**.
+
+## Errores frecuentes al dimensionar una PEAS
+
+Entre los problemas que deberían evitarse se encuentran:
+
+- revisar solamente la profundidad del colector
+- ignorar la cota de solera y el riesgo de rebase
+- utilizar pendientes inferiores a las normales sin justificación
+- profundizar innecesariamente tuberías y cámaras
+- elevar aguas servidas que podrían evacuar gravitacionalmente de manera segura
+- seleccionar bombas únicamente por potencia
+- elegir primero la bomba y después calcular el sistema
+- confundir caudal entrante con caudal de bombeo
+- sobredimensionar innecesariamente la cámara
+- no optimizar el volumen útil respecto de los ciclos de bombeo
+- no verificar el tiempo de retención
+- generar una frecuencia excesiva de partidas
+- no calcular correctamente las pérdidas de carga
+- seleccionar el diámetro únicamente por la descarga de la bomba
+- ignorar el paso de sólidos
+- no evaluar una cámara de rejas cuando las características del establecimiento lo aconsejan
+- instalar una reja sin considerar su limpieza
+- no considerar una bomba de reserva
+- ubicar válvulas en lugares de difícil mantenimiento
+- no disponer de una forma adecuada de vaciar la impulsión
+- utilizar sensores de nivel no apropiados para aguas servidas
+- no prever la extracción futura de las bombas
+- no resolver adecuadamente la descarga de la impulsión
+- omitir alarmas de alto nivel
+- y no analizar qué ocurrirá frente a una falla eléctrica
+
+## ¿Qué información debería recopilarse antes de diseñar?
+
+Antes de dimensionar una PEAS conviene disponer, como mínimo, de:
+
+- Certificado de Factibilidad
+- punto de conexión
+- cotas topográficas
+- cota de solera
+- cotas de artefactos y bocas de admisión
+- cotas de cámaras
+- nivel del terreno
+- trazado del alcantarillado
+- longitudes y pendientes disponibles
+- caudal de diseño
+- características del efluente
+- tipo de establecimiento
+- distancia de impulsión
+- diferencia de altura
+- ubicación disponible para la cámara
+- alimentación eléctrica
+- condiciones de operación
+- accesibilidad para mantenimiento
+- y exigencias particulares de la empresa sanitaria
+
+Una buena parte de los problemas posteriores puede evitarse realizando correctamente este levantamiento antes de seleccionar equipos.
+
+## Una PEAS debe diseñarse como un sistema completo
+
+Dimensionar una planta elevadora de aguas servidas requiere bastante más que calcular la potencia de una bomba.
+
+Primero debe determinarse **si la descarga gravitacional es realmente posible y segura**, considerando cotas de solera, riesgo de rebase, pendientes reglamentarias y condiciones de la unión domiciliaria.
+
+Posteriormente deben relacionarse caudal, almacenamiento, niveles, ciclos de operación, capacidad de bombeo, altura geométrica, pérdidas de carga, diámetro de impulsión y características reales de las aguas servidas.
+
+Dependiendo del establecimiento, también puede resultar conveniente incorporar elementos de protección como una cámara de rejas, entendiendo que cada elemento adicional requiere mantenimiento.
+
+Finalmente deben resolverse la redundancia, válvulas, vaciado de la impulsión, sensores de nivel apropiados, descarga, ventilación, automatización, alarmas, mantenimiento y respuesta frente a fallas.
+
+Una PEAS correctamente dimensionada debe funcionar adecuadamente durante la operación normal, pero también debe estar preparada para responder de manera controlada cuando una bomba falla, un sensor presenta una anomalía, se produce una obstrucción o se interrumpe el suministro eléctrico.
+
+En **ADDSYS** desarrollamos soluciones de bombeo, automatización y telemetría para infraestructura sanitaria, integrando el diseño hidráulico con las condiciones reales de construcción, operación, mantenimiento y supervisión de cada proyecto.
+`,
+},
+
 ];
