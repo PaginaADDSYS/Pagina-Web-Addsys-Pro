@@ -3555,4 +3555,791 @@ En **ADDSYS** desarrollamos soluciones de bombeo, automatización y telemetría 
 `,
 },
 
+{
+  id: 13,
+  categoria: "ADDSYS Insights",
+  titulo: "¿Qué pasa si mi terreno está dentro o fuera del territorio operacional de una empresa sanitaria?",
+  tituloSEO: "Territorio operacional y factibilidad sanitaria en Chile",
+  resumen: "¿Tu terreno está dentro o fuera del territorio operacional de una empresa sanitaria? Conoce cómo obtener factibilidad de agua potable y alcantarillado, las obligaciones de los prestadores, los AFR y AFNR, y las alternativas para proyectos urbanos y rurales en Chile.",
+  imagen: "/img_pub_13.png",
+  fecha: "17 de noviembre de 2026",
+  fechaISO: "2026-11-17",
+  fechaPublicacionISO: "2026-11-17T00:45:21-03:00", 
+  tiempoLectura: "22 min",
+  destacada: false,
+  contenido: `## ¿Qué pasa si mi terreno está dentro o fuera del territorio operacional de una empresa sanitaria?
+
+### Agua potable, alcantarillado, factibilidad sanitaria y financiamiento de infraestructura en Chile.
+
+### Actualizado al 16 de noviembre de 2026
+
+Comprar un terreno, construir una vivienda, desarrollar un loteo o ejecutar un proyecto inmobiliario requiere resolver una pregunta fundamental: **¿cómo se abastecerá de agua potable y cómo se evacuarán y tratarán las aguas servidas?**
+
+En Chile, la respuesta no depende únicamente de si una propiedad está ubicada dentro o fuera del límite urbano. También es necesario determinar si pertenece al territorio operacional de una empresa sanitaria, si se encuentra dentro del área de servicio de un operador de Servicios Sanitarios Rurales (SSR) o si requiere una solución sanitaria particular.
+
+Esta distinción es fundamental porque la ubicación de una propiedad puede determinar qué prestador tiene obligaciones legales, qué condiciones técnicas deben cumplirse, qué inversiones serán necesarias y quién deberá financiarlas.
+
+Además, cuando un proyecto requiere ampliar redes o aumentar la capacidad de los sistemas existentes, pueden aparecer conceptos como los **Aportes de Financiamiento Reembolsables (AFR)** y los **aportes no reembolsables (AFNR)**, que tienen consecuencias económicas diferentes.
+
+Un terreno urbano no tiene necesariamente conexión sanitaria inmediata, y un terreno rural no está obligado, por su sola condición rural, a utilizar sistemas particulares.
+
+A continuación, analizamos los cuatro escenarios que pueden presentarse al cruzar el límite urbano con el territorio operacional de una empresa sanitaria, sus consecuencias técnicas, las alternativas de prestación y los principales mecanismos de financiamiento.
+
+### ¿Qué es el territorio operacional de una empresa sanitaria?
+
+El territorio operacional es el ámbito geográfico definido oficialmente para una concesión de servicios sanitarios, dentro del cual la concesionaria debe cumplir las obligaciones de prestación establecidas por la normativa.
+
+Las concesiones sanitarias se encuentran reguladas principalmente por el Decreto con Fuerza de Ley N.º 382, de 1988, del Ministerio de Obras Públicas, conocido como Ley General de Servicios Sanitarios.
+
+Este régimen comprende las concesiones de producción y distribución de agua potable y de recolección y disposición de aguas servidas.
+
+El territorio operacional se determina mediante los actos administrativos y planos correspondientes a cada concesión.
+
+Por lo tanto, **no puede establecerse simplemente observando hasta dónde llegan las viviendas, las calles pavimentadas o las tuberías existentes**.
+
+**¿Es lo mismo el límite urbano que el territorio operacional?**
+
+No. Son delimitaciones distintas, establecidas para finalidades diferentes.
+
+El **límite urbano** forma parte de la planificación territorial y permite distinguir el suelo urbano del rural conforme a los instrumentos de planificación aplicables.
+
+El **territorio operacional**, en cambio, corresponde al ámbito geográfico de una concesión sanitaria y determina el alcance territorial de las obligaciones legales de su titular.
+
+Esta diferencia permite identificar cuatro situaciones:
+
+1. Terreno urbano dentro del territorio operacional.
+2. Terreno urbano fuera del territorio operacional.
+3. Terreno rural que aparentemente se encuentra dentro de una concesión o es atendido por un prestador sanitario.
+4. Terreno rural fuera del territorio operacional.
+
+Cada escenario debe analizarse considerando el régimen jurídico, la infraestructura disponible y las características del proyecto.
+
+## Caso 1. Terreno urbano dentro del territorio operacional de una empresa sanitaria
+
+Cuando un inmueble urbano se encuentra dentro del territorio operacional de una concesionaria, existe un régimen legal de prestación que establece obligaciones para la empresa y condiciones que deben cumplir los propietarios.
+
+En términos generales, la concesionaria debe prestar los servicios comprendidos en su concesión de acuerdo con la normativa, los instrumentos oficiales y las condiciones técnicas aplicables.
+
+### ¿La empresa sanitaria está obligada a entregar factibilidad?
+
+Como regla general, la concesionaria debe certificar las condiciones de factibilidad correspondientes a los inmuebles comprendidos en su territorio operacional, conforme al DFL N.º 382 y su reglamentación.
+
+Sin embargo, es importante distinguir tres conceptos:
+
+**Obligación de prestación:** corresponde a los deberes legales asociados a la concesión sanitaria.
+
+**Certificado de factibilidad:** establece las condiciones bajo las cuales podrá atenderse una solicitud determinada.
+
+**Conexión física:** implica ejecutar las instalaciones, arranques, uniones domiciliarias u obras necesarias para incorporar efectivamente el inmueble al servicio.
+
+Estas situaciones están relacionadas, pero no son equivalentes.
+
+### ¿Qué sucede si no existen redes frente al terreno?
+
+Una propiedad puede encontrarse dentro del territorio operacional y, aun así, no contar con tuberías públicas frente a su acceso.
+
+Esto puede ocurrir en terrenos interiores, sectores de expansión urbana o zonas donde todavía deben ejecutarse obras de infraestructura.
+
+En estos casos, se deben identificar las condiciones legales de prestación y las inversiones necesarias para habilitar el servicio.
+
+Por ejemplo, pueden requerirse:
+
+- Extensiones de redes de agua potable.
+- Nuevos colectores de alcantarillado.
+- Obras de impulsión o elevación.
+- Refuerzos de infraestructura existente.
+- Obras necesarias para aumentar la capacidad del sistema.
+
+**La obligación de prestar el servicio no significa que cualquier obra de conexión deba ejecutarse gratuitamente ni que todos sus costos correspondan necesariamente al propietario.**
+
+La distribución de responsabilidades depende de la naturaleza de las obras y del régimen legal de financiamiento.
+
+Para conocer las principales disposiciones aplicables al diseño y ejecución de instalaciones sanitarias, revisa nuestro artículo sobre normativa sanitaria para instalaciones de agua potable y alcantarillado en Chile.
+
+### ¿Quién paga las obras de conexión sanitaria?
+
+Para determinar el costo real de habilitar un proyecto, es necesario distinguir entre las obras propias del propietario o urbanizador y aquellas inversiones del sistema sanitario que pueden financiarse mediante mecanismos regulados.
+
+Las instalaciones domiciliarias, arranques, uniones domiciliarias y obras propias de urbanización tienen reglas específicas de financiamiento y ejecución.
+
+Estas obras no se convierten automáticamente en reembolsables por el hecho de conectarse posteriormente a una red pública.
+
+Sin embargo, cuando es necesario aumentar la capacidad del sistema o ejecutar determinadas extensiones de redes, puede resultar aplicable el mecanismo de **Aportes de Financiamiento Reembolsables (AFR)**.
+
+### ¿Qué son los Aportes de Financiamiento Reembolsables (AFR)?
+
+Los AFR están regulados principalmente por el DFL N.º 70/1988 y su reglamento, aprobado mediante Decreto Supremo N.º 453/1989.
+
+Constituyen un mecanismo mediante el cual los prestadores sujetos al régimen correspondiente pueden financiar determinadas inversiones necesarias para incorporar nuevos clientes o ampliar los servicios.
+
+Su característica principal es que **el aporte debe ser restituido conforme a las condiciones legales y contractuales aplicables**.
+
+Existen dos modalidades principales.
+
+### AFR por capacidad
+
+Los AFR por capacidad permiten financiar inversiones destinadas a ampliar la infraestructura existente para prestar el servicio.
+
+Pueden relacionarse, por ejemplo, con inversiones en:
+
+- Sistemas de producción de agua potable.
+- Estanques e infraestructura de regulación.
+- Redes de distribución.
+- Sistemas de recolección.
+- Infraestructura de tratamiento y disposición de aguas servidas.
+
+Su cálculo debe sujetarse a los criterios establecidos por la normativa tarifaria, considerando la demanda del interesado y las inversiones necesarias para atenderla.
+
+No corresponde confundirlos con cualquier gasto de construcción que enfrente un proyecto inmobiliario.
+
+### AFR por extensión
+
+Los AFR por extensión permiten financiar determinadas obras que prolongan las redes desde instalaciones existentes hasta el punto de conexión del interesado.
+
+Para que estas obras tengan carácter reembolsable deben cumplirse los requisitos legales y reglamentarios correspondientes.
+
+En particular, las redes financiadas mediante este mecanismo deben tener posibilidad de servir a otros usuarios y no ser identificables exclusivamente con el proyecto solicitante.
+
+El reglamento también contempla criterios relacionados con el dimensionamiento de las obras y los requerimientos del programa de desarrollo de la concesionaria.
+
+**Por lo tanto, no toda extensión de una tubería constituye automáticamente un AFR.**
+
+Es necesario distinguir entre la infraestructura requerida exclusivamente para el proyecto y aquella que, por sus características técnicas y legales, puede financiarse mediante aportes reembolsables.
+
+### ¿Cómo se devuelven los AFR?
+
+La devolución puede pactarse mediante los mecanismos que admite la legislación, incluyendo dinero, documentos mercantiles, prestación de servicios u otras modalidades autorizadas y acordadas entre las partes.
+
+Las condiciones de restitución deben quedar definidas conforme al régimen aplicable.
+
+Además, la exigencia de AFR debe formularse en la oportunidad establecida por la reglamentación, vinculada a la emisión del certificado de factibilidad.
+
+Antes de asumir una inversión, es importante revisar tanto el monto exigido como las condiciones de devolución.
+
+### ¿Qué son los Aportes de Financiamiento No Reembolsables (AFNR)?
+
+En determinados proyectos sanitarios pueden existir obras o aportes que no generan derecho a devolución.
+
+La denominación AFNR se utiliza en antecedentes del sector para referirse a aportes de financiamiento no reembolsables.
+
+Sin embargo, debe distinguirse este concepto del régimen específico de AFR establecido en el DFL N.º 70.
+
+**La denominación AFNR no constituye, por sí sola, un fundamento legal para exigir un pago.**
+
+Es necesario verificar si la inversión corresponde a una obra propia del interesado, a un aporte de terceros reconocido por la normativa o a un mecanismo especial de financiamiento.
+
+Por lo tanto, no toda obra financiada por un urbanizador constituye un AFNR, ni una concesionaria puede exigir indiscriminadamente aportes no reembolsables por el solo hecho de otorgar factibilidad.
+
+La naturaleza de cada inversión debe determinarse según la legislación, las condiciones técnicas y los instrumentos correspondientes.
+
+### Ejemplo práctico: conjunto habitacional de 80 viviendas
+
+Una inmobiliaria proyecta construir 80 viviendas dentro del territorio operacional de una empresa sanitaria.
+
+El proyecto requiere ejecutar redes interiores de urbanización y conectarse a los sistemas públicos existentes.
+
+Durante la revisión técnica se determina que también será necesario aumentar la capacidad de determinada infraestructura para atender la nueva demanda.
+
+En este escenario pueden existir inversiones de diferente naturaleza:
+
+1. Obras de urbanización que corresponde ejecutar o financiar al desarrollador.
+2. Instalaciones y conexiones necesarias para incorporar las viviendas.
+3. Inversiones de capacidad que eventualmente podrían financiarse mediante AFR.
+4. Obras de extensión cuya naturaleza reembolsable dependerá de los requisitos legales y técnicos.
+
+La evaluación debe identificar cuáles desembolsos son definitivos y cuáles podrían generar un derecho de restitución.
+
+Esto permite estimar de manera más precisa el costo de habilitación sanitaria del conjunto habitacional.
+
+### ¿Puedo instalar un sistema particular dentro del territorio operacional?
+
+No debe asumirse que un propietario puede reemplazar libremente el servicio público por un pozo, una fosa séptica o una planta particular.
+
+El artículo 160 del Decreto Supremo MOP N.º 1.199/2004 establece restricciones y condiciones respecto de los sistemas particulares dentro del territorio operacional.
+
+Además, deben considerarse las disposiciones del artículo 39 del DFL N.º 382.
+
+Cuando no existen redes públicas frente al inmueble, la posibilidad de implementar soluciones particulares debe examinarse conforme a las excepciones y autorizaciones aplicables.
+
+La ausencia física de redes no constituye, por sí sola, una autorización automática.
+
+## Caso 2. Terreno urbano fuera del territorio operacional de una empresa sanitaria
+
+Una propiedad puede encontrarse dentro del límite urbano de una comuna y, al mismo tiempo, fuera del territorio operacional de la empresa sanitaria que atiende sectores cercanos.
+
+Esto puede ocurrir en áreas de expansión urbana, terrenos periféricos o zonas donde el crecimiento inmobiliario no ha sido acompañado por una ampliación equivalente de las concesiones.
+
+### ¿Una empresa sanitaria cercana está obligada a conectarme?
+
+Como regla general, una concesionaria no tiene una obligación automática de conexión respecto de cualquier inmueble ubicado fuera de su territorio operacional.
+
+Sin embargo, esta regla debe analizarse considerando las excepciones legales vigentes.
+
+### Nueva disposición de 2026: factibilidad en una franja de 200 metros
+
+La Ley N.º 21.814, publicada el 21 de abril de 2026, incorporó disposiciones al artículo 48 del DFL N.º 382.
+
+Estas establecen una obligación especial de certificar factibilidad para determinadas categorías de inmuebles urbanos ubicados dentro de una franja de 200 metros alrededor del territorio operacional.
+
+Entre los inmuebles comprendidos se consideran, bajo los requisitos legales:
+
+- Viviendas y equipamientos existentes a la fecha de publicación de la ley.
+- Viviendas de interés público conforme a la Ley N.º 21.450.
+- Equipamientos de interés público o en beneficio de la comunidad, como establecimientos de salud o educación.
+
+La obligación está sujeta a condiciones y limitaciones.
+
+Entre ellas se encuentra un límite acumulado vinculado al 5% de la demanda máxima diaria del programa de desarrollo vigente en la localidad durante el período legalmente establecido.
+
+La normativa también contempla situaciones en que el prestador puede denegar la factibilidad por eventuales efectos sobre la continuidad o calidad del servicio, sujetas a la intervención de la SISS.
+
+Asimismo, existen excepciones para determinados prestadores o localidades de menor tamaño.
+
+**Estar dentro de la franja de 200 metros no significa que cualquier proyecto inmobiliario tenga automáticamente derecho a conectarse.**
+
+Es necesario comprobar la categoría del inmueble, las condiciones de demanda y el cumplimiento de los demás requisitos legales.
+
+### ¿Qué alternativas existen cuando no corresponde esta excepción?
+
+Dependiendo del proyecto, pueden analizarse las siguientes posibilidades:
+
+**Ampliación del territorio operacional**
+
+La normativa contempla procedimientos para ampliar los límites de una concesión sanitaria.
+
+Su procedencia depende de los requisitos legales, las condiciones técnicas y la intervención de las autoridades correspondientes.
+
+Si el proyecto requiere extender redes por calles, caminos o terrenos de terceros, también es importante conocer los permisos necesarios para ejecutar obras sanitarias en vía pública.
+
+**Nueva concesión sanitaria**
+
+En determinados proyectos puede evaluarse el establecimiento de una nueva concesión, conforme a los procedimientos previstos en el DFL N.º 382.
+
+Esta alternativa puede ser especialmente relevante para desarrollos de mayor escala, pero requiere una evaluación jurídica, técnica y económica específica.
+
+**Sistemas sanitarios particulares**
+
+Cuando resulten legalmente admisibles, pueden estudiarse soluciones particulares de agua potable y tratamiento de aguas servidas.
+
+Su diseño debe considerar las condiciones sanitarias y ambientales del proyecto y obtener las autorizaciones que correspondan.
+
+### ¿Quién financia las obras fuera del territorio operacional?
+
+El financiamiento depende del mecanismo mediante el cual se prestará el servicio.
+
+**No existe una regla general que permita exigir indistintamente AFR o AFNR a cualquier propietario situado fuera de una concesión.**
+
+En determinados procedimientos de ampliación, establecimiento de concesiones o desarrollo de proyectos habitacionales pueden existir aportes de terceros para ejecutar infraestructura.
+
+La legislación contempla situaciones en que ciertas obras pueden considerarse no reembolsables.
+
+Por ejemplo, el artículo 33 A del DFL N.º 382 permite, bajo el procedimiento y las condiciones legales correspondientes, establecer que determinadas obras asociadas a licitaciones solicitadas por el Ministerio de Vivienda y Urbanismo sean consideradas aportes de terceros o no reembolsables.
+
+Estas condiciones deben quedar recogidas en los instrumentos administrativos pertinentes.
+
+### ¿Qué ocurre con los proyectos de viviendas sociales?
+
+El artículo 33 C del DFL N.º 382 contempla un mecanismo especial para los proyectos de viviendas sociales comprendidos en el inciso segundo del artículo 33.
+
+Este último establece una excepción al régimen de AFR para proyectos habitacionales de viviendas sociales de hasta **750 UF**, financiados total o parcialmente mediante subsidios otorgados por el Ministerio de Vivienda y Urbanismo (MINVU).
+
+Cuando estos proyectos se desarrollan dentro del límite urbano o de extensión urbana, pero fuera del territorio operacional, el artículo 33 C contempla la posibilidad de celebrar convenios con una concesionaria para tramitar una nueva concesión o su ampliación, bajo las condiciones legales correspondientes.
+
+La norma establece que la suscripción del convenio no puede significar cobros por sí misma.
+
+Sin embargo, contempla situaciones en que determinadas obras de capacidad pueden ser asumidas por los interesados y consideradas aportes de terceros, cuando se cumplen los requisitos legales.
+
+Estas inversiones deben quedar expresamente identificadas en los convenios correspondientes.
+
+**Es importante distinguir que la prohibición de cobrar por suscribir el convenio no equivale a una exención general de todos los costos de infraestructura del proyecto.**
+
+Tampoco debe suponerse que cualquier proyecto denominado vivienda social, vivienda subsidiada o vivienda de interés público cumple automáticamente los requisitos de esta disposición.
+
+Su aplicación exige verificar las características de las viviendas, su valor, el financiamiento mediante subsidios MINVU y los demás requisitos legales.
+
+### ¿Pueden aplicarse AFR después de una ampliación territorial?
+
+La eventual aplicación de AFR debe analizarse según el régimen jurídico de la prestación, las inversiones involucradas y las excepciones legales.
+
+No debe suponerse que toda obra ejecutada fuera del territorio operacional será reembolsable ni que cualquier inversión realizada por el desarrollador constituirá un aporte no reembolsable.
+
+**La ampliación de una concesión y el financiamiento de la infraestructura son aspectos relacionados, pero jurídicamente distintos.**
+
+### Ejemplo práctico: proyecto de 120 viviendas
+
+Una inmobiliaria evalúa construir 120 viviendas en un terreno urbano situado fuera del territorio operacional de la empresa sanitaria más cercana.
+
+El proyecto requiere extender redes de agua potable y alcantarillado y evaluar la capacidad disponible de la infraestructura existente.
+
+Antes de comprometer inversiones, corresponde determinar:
+
+1. Si el proyecto cumple los requisitos de alguna excepción legal de factibilidad.
+2. Si será necesario tramitar una ampliación o una nueva concesión.
+3. Qué inversiones corresponden a la urbanización propia del proyecto.
+4. Si se requieren obras adicionales de capacidad o extensión.
+5. Qué mecanismos legales permiten financiar esas inversiones.
+6. Si existen aportes reembolsables, aportes de terceros o excepciones aplicables.
+
+Resolver estas materias anticipadamente permite evaluar la viabilidad económica del terreno antes de iniciar su desarrollo.
+
+## Caso 3. Terreno rural que aparentemente está dentro del territorio operacional de una empresa sanitaria
+
+Este escenario requiere especial atención porque una concesión sanitaria, una prestación rural de una concesionaria y un Servicio Sanitario Rural no son jurídicamente equivalentes.
+
+Encontrar infraestructura de una empresa sanitaria en un sector rural no significa necesariamente que ese sector forme parte de su territorio operacional.
+
+Para determinar la situación real del inmueble, es necesario verificar los títulos y antecedentes oficiales del servicio.
+
+### Situación A. El predio aparece incluido en los planos de una concesión
+
+Si los antecedentes oficiales indican que un terreno rural se encuentra comprendido dentro de los límites de una concesión sanitaria, es necesario examinar la situación específica.
+
+Deben revisarse el decreto de concesión, sus modificaciones, los planos aprobados y los antecedentes de planificación territorial.
+
+No corresponde deducir obligaciones de prestación únicamente a partir de una imagen cartográfica o de la presencia de tuberías cercanas.
+
+### Situación B. La empresa concesionaria presta servicios rurales conforme al artículo 52 bis
+
+El artículo 52 bis del DFL N.º 382 contempla la posibilidad de que una concesionaria preste servicios sanitarios en el ámbito rural, bajo las condiciones correspondientes.
+
+Esta modalidad debe distinguirse de una concesión sanitaria propiamente tal.
+
+La prestación rural no transforma automáticamente toda el área atendida en territorio operacional concesionado.
+
+En consecuencia, deben comprobarse el fundamento jurídico de la prestación y las condiciones particulares del servicio.
+
+### ¿Quién financia las obras cuando una concesionaria presta servicios rurales?
+
+En una prestación rural desarrollada conforme al artículo 52 bis, el financiamiento debe analizarse considerando el régimen legal aplicable y los convenios o instrumentos correspondientes.
+
+Pueden existir inversiones asociadas a:
+
+- Conexiones individuales.
+- Extensiones de redes.
+- Obras de impulsión o almacenamiento.
+- Refuerzos de capacidad.
+- Infraestructura de tratamiento y disposición de aguas servidas.
+
+Sin embargo, no corresponde trasladar automáticamente a estas prestaciones el régimen de AFR de una concesión urbana ni las reglas específicas de aportes de los operadores SSR.
+
+Las responsabilidades económicas deben identificarse y documentarse antes de ejecutar las obras.
+
+### Situación C. El terreno está comprendido en el área de servicio de un SSR
+
+Los Servicios Sanitarios Rurales se regulan principalmente por la Ley N.º 20.998 y su reglamento, aprobado mediante Decreto MOP N.º 50/2019.
+
+Este régimen contempla operadores, licencias y áreas de servicio, con obligaciones de factibilidad y prestación propias.
+
+El artículo 46 de la Ley N.º 20.998 contempla reglas para la conexión de inmuebles ubicados dentro del área de servicio cuando existe factibilidad técnica positiva.
+
+Por lo tanto, la pertenencia al área de servicio de un SSR puede generar consecuencias jurídicas distintas de las aplicables a una concesión sanitaria.
+
+### ¿Qué son los aportes no reembolsables en los SSR?
+
+El artículo 48 del Reglamento SSR permite a los operadores solicitar aportes financieros o en obras para financiar las inversiones necesarias para conectar nuevos usuarios a las redes existentes.
+
+Estos aportes tienen características específicas:
+
+- Requieren aprobación previa de la Subdirección de Servicios Sanitarios Rurales.
+- Pueden consistir en dinero o en obras.
+- No son reembolsables.
+- No pueden superar el costo necesario de las inversiones.
+- Deben justificarse mediante presupuestos o cotizaciones.
+- El interesado puede presentar cotizaciones propias.
+- Las disconformidades son resueltas por la Subdirección.
+
+Además, la disposición contempla aportes autorizados para interesados que desarrollen actividades distintas del consumo doméstico, en las condiciones establecidas por el reglamento.
+
+**Por lo tanto, un SSR no puede establecer libremente cualquier monto como condición para incorporar nuevos usuarios.**
+
+Es importante comprender que estos aportes no reembolsables pertenecen al régimen especial SSR y no son equivalentes a los AFR regulados para las concesionarias sanitarias.
+
+### ¿Las obligaciones de los SSR ya están completamente vigentes?
+
+La Ley N.º 20.998 contempló una implementación progresiva de determinadas obligaciones y facultades de fiscalización.
+
+Es importante distinguir entre la obligación de otorgar factibilidad y el calendario de fiscalización de la Superintendencia de Servicios Sanitarios (SISS).
+
+El artículo vigésimo primero transitorio estableció períodos diferentes para la aplicación de la obligación de factibilidad contemplada en el artículo 40:
+
+- Desde el segundo año de vigencia de la ley para operadores mayores y medianos.
+- Desde el tercer año para operadores menores.
+
+**Al 16 de noviembre de 2026, ambos períodos ya habían transcurrido.**
+
+Sin embargo, la fiscalización contemplada en el artículo vigésimo transitorio tiene un calendario diferente:
+
+- Operadores mayores: desde el 20 de noviembre de 2024.
+- Operadores medianos: desde el 20 de noviembre de 2025.
+- Operadores menores: desde el 20 de noviembre de 2027.
+
+En consecuencia, la entrada gradual de la fiscalización no significa que los operadores menores se encuentren exentos de todas sus obligaciones legales.
+
+Tampoco debe confundirse este calendario con las reglas transitorias relativas a fijación tarifaria.
+
+### Ejemplo práctico: vivienda dentro de un área SSR
+
+Una familia posee un terreno rural ubicado dentro del área de servicio de un SSR.
+
+El operador confirma la factibilidad técnica de conexión, pero determina que se requieren obras adicionales para incorporar la vivienda.
+
+En este escenario, la conexión puede implicar costos para el interesado y, cuando proceda, aportes no reembolsables autorizados conforme al reglamento.
+
+Por ello, una factibilidad favorable no significa necesariamente que la conexión sea gratuita.
+
+### ¿Cómo verificar la situación jurídica de un terreno rural?
+
+Según corresponda, deben revisarse:
+
+1. Decretos y planos oficiales de concesión sanitaria.
+2. Antecedentes de prestaciones rurales de concesionarias.
+3. Licencia y área de servicio del SSR.
+4. Condiciones de factibilidad del operador.
+5. Instrumentos de planificación territorial.
+6. Ubicación precisa del predio respecto de los límites oficiales.
+
+Esta revisión permite determinar qué régimen de prestación resulta aplicable antes de diseñar o financiar infraestructura.
+
+## Caso 4. Terreno rural fuera del territorio operacional de una empresa sanitaria
+
+Cuando una propiedad rural se encuentra fuera de una concesión sanitaria, deben evaluarse las alternativas disponibles para abastecimiento de agua potable y saneamiento.
+
+Estas pueden comprender la conexión a un SSR, una eventual prestación rural por una concesionaria o sistemas particulares debidamente autorizados.
+
+La elección depende de la ubicación del terreno, la capacidad disponible, las condiciones técnicas y el régimen jurídico aplicable.
+
+### Alternativa 1. Conexión a un Servicio Sanitario Rural
+
+Los SSR cumplen un papel fundamental en el abastecimiento de agua potable y en el desarrollo del saneamiento rural.
+
+La Ley N.º 20.998 contempla operadores organizados, entre otras formas, como comités y cooperativas.
+
+Sin embargo, la existencia de una red cercana no garantiza que un inmueble pueda conectarse.
+
+Es necesario verificar el área de servicio, solicitar la factibilidad correspondiente y determinar si existen obras adicionales.
+
+### ¿Qué ocurre si el terreno está fuera del área de servicio SSR?
+
+La Ley N.º 20.998 contempla procedimientos de ampliación del área de servicio.
+
+El artículo 19 regula la posibilidad de solicitar una ampliación, mientras que el reglamento establece condiciones para determinadas factibilidades otorgadas respecto de áreas cuya incorporación se encuentra en trámite.
+
+En estos casos, la prestación puede quedar condicionada a la aprobación de la ampliación y a la puesta en servicio de las obras necesarias.
+
+**Un certificado condicionado no debe interpretarse como una conexión inmediatamente disponible.**
+
+### ¿Cómo se financian las ampliaciones de infraestructura SSR?
+
+Cuando un SSR necesita incorporar nuevas viviendas o aumentar su capacidad, pueden requerirse inversiones como:
+
+- Extensiones de redes.
+- Nuevas captaciones.
+- Estanques de almacenamiento.
+- Sistemas de impulsión.
+- Obras de tratamiento de agua potable.
+- Infraestructura de recolección y tratamiento de aguas servidas.
+
+Estas inversiones pueden financiarse mediante diferentes mecanismos, de acuerdo con las condiciones legales.
+
+Entre ellos se encuentran los aportes autorizados de interesados, los recursos del operador y los programas de inversión pública.
+
+Los artículos 77 a 81 de la Ley N.º 20.998 contemplan mecanismos de inversión y subsidios para el desarrollo de infraestructura sanitaria rural.
+
+Los operadores pueden presentar solicitudes de financiamiento total o parcial, sujetas a evaluación y selección conforme a los procedimientos establecidos.
+
+**La existencia de programas públicos no significa que cualquier ampliación solicitada por un particular tenga financiamiento estatal garantizado.**
+
+### Alternativa 2. Prestación rural de una concesionaria sanitaria
+
+Una empresa concesionaria puede eventualmente prestar servicios en el ámbito rural conforme al artículo 52 bis del DFL N.º 382, cuando se cumplan las condiciones aplicables.
+
+Esta posibilidad debe analizarse separadamente del régimen SSR y de los procedimientos de ampliación de concesiones.
+
+Las obras, sus costos y las responsabilidades de financiamiento deben quedar definidos según el mecanismo jurídico utilizado.
+
+### Alternativa 3. Sistema particular de agua potable
+
+Cuando no existe una alternativa de abastecimiento mediante un prestador, puede evaluarse un sistema particular.
+
+Dependiendo de las características del terreno, este podría considerar una captación subterránea o superficial, almacenamiento, tratamiento, desinfección y distribución.
+
+Sin embargo, encontrar agua en una excavación o disponer físicamente de un pozo no garantiza que pueda utilizarse legalmente ni que sea apta para consumo humano.
+
+El proyecto debe evaluar:
+
+- Disponibilidad y seguridad de la fuente de abastecimiento.
+- Derechos o autorizaciones de aprovechamiento de aguas, cuando corresponda.
+- Calidad físico-química y microbiológica.
+- Demanda y caudal de diseño.
+- Tratamiento y desinfección.
+- Continuidad de operación y mantenimiento.
+- Autorizaciones sanitarias exigibles.
+
+La SEREMI de Salud interviene en los procedimientos de aprobación y autorización sanitaria que correspondan, sin perjuicio de las atribuciones de otros organismos.
+
+### Alternativa 4. Sistema particular de tratamiento y disposición de aguas servidas
+
+Cuando no existe posibilidad de conexión a un sistema público o autorizado de alcantarillado, puede estudiarse una solución particular de saneamiento.
+
+Entre las alternativas técnicas que podrían evaluarse se encuentran las fosas sépticas con sistemas adecuados de disposición y determinadas plantas de tratamiento de aguas servidas.
+
+La elección debe considerar:
+
+- Caudal y características de las aguas servidas.
+- Número de usuarios.
+- Capacidad de infiltración del suelo.
+- Nivel de la napa subterránea.
+- Topografía y superficie disponible.
+- Restricciones sanitarias y distancias de seguridad.
+- Destino del efluente tratado.
+- Operación, mantenimiento y manejo de lodos.
+- Normativa ambiental y sanitaria aplicable.
+
+No todas las tecnologías pueden utilizarse en cualquier terreno.
+
+Una solución apropiada para una vivienda aislada puede resultar insuficiente para un conjunto habitacional o una actividad productiva.
+
+### ¿Quién financia los sistemas particulares?
+
+En términos generales, los costos de diseño, tramitación, construcción, operación y mantenimiento de un sistema particular corresponden al titular del proyecto, sin perjuicio de los programas de apoyo o financiamiento que eventualmente resulten aplicables.
+
+Estas inversiones no deben confundirse con los AFR ni con los aportes de conexión regulados para operadores SSR.
+
+### ¿Qué ocurre con los loteos rurales y parcelas de agrado?
+
+La subdivisión de un terreno rural no garantiza que cada lote tenga factibilidad sanitaria.
+
+Para evaluar un proyecto de estas características deben distinguirse:
+
+- La posibilidad legal de subdividir el predio.
+- Los usos de suelo y las edificaciones permitidas.
+- La disponibilidad de agua potable.
+- La alternativa de tratamiento y disposición de aguas servidas.
+- Las autorizaciones sanitarias, urbanísticas y ambientales que correspondan.
+
+Un loteo puede requerir soluciones individuales por vivienda o una infraestructura colectiva, según sus condiciones y la normativa aplicable.
+
+### Ejemplo práctico: subdivisión rural en 20 lotes
+
+Un propietario proyecta subdividir un predio rural en 20 lotes destinados a futuras viviendas.
+
+El terreno se encuentra fuera del territorio operacional de una concesionaria y el SSR más cercano no ha confirmado la factibilidad de conexión.
+
+Antes de ejecutar caminos interiores o comprometer la comercialización del proyecto, resulta recomendable estudiar:
+
+1. La disponibilidad legal y física de agua.
+2. La posibilidad de incorporar los lotes a un SSR.
+3. La capacidad de la infraestructura existente.
+4. El costo de eventuales ampliaciones.
+5. La aptitud del suelo para soluciones particulares.
+6. La factibilidad de tratamiento y disposición de aguas servidas.
+7. Las autorizaciones necesarias para el desarrollo previsto.
+
+La ausencia de esta evaluación puede generar inversiones imprevistas o dificultades para obtener las autorizaciones de edificación y funcionamiento correspondientes.
+
+## Tabla comparativa: los cuatro escenarios sanitarios
+
+| Escenario | Régimen principal | Factibilidad sanitaria | Financiamiento y alternativas |
+|---|---|---|---|
+| Urbano dentro del territorio operacional | Concesión sanitaria | Obligaciones conforme al DFL N.º 382 | Obras del urbanizador, AFR cuando procedan y demás inversiones legalmente aplicables |
+| Urbano fuera del territorio operacional | Excepciones legales, ampliación o nueva concesión | No existe obligación automática general; deben evaluarse las excepciones | Extensiones, aportes de terceros, eventuales AFR y sistemas particulares autorizables |
+| Rural aparentemente dentro del territorio operacional | Concesión formal, artículo 52 bis o SSR | Depende del título jurídico real y de las condiciones de prestación | AFR, convenios o aportes SSR, únicamente cuando resulte aplicable cada régimen |
+| Rural fuera del territorio operacional | SSR, eventual prestación rural o sistema particular | Depende de cobertura, capacidad y autorizaciones | Aportes SSR, inversión pública, convenios o financiamiento del titular |
+
+Esta comparación es orientativa. La situación jurídica y técnica de un inmueble debe establecerse mediante sus antecedentes específicos.
+
+## AFR, AFNR y obras sanitarias: ¿cuál es la diferencia?
+
+Uno de los errores más frecuentes al evaluar un proyecto es considerar todos los costos de habilitación sanitaria como si fueran equivalentes.
+
+Sin embargo, existen diferencias importantes.
+
+### Aportes de Financiamiento Reembolsables (AFR)
+
+Son aportes regulados principalmente por el DFL N.º 70/1988, destinados a financiar determinadas inversiones por capacidad o extensión de los servicios.
+
+Contemplan restitución bajo las condiciones legales y contractuales correspondientes.
+
+### Aportes de Financiamiento No Reembolsables (AFNR)
+
+La expresión se utiliza en determinados antecedentes del sector sanitario para identificar aportes que no generan derecho a devolución.
+
+Su denominación no constituye por sí sola una autorización de cobro.
+
+La procedencia de un aporte no reembolsable debe analizarse conforme a su fundamento jurídico específico.
+
+Por ejemplo, determinadas obras pueden ser consideradas aportes de terceros en procedimientos previstos por el DFL N.º 382.
+
+En cambio, el artículo 48 del Reglamento SSR establece un mecanismo propio de aportes no reembolsables, sujeto a aprobación previa de la Subdirección de Servicios Sanitarios Rurales.
+
+**Estos mecanismos no deben tratarse como equivalentes ni sujetos a una misma regulación.**
+
+### Obras propias de urbanización y conexión
+
+Son inversiones que pueden corresponder al propietario o desarrollador conforme a las obligaciones legales y características de su proyecto.
+
+El hecho de que estas obras se conecten a sistemas públicos o posteriormente sean recibidas por un prestador no significa que siempre deban ser reembolsadas.
+
+### Inversión pública sanitaria rural
+
+La Ley N.º 20.998 contempla mecanismos de inversión y subsidios destinados al desarrollo de infraestructura SSR.
+
+Estos recursos tienen un régimen diferente de los aportes exigidos a usuarios o desarrolladores.
+
+Conocer estas diferencias permite identificar mejor los costos definitivos, las eventuales devoluciones y los instrumentos que deben revisarse antes de ejecutar las obras.
+
+## ¿Cómo verificar la factibilidad sanitaria antes de comprar un terreno?
+
+La factibilidad sanitaria debe analizarse desde las primeras etapas de un proyecto.
+
+Una propiedad puede tener una ubicación atractiva, acceso vehicular y un precio conveniente, pero presentar dificultades significativas para obtener agua potable o resolver la evacuación de aguas servidas.
+
+Para reducir esos riesgos, se recomienda seguir el siguiente procedimiento.
+
+### Paso 1. Identificar correctamente el inmueble
+
+Reunir los antecedentes que permitan ubicar el terreno con precisión, como rol de avalúo, dirección, plano de ubicación y demás documentos pertinentes.
+
+### Paso 2. Verificar su condición urbana o rural
+
+Consultar los instrumentos de planificación territorial y solicitar los antecedentes correspondientes a la Dirección de Obras Municipales.
+
+### Paso 3. Revisar el territorio operacional
+
+Comprobar los límites oficiales de las concesiones sanitarias mediante los antecedentes disponibles en la Superintendencia de Servicios Sanitarios y los decretos y planos correspondientes.
+
+### Paso 4. Verificar la cobertura SSR
+
+En sectores rurales, revisar si existe un operador SSR y determinar si el inmueble pertenece a su área de servicio.
+
+### Paso 5. Solicitar factibilidad formal
+
+Presentar los antecedentes del proyecto al prestador que corresponda.
+
+La solicitud debe reflejar su demanda real, uso previsto y características técnicas.
+
+### Paso 6. Identificar las obras necesarias
+
+Determinar si se requieren conexiones, extensiones de redes, refuerzos de capacidad, sistemas de impulsión u otras inversiones.
+
+### Paso 7. Revisar AFR, aportes no reembolsables y responsabilidades económicas
+
+Antes de aprobar el presupuesto, verificar:
+
+- Qué obras corresponden al propietario o urbanizador.
+- Qué inversiones están asociadas a obligaciones del prestador.
+- Si existen AFR por capacidad o extensión.
+- Si se contemplan aportes de terceros no reembolsables.
+- Si el operador SSR exige aportes autorizados.
+- Qué condiciones de devolución o financiamiento resultan aplicables.
+
+### Paso 8. Evaluar alternativas particulares cuando corresponda
+
+Si no existe factibilidad de conexión, analizar las soluciones particulares que sean legal y técnicamente admisibles.
+
+### Paso 9. Verificar autorizaciones y permisos
+
+Según el tipo de proyecto, pueden intervenir la SEREMI de Salud, la Dirección General de Aguas, la Dirección de Obras Municipales, el MOP y otros organismos competentes.
+
+Es recomendable realizar estas verificaciones antes de ejecutar obras o comprometer inversiones significativas.
+
+## Preguntas frecuentes sobre factibilidad sanitaria y territorio operacional
+
+### ¿Puede un terreno urbano estar fuera del territorio operacional?
+
+Sí. El límite urbano y el territorio operacional son delimitaciones diferentes. Un terreno puede estar dentro del límite urbano y fuera de una concesión sanitaria.
+
+### ¿Una empresa sanitaria está obligada a conectarme si estoy fuera de su territorio operacional?
+
+No existe una obligación automática general. Sin embargo, la legislación contempla excepciones, incluyendo determinadas solicitudes de inmuebles urbanos ubicados dentro de la franja de 200 metros prevista en el artículo 48 del DFL N.º 382.
+
+### ¿Qué ocurre si existe una tubería frente a mi terreno?
+
+La presencia de una red no garantiza por sí sola la factibilidad. Es necesario comprobar el régimen jurídico de la infraestructura, su capacidad y las condiciones técnicas de conexión.
+
+### ¿Cuál es la diferencia entre AFR y AFNR?
+
+Los AFR son mecanismos regulados de financiamiento que contemplan restitución. Los aportes no reembolsables no generan derecho de devolución y su procedencia depende del régimen jurídico correspondiente.
+
+### ¿Los AFR se devuelven al propietario?
+
+Los AFR deben restituirse conforme a las condiciones legales y contractuales aplicables. El destinatario y mecanismo de devolución deben determinarse según el instrumento correspondiente.
+
+### ¿Un SSR puede cobrar por conectar una vivienda?
+
+Sí. El reglamento contempla costos y aportes para determinadas inversiones de conexión. Los aportes no reembolsables del artículo 48 requieren aprobación de la Subdirección y están sujetos a límites y justificación.
+
+### ¿Qué diferencia existe entre un APR y un SSR?
+
+APR es la denominación tradicional de Agua Potable Rural. SSR corresponde al régimen legal de Servicios Sanitarios Rurales establecido por la Ley N.º 20.998.
+
+Las organizaciones tradicionalmente conocidas como APR pueden estar comprendidas en este régimen, según su situación jurídica.
+
+### ¿Un SSR debe conectarme si estoy dentro de su área de servicio?
+
+La Ley N.º 20.998 contempla reglas específicas sobre prestación y conexión cuando existe factibilidad técnica positiva. Deben verificarse las condiciones del operador y del inmueble.
+
+### ¿Puedo conectarme a un SSR si estoy fuera de su área de servicio?
+
+Puede ser necesario tramitar una ampliación. La normativa contempla determinadas factibilidades condicionadas, pero no existe conexión automática por proximidad.
+
+### ¿Puedo instalar una fosa séptica en cualquier parcela?
+
+No. Es necesario verificar la admisibilidad de la solución, las características del suelo y las autorizaciones correspondientes.
+
+### ¿Quién autoriza un sistema particular de agua potable o aguas servidas?
+
+La SEREMI de Salud interviene en los procedimientos sanitarios de aprobación y autorización de funcionamiento, según corresponda. Pueden requerirse también otros permisos sectoriales.
+
+### ¿Una subdivisión rural garantiza factibilidad sanitaria para todos sus lotes?
+
+No. La posibilidad de subdividir no acredita por sí misma disponibilidad de agua potable ni factibilidad de saneamiento.
+
+### ¿Qué debo revisar antes de comprar un terreno?
+
+Como mínimo, su condición urbana o rural, cobertura sanitaria oficial, factibilidad, disponibilidad de agua, obras necesarias, responsabilidades económicas y autorizaciones exigibles para el uso proyectado.
+
+## ¿Podrían cambiar estas reglas con las nuevas modificaciones a la legislación sanitaria?
+
+Sí. El régimen de concesiones sanitarias en Chile contempla modificaciones legales cuya entrada en vigencia puede afectar determinados procedimientos y requisitos aplicables a prestadores, propietarios y desarrolladores.
+
+La Ley N.º 21.770, publicada el 29 de septiembre de 2025, introdujo modificaciones a la Ley General de Servicios Sanitarios, particularmente en materias vinculadas con procedimientos de concesión, ampliaciones y factibilidad.
+
+Sin embargo, su artículo vigésimo transitorio establece que las modificaciones contempladas en el artículo 86 comenzarán a regir el primer día del mes subsiguiente a la publicación en el Diario Oficial de la modificación correspondiente al Decreto Supremo MOP N.º 1.199/2004.
+
+**Al 16 de noviembre de 2026, no se ha podido acreditar el cumplimiento de dicha condición de entrada en vigencia.**
+
+En consecuencia, este artículo considera las disposiciones aplicables a la fecha indicada, sin anticipar los efectos de las modificaciones pendientes.
+
+### ¿Qué significa esto para propietarios y desarrolladores?
+
+Antes de solicitar factibilidad, adquirir una propiedad o iniciar un proyecto, debe verificarse que la legislación y los reglamentos consultados continúen vigentes.
+
+Una modificación normativa puede cambiar procedimientos administrativos, requisitos o plazos asociados a determinadas solicitudes.
+
+Esto no significa que todas las propiedades ubicadas fuera de un territorio operacional adquieran automáticamente derecho a conexión.
+
+**Nota de actualización normativa:** Este artículo considera el marco legal aplicable al 16 de noviembre de 2026. Sus disposiciones y procedimientos pueden experimentar modificaciones posteriores. Para decisiones técnicas, administrativas o de inversión deben consultarse las versiones actualizadas de las normas y los antecedentes oficiales de los organismos competentes.
+
+## La importancia de evaluar la solución sanitaria antes de desarrollar un proyecto
+
+La disponibilidad de agua potable y la gestión de aguas servidas son condiciones esenciales para la viabilidad de cualquier proyecto habitacional, inmobiliario, comercial o productivo.
+
+Estas materias no deberían abordarse únicamente cuando las edificaciones ya están diseñadas o cuando se inicia la tramitación de permisos.
+
+Pueden determinar desde las primeras etapas la selección del terreno, la capacidad del proyecto, las obras de urbanización, las alternativas tecnológicas y la inversión necesaria.
+
+Además, conocer oportunamente los mecanismos de financiamiento sanitario permite diferenciar entre inversiones definitivas, aportes reembolsables y eventuales instrumentos de apoyo público.
+
+Una evaluación temprana ayuda a identificar restricciones, comparar soluciones y reducir el riesgo de comprometer recursos en proyectos cuya infraestructura sanitaria no haya sido suficientemente estudiada.
+
+En ADDSYS entendemos que cada terreno presenta condiciones particulares. Por ello, el análisis de factibilidad sanitaria debe integrar los antecedentes normativos, la infraestructura existente, las exigencias técnicas y las responsabilidades económicas asociadas a cada alternativa.
+
+**Conocer la situación sanitaria de un terreno antes de invertir es una decisión fundamental para desarrollar proyectos técnicamente viables, seguros y sostenibles.**
+
+---
+
+### Artículo técnico informativo elaborado con fecha de corte al 16 de noviembre de 2026. Su contenido no sustituye certificados de factibilidad, decretos de concesión, licencias SSR, resoluciones, autorizaciones ni pronunciamientos de los organismos competentes.`,
+},
+
 ];

@@ -1203,6 +1203,151 @@ export default async function InsightPage({ params }: PageProps) {
                 );
               }
 
+              // Enlace interno artículo 13 → artículo 7
+              if (
+                publicacion.id === 13 &&
+                texto.startsWith(
+                  "Para conocer las principales disposiciones aplicables al diseño",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Para conocer las principales disposiciones aplicables al
+                    diseño y ejecución de instalaciones sanitarias, revisa
+                    nuestro artículo sobre{" "}
+                    <Link
+                      href="/insights/7"
+                      className="text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      normativa sanitaria para instalaciones de agua potable y
+                      alcantarillado en Chile
+                    </Link>
+                    .
+                  </p>
+                );
+              }
+
+              // Enlace interno artículo 13 → artículo 8
+              if (
+                publicacion.id === 13 &&
+                texto.startsWith(
+                  "Si el proyecto requiere extender redes por calles",
+                )
+              ) {
+                return (
+                  <p key={index} className="mb-6 leading-8 text-slate-700">
+                    Si el proyecto requiere extender redes por calles, caminos o
+                    terrenos de terceros, también es importante conocer los{" "}
+                    <Link
+                      href="/insights/8"
+                      className="text-sky-600 transition-colors hover:text-sky-700"
+                    >
+                      permisos necesarios para ejecutar obras sanitarias en vía
+                      pública
+                    </Link>
+                    .
+                  </p>
+                );
+              }
+
+              // Tabla comparativa del artículo 13
+              if (
+                publicacion.id === 13 &&
+                texto.trimStart().startsWith("| Escenario |")
+              ) {
+                const escenarios = [
+                  {
+                    escenario: "Urbano dentro del territorio operacional",
+                    regimen: "Concesión sanitaria",
+                    factibilidad: "Obligaciones conforme al DFL N.º 382",
+                    financiamiento:
+                      "Obras del urbanizador, AFR cuando procedan y demás inversiones legalmente aplicables",
+                  },
+                  {
+                    escenario: "Urbano fuera del territorio operacional",
+                    regimen:
+                      "Excepciones legales, ampliación o nueva concesión",
+                    factibilidad:
+                      "No existe obligación automática general; deben evaluarse las excepciones",
+                    financiamiento:
+                      "Extensiones, aportes de terceros, eventuales AFR y sistemas particulares autorizables",
+                  },
+                  {
+                    escenario:
+                      "Rural aparentemente dentro del territorio operacional",
+                    regimen: "Concesión formal, artículo 52 bis o SSR",
+                    factibilidad:
+                      "Depende del título jurídico real y de las condiciones de prestación",
+                    financiamiento:
+                      "AFR, convenios o aportes SSR, únicamente cuando resulte aplicable cada régimen",
+                  },
+                  {
+                    escenario: "Rural fuera del territorio operacional",
+                    regimen:
+                      "SSR, eventual prestación rural o sistema particular",
+                    factibilidad:
+                      "Depende de cobertura, capacidad y autorizaciones",
+                    financiamiento:
+                      "Aportes SSR, inversión pública, convenios o financiamiento del titular",
+                  },
+                ];
+
+                return (
+                  <div
+                    key={index}
+                    className="relative left-1/2 my-10 w-[min(800px,calc(100vw-48px))] -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                  >
+                    <div className="overflow-x-auto">
+                      <table className="w-full table-fixed border-collapse text-left text-sm">
+                        <thead className="bg-slate-900 text-white">
+                          <tr>
+                            <th className="px-5 py-4 font-semibold">
+                              Escenario
+                            </th>
+                            <th className="px-5 py-4 font-semibold">
+                              Régimen principal
+                            </th>
+                            <th className="px-5 py-4 font-semibold">
+                              Factibilidad sanitaria
+                            </th>
+                            <th className="px-5 py-4 font-semibold">
+                              Financiamiento y alternativas
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody className="divide-y divide-slate-200">
+                          {escenarios.map((fila, filaIndex) => (
+                            <tr
+                              key={filaIndex}
+                              className="transition-colors hover:bg-sky-50"
+                            >
+                              <td className="px-5 py-5 align-top font-semibold text-slate-900">
+                                {fila.escenario}
+                              </td>
+                              <td className="px-5 py-5 align-top text-slate-700">
+                                {fila.regimen}
+                              </td>
+                              <td className="px-5 py-5 align-top text-slate-700">
+                                {fila.factibilidad}
+                              </td>
+                              <td className="px-5 py-5 align-top text-slate-700">
+                                {fila.financiamiento}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                );
+              }
+
+              // Evitar mostrar filas Markdown de la tabla como texto
+              if (publicacion.id === 13 && texto.trimStart().startsWith("|")) {
+                return null;
+              }
+
               // Párrafos normales
               return (
                 <p key={index} className="mb-5">
