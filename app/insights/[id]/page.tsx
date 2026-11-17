@@ -1297,8 +1297,8 @@ export default async function InsightPage({ params }: PageProps) {
                     key={index}
                     className="relative left-1/2 my-10 w-[min(800px,calc(100vw-48px))] -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
                   >
-                    <div className="overflow-x-auto">
-                      <table className="w-full table-fixed border-collapse text-left text-sm">
+                    <div className="w-full overflow-x-auto overscroll-x-contain">
+                      <table className="w-full min-w-[800px] table-fixed border-collapse text-left text-sm">
                         <thead className="bg-slate-900 text-white">
                           <tr>
                             <th className="px-5 py-4 font-semibold">
