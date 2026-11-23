@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
 
 import ADDSYSInsights from "@/components/ADDSYSInsights";
 
 import FenixHeroWaves from "@/components/FenixHeroWaves";
+import HomeWaterProjects from "@/components/HomeWaterProjects";
 
 export default function AddsysWeb() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -319,18 +319,7 @@ export default function AddsysWeb() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-lg md:col-start-2 md:row-span-2 md:row-start-1 md:self-center">
-            <Image
-              src="/Images/F_OB/Grid2.jpg"
-              alt="Bombas verticales de una planta elevadora de agua potable"
-              width={1040}
-              height={780}
-              sizes="(min-width: 1280px) 592px, (min-width: 768px) calc((100vw - 6rem) / 2), (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2.5rem)"
-              loading="eager"
-              fetchPriority="high"
-              className="h-auto w-full"
-            />
-          </div>
+          <HomeWaterProjects />
 
           <dl className="grid grid-cols-3 gap-2 rounded-2xl border border-slate-200 bg-white/95 px-3 py-4 text-slate-900 sm:gap-4 sm:px-5 md:col-start-1 md:row-start-2">
             <div>

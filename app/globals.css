@@ -28,3 +28,17 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@media (min-width: 48rem) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .home-water-project-card {
+    transition: transform 220ms ease-out;
+  }
+
+  .home-water-project-card:hover {
+    transform: perspective(680px) rotateX(3deg) rotateY(4deg) translateY(-3px);
+  }
+
+  .home-water-project-card[data-category="servidas"]:hover {
+    transform: perspective(680px) rotateX(3deg) rotateY(-4deg) translateY(-3px);
+  }
+}
