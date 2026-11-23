@@ -4342,4 +4342,103 @@ En ADDSYS entendemos que cada terreno presenta condiciones particulares. Por ell
 ### Artículo técnico informativo elaborado con fecha de corte al 16 de noviembre de 2026. Su contenido no sustituye certificados de factibilidad, decretos de concesión, licencias SSR, resoluciones, autorizaciones ni pronunciamientos de los organismos competentes.`,
 },
 
+{
+  id: 14,
+  categoria: "ADDSYS Insights",
+  titulo: "¿Cómo se automatiza y monitorea una planta elevadora de agua potable?",
+  tituloSEO: "Automatización y telemetría en plantas elevadoras de agua potable",
+  resumen: "Cómo el tablero regula la presión, qué señales conviene monitorear y qué pasa cuando una planta elevadora de agua potable pierde comunicación.",
+  imagen: "/img_pub_14.jpg",
+  fecha: "22 de noviembre de 2026",
+  fechaISO: "2026-11-22",
+  fechaPublicacionISO: "2026-11-22T23:36:59-03:00",
+  tiempoLectura: "8 min de lectura",
+  destacada: false,
+  fuentes: [
+    {
+      titulo: "RIDAA, Decreto MOP N.º 50, título VI — Biblioteca del Congreso Nacional",
+      url: "https://www.bcn.cl/leychile/navegar?idNorma=207101",
+    },
+    {
+      titulo: "Guía de inspección de sistemas de agua potable, capítulos 5 y 10 — EPA",
+      url: "https://www.epa.gov/sites/default/files/2019-08/documents/sanitary_survey_learners_guide_508_8.27.19.pdf",
+    },
+    {
+      titulo: "Piloto de telemetría en el APR El Esfuerzo — Dirección de Obras Hidráulicas",
+      url: "https://doh.mop.gob.cl/doh-implementa-sistema-de-telemetria-en-apr-el-esfuerzo-en-la-region-de-coquimbo/",
+    },
+    {
+      titulo: "Guía de diseño de variadores para bombeo y control en cascada — Danfoss",
+      url: "https://assets.danfoss.com/documents/272860/AJ300847815559en-000002.pdf",
+    },
+    {
+      titulo: "Variadores y funciones para agua y aguas residuales — ABB",
+      url: "https://www.abb.com/global/en/areas/motion/drives/low-voltage-ac-drives/water-wastewater-drives",
+    },
+    {
+      titulo: "Varios motores en un variador y protección individual — Schneider Electric",
+      url: "https://www.se.com/ca/en/faqs/FA115250/",
+    },
+  ],
+  articulosRelacionados: [3, 4, 10],
+  contenido: `Una planta elevadora de agua potable se automatiza con un tablero que usa señales de presión, nivel y estado de los equipos para gobernar las bombas. La telemetría transmite esas señales y sus alarmas a distancia. Si el tablero dispone de las mediciones, energía y protecciones necesarias, puede seguir operando ante una pérdida de comunicación con la plataforma de supervisión.
+
+## ¿Qué controla el tablero de la planta?
+
+En una instalación con estanque de acumulación y bombas que presurizan la red interior, el tablero regula el bombeo según la demanda. Un transmisor mide la presión de descarga. Si la instalación usa variadores de frecuencia, el controlador puede ajustar la velocidad de las bombas para mantener la presión dentro del rango definido en el proyecto. En otras configuraciones, la regulación se realiza mediante arranque y parada por bandas de presión.
+
+Cuando existen dos o más bombas, el tablero puede alternar la unidad principal para repartir las horas de marcha. Según el diseño, una segunda bomba puede entrar para apoyar en períodos de alta demanda o sustituir a una unidad que quedó fuera de servicio. La lógica debe tener en cuenta cuántas bombas requiere el sistema para abastecer la demanda prevista y cuántas pueden quedar disponibles como respaldo.
+
+Las protecciones actúan en la planta. Por ejemplo, cuando el estanque baja del nivel mínimo definido, el tablero puede impedir el bombeo para proteger los equipos frente a la marcha en seco. La condición de rearme se define en el proyecto y se comprueba durante la puesta en servicio.
+
+## ¿Qué variador de frecuencia conviene para una planta elevadora de agua potable?
+
+Para un grupo de presurización con demanda variable, conviene especificar un **variador de frecuencia (VFD) para aplicaciones de bombeo**, con control PID de presión, rampas ajustables y funciones de reposo y rearranque por baja demanda. Un variador de propósito general también sirve si el tablero o el controlador lógico programable (PLC) se ocupa de la regulación, la secuencia de bombas y las protecciones. En un grupo compacto nuevo se puede evaluar un equipo presurizador con variador integrado en cada bomba, siempre que ofrezca el control y la comunicación que requiere el proyecto.
+
+Selecciona el variador según la **tensión de alimentación, el tipo de motor y su corriente nominal de placa**, además de la capacidad de salida efectiva del variador en las condiciones de instalación. Revisa la temperatura del tablero, la altitud, la protección frente a humedad y polvo, y la longitud del cable al motor. El fabricante del variador indica cuándo se necesitan filtros de salida. Verifica también que el motor sea apto para trabajar con variador y dentro del rango de velocidad previsto.
+
+### ¿Un variador por bomba o uno compartido?
+
+- **Un variador por bomba.** Es la configuración preferente cuando importan la continuidad del servicio y la regulación de presión. El control en cascada alterna la bomba principal por horas de marcha y agrega o retira bombas según la demanda. Si falla un variador, las otras bombas pueden seguir operando si el control permite omitir el equipo en falla y la capacidad restante alcanza. También hay que evaluar fallas comunes, como la del sensor de presión o del controlador central.
+- **Un variador en la bomba principal y bombas de apoyo a velocidad fija.** Es una alternativa de menor inversión cuando la bomba principal cubre la demanda habitual y las de apoyo entran solo en períodos punta. El controlador coordina su entrada y salida para limitar oscilaciones de presión. Si el variador se avería, la operación a velocidad fija depende de un modo de respaldo previsto y probado.
+- **Un variador que se alterna entre bombas.** Algunos fabricantes documentan esta opción para seleccionar qué bomba opera a velocidad variable. Requiere un esquema de conmutación e interbloqueos aprobado por el fabricante. Si falla el variador compartido, ninguna bomba podrá regular su velocidad con él.
+- **Varios motores en paralelo en la misma salida del variador.** Reciben la misma frecuencia y carecen de regulación independiente. Esta opción tiene sentido cuando los motores deben funcionar juntos y el fabricante admite el montaje. El variador debe dimensionarse para la carga simultánea y cada motor debe tener protección individual contra sobrecarga. Para un grupo de presión que necesita escalonar bombas y mantener servicio ante una falla, suele ser preferible el control independiente.
+
+### ¿Qué se ajusta en la puesta en servicio?
+
+Configura los datos de placa del motor y verifica la escala del transmisor de presión. Define la consigna según el cálculo hidráulico y los límites de velocidad y caudal según las curvas y requisitos de la bomba y el motor. Después ajusta el PID, las rampas y la entrada y salida escalonada de las bombas con retardos que eviten arranques repetidos. Prueba la presión con demanda baja y alta, la alternancia, la protección por nivel bajo y la respuesta ante la falla de un variador o del sensor.
+
+## ¿Qué variables conviene registrar?
+
+- **Presión de descarga.** Permite verificar si la planta sostiene el servicio ante cambios de demanda y detectar caídas persistentes. Una lectura puntual puede parecer normal aunque el historial muestre fluctuaciones repetidas.
+- **Nivel del estanque.** Permite seguir la disponibilidad de agua y distinguir una caída de presión causada por falta de agua de una asociada al grupo de bombeo.
+- **Estado de cada bomba.** Registrar marcha, parada, disponibilidad, falla y modo manual o automático facilita el diagnóstico. Las horas de funcionamiento y cantidad de arranques ayudan a programar mantenimiento.
+- **Caudal impulsado, si existe caudalímetro.** Complementa las lecturas de presión. Si dos bombas están en marcha y el caudal sigue bajo, el operador tiene una señal para revisar el comportamiento hidráulico junto con los demás datos.
+- **Energía y comunicación.** Registrar pérdida de alimentación y la hora de la última lectura válida ayuda a distinguir una parada eléctrica de una interrupción de la supervisión remota.
+
+## ¿Qué alarmas debería recibir el operador?
+
+Conviene priorizar las alarmas que requieren una respuesta, como presión baja sostenida, nivel crítico, falla de bomba sin respaldo disponible y pérdida de comunicación. Para cada alarma se debe definir qué la activa, cuánto debe persistir la condición, a quién se avisa y qué revisión corresponde. Los umbrales y retardos dependen del diseño hidráulico y de las condiciones de operación de la planta.
+
+Una alarma de **presión baja con nivel normal y una bomba en falla** orienta la revisión hacia el equipo de bombeo. La misma alarma con **nivel crítico** orienta primero hacia el abastecimiento o llenado del estanque. Son indicios para guiar la inspección. El diagnóstico requiere contrastar las señales con las condiciones observadas en la planta.
+
+## ¿Qué pasa si se pierde la comunicación?
+
+Si falla el enlace con la plataforma, un tablero con control autónomo puede seguir regulando la presión con sus sensores locales y mantener activas sus protecciones. En el panel remoto, los datos deben mostrar su hora y aparecer como desactualizados cuando corresponda. Si el equipo admite almacenamiento local, se puede recuperar parte del historial cuando se restablezca el enlace.
+
+La falla de comunicación, el corte de energía y la pérdida de un sensor son eventos distintos. Una planta puede continuar ante el primero y necesitar una respuesta diferente ante los otros dos. El comportamiento ante cada evento debe quedar documentado y probado. Cuando existe mando remoto, las órdenes deben respetar las protecciones del tablero local.
+
+## Ejemplo para la puesta en servicio
+
+En un edificio con estanque y dos bombas de presurización, la bomba principal compensa un aumento del consumo. Si la presión permanece baja, la lógica puede habilitar la segunda bomba, siempre que esté disponible y se cumplan las condiciones del diseño. Si cae el enlace de telemetría, se verifica en terreno que el tablero siga regulando y que la plataforma marque la hora de la última comunicación. El ejemplo ilustra una secuencia de operación y debe ajustarse a cada instalación.
+
+Antes de entregar la planta, conviene comprobar las lecturas de presión y nivel contra instrumentos de referencia, verificar la alternancia y simular en condiciones controladas la falla de una bomba, el nivel bajo y la pérdida de comunicación. También conviene confirmar que el personal de turno recibe los avisos y sabe qué revisar ante cada evento.
+
+## ¿Cómo aplicar estos criterios en Chile?
+
+Para instalaciones domiciliarias, el Reglamento de Instalaciones Domiciliarias de Agua Potable y de Alcantarillado (RIDAA) aborda la elevación de agua potable en su título VI. Para decidir qué sistema se requiere, se deben revisar los antecedentes del inmueble y la presión informada por el prestador en el certificado de factibilidad, cuando corresponda. La arquitectura de control y telemetría se define para la instalación y sus necesidades de operación. Como referencia aplicada en Chile, la Dirección de Obras Hidráulicas documenta un piloto de telemetría en el APR El Esfuerzo, en la Región de Coquimbo, que incorporó señales de nivel, estados de bombas y variables eléctricas.
+
+Para una planta existente, una buena primera evaluación es revisar el esquema hidráulico, las señales de terreno, las alarmas disponibles y el comportamiento ante fallas. En ADDSYS abordamos estas decisiones en conjunto con el diseño hidráulico, el tablero eléctrico y las necesidades de operación y mantenimiento.`,
+},
+
 ];

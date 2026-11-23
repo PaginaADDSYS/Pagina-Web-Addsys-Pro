@@ -11,4 +11,6 @@ export interface Publicacion {
   fechaPublicacionISO?: string;
   tiempoLectura: string;
   destacada: boolean;
+  fuentes?: { titulo: string; url: string }[];
+  articulosRelacionados?: number[];
 }

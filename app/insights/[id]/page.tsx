@@ -90,6 +90,13 @@ export default async function InsightPage({ params }: PageProps) {
     notFound();
   }
 
+  const articulosRelacionados = (publicacion.articulosRelacionados ?? []).flatMap(
+    (idRelacionado) => {
+      const articulo = publicaciones.find((item) => item.id === idRelacionado);
+      return articulo ? [articulo] : [];
+    },
+  );
+
   const temasInsights = [
     "Ingeniería sanitaria",
     "Agua potable y aguas servidas",
@@ -1357,6 +1364,42 @@ export default async function InsightPage({ params }: PageProps) {
             });
           })()}
         </div>
+
+        {publicacion.fuentes && publicacion.fuentes.length > 0 && (
+          <section className="mx-auto mt-10 max-w-3xl">
+            <h2 className="text-2xl font-bold text-slate-900">Fuentes</h2>
+            <ul className="mt-4 list-disc space-y-2 pl-6 text-slate-700">
+              {publicacion.fuentes.map((fuente) => (
+                <li key={fuente.url}>
+                  <a
+                    className="text-sky-800 underline underline-offset-4 hover:text-sky-950"
+                    href={fuente.url}
+                  >
+                    {fuente.titulo}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {articulosRelacionados.length > 0 && (
+          <section className="mx-auto mt-10 max-w-3xl">
+            <h2 className="text-2xl font-bold text-slate-900">Artículos relacionados</h2>
+            <ul className="mt-4 list-disc space-y-2 pl-6 text-slate-700">
+              {articulosRelacionados.map((articulo) => (
+                <li key={articulo.id}>
+                  <Link
+                    className="text-sky-800 underline underline-offset-4 hover:text-sky-950"
+                    href={`/insights/${articulo.id}`}
+                  >
+                    {articulo.titulo}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* CIERRE */}
         <div className="mt-16 border-t border-slate-200 pt-10">
