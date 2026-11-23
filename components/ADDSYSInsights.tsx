@@ -237,10 +237,10 @@ export default function ADDSYSInsights() {
               {" "}
               ADDSYS Insights{" "}
             </div>{" "}
-            <h1 className=" mt-5 max-w-[560px] text-4xl font-bold leading-[1.08] tracking-tight text-slate-700 md:text-5xl lg:text-[58px] ">
+            <h2 className=" mt-5 max-w-[560px] text-4xl font-bold leading-[1.08] tracking-tight text-slate-700 md:text-5xl lg:text-[58px] ">
               {" "}
               Ingeniería sanitaria <br /> impulsada por datos.{" "}
-            </h1>{" "}
+            </h2>{" "}
             <p className=" mt-7 max-w-[500px] text-base leading-7 text-slate-600 md:text-lg ">
               {" "}
               Diseñamos soluciones que integran operación, telemetría,
@@ -301,6 +301,7 @@ export default function ADDSYSInsights() {
             <div className="relative min-h-[380px] overflow-hidden lg:min-h-[450px]">
               <img
                 src="/Insights/hero-insight.png"
+                loading="lazy"
                 alt={destacada.titulo}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -370,6 +371,7 @@ export default function ADDSYSInsights() {
                   <div className="relative aspect-[16/9] overflow-hidden">
                     <img
                       src={publicacion.imagen}
+                      loading="lazy"
                       alt={publicacion.titulo}
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />

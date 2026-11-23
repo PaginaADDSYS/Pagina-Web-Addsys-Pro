@@ -1,29 +1,17 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 import ADDSYSInsights from "@/components/ADDSYSInsights";
-
-import AddsysHomeHero from "@/components/AddsysHomeHero";
 
 import FenixHeroWaves from "@/components/FenixHeroWaves";
 
 export default function AddsysWeb() {
-  const heroImages = [
-    { src: "/Images/HERO5.jpg", position: "center 100%", scale: "1" },
-    { src: "/Images/F_OB/HERO122.jpg", position: "center 50%", scale: "1" },
-    { src: "/Images/HERO7.jpg", position: "center 35%", scale: "1" },
-    { src: "/Images/F_OB/HERO2.png", position: "center 50%", scale: "1" },
-    { src: "/Images/F_OB/HERO10.jpg", position: "center 50%", scale: "1" },
-    { src: "/Images/F_OB/HERO100.jpg", position: "center 100%", scale: "1" },
-    { src: "/Images/F_OB/HERO203.jpg", position: "center 20%", scale: "1" },
-    { src: "/Images/F_OB/HERO200.png", position: "center 50%", scale: "1" },
-    { src: "/Images/F_OB/HERO204.jpg", position: "center 50%", scale: "1" },
-    { src: "/Images/F_OB/HERO202.jpg", position: "center 100%", scale: "1" },
-  ];
-
-  const [currentImage, setCurrentImage] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuButton = useRef<HTMLButtonElement>(null);
+  const heroSection = useRef<HTMLElement>(null);
+  const [heroInView, setHeroInView] = useState(true);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">(
@@ -33,12 +21,16 @@ export default function AddsysWeb() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const isHovered = useRef(false);
 
-  useEffect(() => {
-    const interval = window.setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
 
-    return () => window.clearInterval(interval);
+  useEffect(() => {
+    const section = heroSection.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      setHeroInView(entry.isIntersecting);
+    });
+    observer.observe(section);
+    return () => observer.disconnect();
   }, []);
 
   // Auto scroll galería
@@ -155,7 +147,15 @@ export default function AddsysWeb() {
       {/* HERO EXPERIMENTAL — retirado para integración FÉNIX */}
 
       {/* HEADER */}
-      <header className="sticky top-0 z-50 bg-white border-b border-slate-200">
+      <header
+        className="sticky top-0 z-50 border-b border-slate-200 bg-white"
+        onKeyDown={(event) => {
+          if (event.key === "Escape" && mobileMenuOpen) {
+            setMobileMenuOpen(false);
+            mobileMenuButton.current?.focus();
+          }
+        }}
+      >
         <div className="max-w-7xl mx-auto h-20 px-6 flex items-center justify-between">
           {/* LOGO */}
           <a href="#inicio" className="flex items-center">
@@ -206,182 +206,148 @@ export default function AddsysWeb() {
 
           {/* BOTÓN MÓVIL */}
           <button
+            ref={mobileMenuButton}
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="lg:hidden inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700"
-            aria-label="Abrir menú"
+            className="inline-flex size-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-sm font-medium text-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700 lg:hidden"
+            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={mobileMenuOpen}
+            aria-controls="navegacion-movil"
           >
             {mobileMenuOpen ? "✕" : "☰"}
           </button>
         </div>
 
         {/* MENÚ MÓVIL */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-slate-200 bg-white px-6 py-4">
-            <nav className="flex flex-col gap-4 text-sm font-medium text-slate-700">
-              <a
-                href="#inicio"
-                onClick={() => setMobileMenuOpen(false)}
-                className="transition hover:text-sky-700"
-              >
-                Inicio
-              </a>
+        <div
+          id="navegacion-movil"
+          hidden={!mobileMenuOpen}
+          className="border-t border-slate-200 bg-white px-6 py-4 lg:hidden"
+        >
+          <nav aria-label="Navegación móvil" className="flex flex-col gap-4 text-sm font-medium text-slate-700">
+            <a
+              href="#inicio"
+              onClick={() => setMobileMenuOpen(false)}
+              className="transition hover:text-sky-700"
+            >
+              Inicio
+            </a>
 
-              <a
-                href="#servicios"
-                onClick={() => setMobileMenuOpen(false)}
-                className="transition hover:text-sky-700"
-              >
-                Servicios
-              </a>
+            <a
+              href="#servicios"
+              onClick={() => setMobileMenuOpen(false)}
+              className="transition hover:text-sky-700"
+            >
+              Servicios
+            </a>
 
-              <a
-                href="#proyectos"
-                onClick={() => setMobileMenuOpen(false)}
-                className="transition hover:text-sky-700"
-              >
-                Proyectos
-              </a>
+            <a
+              href="#proyectos"
+              onClick={() => setMobileMenuOpen(false)}
+              className="transition hover:text-sky-700"
+            >
+              Proyectos
+            </a>
 
-              <a
-                href="#clientes"
-                onClick={() => setMobileMenuOpen(false)}
-                className="transition hover:text-sky-700"
-              >
-                Clientes
-              </a>
+            <a
+              href="#clientes"
+              onClick={() => setMobileMenuOpen(false)}
+              className="transition hover:text-sky-700"
+            >
+              Clientes
+            </a>
 
-              <a
-                href="#cobertura"
-                onClick={() => setMobileMenuOpen(false)}
-                className="transition hover:text-sky-700"
-              >
-                Cobertura
-              </a>
+            <a
+              href="#cobertura"
+              onClick={() => setMobileMenuOpen(false)}
+              className="transition hover:text-sky-700"
+            >
+              Cobertura
+            </a>
 
-              <a
-                href="#insights"
-                onClick={() => setMobileMenuOpen(false)}
-                className="font-semibold text-sky-700"
-              >
-                ADDSYS Insights
-              </a>
+            <a
+              href="#insights"
+              onClick={() => setMobileMenuOpen(false)}
+              className="font-semibold text-sky-700"
+            >
+              ADDSYS Insights
+            </a>
 
-              <a
-                href="#contacto"
-                onClick={() => setMobileMenuOpen(false)}
-                className="rounded-xl bg-sky-600 px-5 py-3 text-center font-semibold text-white transition hover:bg-sky-700"
-              >
-                Solicitar Cotización
-              </a>
-            </nav>
-          </div>
-        )}
+            <a
+              href="#contacto"
+              onClick={() => setMobileMenuOpen(false)}
+              className="rounded-xl bg-sky-600 px-5 py-3 text-center font-semibold text-white transition hover:bg-sky-700"
+            >
+              Solicitar Cotización
+            </a>
+          </nav>
+        </div>
       </header>
 
       {/* HERO */}
       <section
         id="inicio"
+        ref={heroSection}
         className="scroll-mt-35 relative overflow-hidden bg-[radial-gradient(circle_at_15%_10%,_rgba(14,165,233,0.10),_transparent_30%),radial-gradient(circle_at_85%_85%,_rgba(56,189,248,0.08),_transparent_28%)] bg-white"
       >
-        <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-6 pt-5 md:pt-0 pb-20 md:py-20 grid md:grid-cols-2 gap-3 md:gap-12 items-start">
-          {/* TEXTO */}
-          <div className="order-2 md:order-1 md:mt-6 max-w-2xl">
-            <div className="mb-3 text-sm font-medium tracking-[0.08em] text-sky-700">
-              INGENIERÍA SANITARIA
-            </div>
-            <h1 className="mt-0 max-w-[650px] text-4xl sm:text-5xl md:text-[40px] font-semibold leading-[1.08] tracking-[-0.02em] text-slate-900">
-              Soluciones sanitarias confiables para ejecutar tu proyecto con
-              seguridad
+        <div className="relative z-10 mx-auto grid max-w-7xl items-start gap-8 px-5 py-9 sm:px-6 sm:py-12 md:grid-cols-2 md:gap-x-12 md:gap-y-6 lg:py-16">
+          <div className="max-w-2xl md:col-start-1 md:row-start-1 md:self-end">
+            <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.035em] text-slate-950">
+              Ingeniería sanitaria para proyectos de agua potable y alcantarillado
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Desde Temuco, ADDSYS cuenta con 8 años de experiencia
-              desarrollando soluciones sanitarias en agua potable y aguas
-              servidas, brindando atención especializada a proyectos
-              domiciliarios, urbanos e industriales en la zona sur del país.
+            <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-700 sm:text-lg">
+              Diseñamos, mantenemos y ejecutamos redes, plantas elevadoras y
+              otras obras sanitarias para proyectos en todo Chile.
             </p>
 
-            {/* DESTACADOS */}
-            <div className="mt-4 flex flex-wrap gap-3">
-              {[
-                "Experiencia comprobada",
-                "Cobertura Nacional",
-                "Soluciones a medida",
-              ].map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-
-            {/* CTA */}
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="#contacto"
+                className="inline-flex min-h-12 items-center rounded-xl bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700 sm:text-base"
+              >
+                Solicitar cotización
+              </a>
               <a
                 href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-14 rounded-xl bg-green-500 px-6 py-4 text-base font-semibold text-white transition hover:bg-green-600"
+                className="inline-flex min-h-12 items-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-sky-700 hover:text-sky-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700 sm:text-base"
               >
                 Hablar por WhatsApp
               </a>
-
-              <a
-                href="#contacto"
-                className="h-14 rounded-xl bg-sky-600 px-6 py-4 text-base font-semibold text-white transition hover:bg-sky-700"
-              >
-                Solicitar cotización
-              </a>
-            </div>
-
-            {/* BLOQUES CLAVE (MUCHO MÁS LIMPIOS) */}
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl">
-              <div className="rounded-[20px] border border-slate-200 bg-white p-4 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
-                <div className="text-sm text-slate-500">Trayectoria</div>
-                <div className="text-lg font-semibold text-slate-900">
-                  8 años
-                </div>
-              </div>
-
-              <div className="rounded-[20px] border border-slate-200 bg-white p-4 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
-                <div className="text-sm text-slate-500">Ubicación</div>
-                <div className="text-lg font-semibold text-slate-900">
-                  Temuco, Chile
-                </div>
-              </div>
-
-              <div className="rounded-[20px] border border-slate-200 bg-white p-4 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
-                <div className="text-sm text-slate-500">Cobertura</div>
-                <div className="text-lg font-semibold text-slate-900">
-                  Todo el país
-                </div>
-              </div>
             </div>
           </div>
 
-          {/* IMAGEN */}
-          <div className="relative order-1 md:order-2 md:mt-6">
-            {/* Fondo sutil */}
-            <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-3xl bg-gray-200/40"></div>
-
-            {/* Imagen */}
-            <div className="relative overflow-hidden rounded-[20px] border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.06)] h-[380px] sm:h-[450px] md:h-[550px]">
-              <img
-                src={heroImages[currentImage].src}
-                alt="Proyecto sanitario"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out"
-                style={{
-                  objectPosition: heroImages[currentImage].position,
-                  transform: `scale(${heroImages[currentImage].scale})`,
-                }}
-              />
-            </div>
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-lg md:col-start-2 md:row-span-2 md:row-start-1 md:self-center">
+            <Image
+              src="/Images/F_OB/Grid2.jpg"
+              alt="Bombas verticales de una planta elevadora de agua potable"
+              width={1040}
+              height={780}
+              sizes="(min-width: 1280px) 592px, (min-width: 768px) calc((100vw - 6rem) / 2), (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2.5rem)"
+              loading="eager"
+              fetchPriority="high"
+              className="h-auto w-full"
+            />
           </div>
+
+          <dl className="grid grid-cols-3 gap-2 rounded-2xl border border-slate-200 bg-white/95 px-3 py-4 text-slate-900 sm:gap-4 sm:px-5 md:col-start-1 md:row-start-2">
+            <div>
+              <dt className="text-xs text-slate-600 sm:text-sm">Trayectoria</dt>
+              <dd className="mt-1 text-sm font-semibold sm:text-base">8 años</dd>
+            </div>
+            <div>
+              <dt className="text-xs text-slate-600 sm:text-sm">Ubicación</dt>
+              <dd className="mt-1 text-sm font-semibold sm:text-base">Temuco, Chile</dd>
+            </div>
+            <div>
+              <dt className="text-xs text-slate-600 sm:text-sm">Cobertura</dt>
+              <dd className="mt-1 text-sm font-semibold sm:text-base">Todo el país</dd>
+            </div>
+          </dl>
         </div>
+
         <FenixHeroWaves />
       </section>
 
@@ -520,6 +486,7 @@ export default function AddsysWeb() {
                 >
                   <img
                     src={item.img}
+                    loading="lazy"
                     alt={item.titulo}
                     className="w-full h-[420px] object-cover object-center transition-transform duration-500 group-hover:scale-110"
                   />
@@ -734,6 +701,7 @@ export default function AddsysWeb() {
                     <div className="relative overflow-hidden rounded-[20px] border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
                       <img
                         src={item.img}
+                        loading="lazy"
                         alt={item.titulo}
                         className="w-full h-[300px] sm:h-[340px] md:h-[400px] object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-105"
                       />
@@ -791,6 +759,7 @@ export default function AddsysWeb() {
               >
                 <img
                   src={logo}
+                  loading="lazy"
                   alt={`Cliente ${i + 1}`}
                   className="max-h-[60px] object-contain opacity-80 hover:opacity-100 transition"
                 />
@@ -886,6 +855,7 @@ export default function AddsysWeb() {
               <div className="relative flex justify-center">
                 <img
                   src="/Cob_MapChile.png"
+                  loading="lazy"
                   alt="Cobertura Chile"
                   className="h-[520px] md:h-[720px] object-contain scale-140 opacity-95 drop-shadow-[0_25px_35px_rgba(0,0,0,0.45)]"
                 />
@@ -933,7 +903,7 @@ export default function AddsysWeb() {
       {/* CONTACTO */}
       <section
         id="contacto"
-        className="scroll-mt-15 py-24 bg-slate-900 text-white"
+        className="scroll-mt-20 py-24 bg-slate-900 text-white"
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
@@ -1169,7 +1139,7 @@ export default function AddsysWeb() {
         href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 transition z-50"
+        className={`fixed bottom-6 right-6 z-50 rounded-full bg-green-500 px-5 py-3 text-white shadow-lg transition hover:bg-green-600 ${heroInView ? "invisible lg:visible" : ""}`}
       >
         WhatsApp
       </a>
