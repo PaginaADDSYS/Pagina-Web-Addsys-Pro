@@ -312,7 +312,7 @@ export default function AddsysWeb() {
                 href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-12 items-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-sky-700 hover:text-sky-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700 sm:text-base"
+                className="inline-flex min-h-12 items-center rounded-xl border border-green-500 bg-green-500 px-5 py-3 text-sm font-semibold text-green-950 transition hover:border-green-600 hover:bg-green-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700 sm:text-base"
               >
                 Hablar por WhatsApp
               </a>
